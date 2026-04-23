@@ -356,6 +356,37 @@ p {
   justify-content: center;
 }
 
+/* Wrapper SVG du titre tracé */
+.hero__title-svg-wrapper {
+  width: 100%;
+  max-width: 860px;
+  margin: 0.5rem auto 0;
+  line-height: 1;
+}
+
+.hero__title-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  display: block;
+}
+
+/* Les lignes SVG : fill blanc par défaut (fallback sans JS) */
+.hero-draw-line {
+  fill: rgba(255, 255, 255, 0.95);
+  stroke: none;
+}
+
+/* Éléments qui apparaissent après le tracé du titre
+   opacity:0 est appliqué par JS seulement si les animations sont actives */
+.hero-extra {
+  opacity: 1;
+}
+
+.hero-extra--active {
+  animation: heroReveal 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 .hero__scroll {
   position: absolute;
   bottom: 2rem;

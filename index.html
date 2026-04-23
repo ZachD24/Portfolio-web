@@ -49,12 +49,40 @@
         <!-- REMPLACER : votre spécialité ou accroche -->
         <p class="hero__eyebrow hero-animate-1">Portfolio · 2024</p>
 
-        <h1 class="hero__title hero-animate-2">Zachary<br>Drolet</h1>
+        <!-- Titre SVG tracé comme une courbe paramétrique -->
+        <h1 class="hero__title-svg-wrapper" aria-label="Zachary Drolet">
+          <svg
+            class="hero__title-svg"
+            viewBox="0 0 820 310"
+            preserveAspectRatio="xMidYMid meet"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <text
+              class="hero-draw-line"
+              x="410" y="148"
+              text-anchor="middle"
+              font-family="'Cormorant Garamond', Georgia, serif"
+              font-size="148"
+              font-weight="300"
+              letter-spacing="-2"
+            >Zachary</text>
+            <text
+              class="hero-draw-line"
+              x="410" y="295"
+              text-anchor="middle"
+              font-family="'Cormorant Garamond', Georgia, serif"
+              font-size="148"
+              font-weight="300"
+              letter-spacing="-2"
+            >Drolet</text>
+          </svg>
+        </h1>
 
-        <!-- Traduit automatiquement via data-i18n -->
-        <p class="hero__tagline hero-animate-3" data-i18n="hero.tagline">Architecte · Lyon</p>
+        <!-- Ces éléments apparaissent après que le tracé est terminé -->
+        <p class="hero__tagline hero-extra" data-i18n="hero.tagline">Architecte · Lyon</p>
 
-        <div class="hero__cta hero-animate-4">
+        <div class="hero__cta hero-extra">
           <a href="projets.html" class="btn btn-outline-light" data-i18n="hero.cta">Voir les projets</a>
           <a href="a-propos.html" class="btn btn-outline-light" data-i18n="nav.about">À propos</a>
         </div>
@@ -104,6 +132,7 @@
   <script src="js/projects.js"></script>
   <script src="js/main.js"></script>
   <script src="js/hero-canvas.js"></script>
+  <script src="js/title-draw.js"></script>
   <script>
     // Aperçu : 4 premiers projets sur la page d'accueil
     document.addEventListener('DOMContentLoaded', () => {
