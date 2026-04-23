@@ -23,7 +23,7 @@ const TRANSLATIONS = {
 
     // a-propos.html
     "about.title":       "À propos",
-    "about.bio.1":       "Étudiante en architecture à l'École Nationale Supérieure d'Architecture de Lyon, je développe une pratique centrée sur la relation entre l'espace bâti et ses usagers. Mes projets explorent les thèmes de la lumière naturelle, de la matérialité et du contexte urbain.",
+    "about.bio.1":       "Étudiant en architecture à l'École Nationale Supérieure d'Architecture de Lyon, je développe une pratique centrée sur la relation entre l'espace bâti et ses usagers. Mes projets explorent les thèmes de la lumière naturelle, de la matérialité et du contexte urbain.",
     "about.bio.2":       "Attachée à une approche rigoureuse du dessin et de la maquette, je conçois l'architecture comme un dialogue permanent entre contraintes techniques et aspirations humaines.",
     "about.skills.title": "Compétences",
     "about.software":    "Logiciels",
@@ -83,7 +83,7 @@ const TRANSLATIONS = {
 
     // a-propos.html
     "about.title":       "About",
-    "about.bio.1":       "Architecture student at the École Nationale Supérieure d'Architecture de Lyon, I develop a practice centred on the relationship between built space and its users. My projects explore themes of natural light, materiality, and urban context.",
+    "about.bio.1":       "Architecture student at the École Nationale Supérieure d'Architecture de Lyon (ENSAL), I develop a practice centred on the relationship between built space and its users. My projects explore themes of natural light, materiality, and urban context.",
     "about.bio.2":       "Committed to a rigorous approach to drawing and model-making, I conceive architecture as a permanent dialogue between technical constraints and human aspirations.",
     "about.skills.title": "Skills",
     "about.software":    "Software",

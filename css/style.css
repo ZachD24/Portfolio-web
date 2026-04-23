@@ -383,10 +383,13 @@ p {
 
 .project-card {
   position: relative;
+  display: block;
   background: var(--color-card-bg);
   overflow: hidden;
   border-radius: var(--radius);
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-card__img-wrapper {

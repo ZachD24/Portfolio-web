@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet — Zachary Drolet Architecte</title>
+  <meta name="description" content="Détail d'un projet de Zachary Drolet, étudiant en architecture.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <style>
+    .project-detail-hero {
+      width: 100%;
+      aspect-ratio: 16 / 7;
+      object-fit: cover;
+      display: block;
+      background: var(--color-border);
+    }
+
+    .project-detail-body {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: clamp(2rem, 5vw, 4rem);
+      align-items: start;
+      margin-top: 3rem;
+    }
+
+    .project-detail-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-top: 0.5rem;
+    }
+
+    .project-detail-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .project-detail-meta-label {
+      font-size: 0.6875rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .project-detail-meta-value {
+      font-size: 0.9375rem;
+      color: var(--color-text);
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8125rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+      transition: color var(--transition-fast);
+      margin-bottom: 2rem;
+    }
+
+    .back-link:hover { color: var(--color-accent); }
+
+    .back-link svg {
+      transition: transform var(--transition-fast);
+    }
+
+    .back-link:hover svg { transform: translateX(-3px); }
+
+    .project-not-found {
+      text-align: center;
+      padding-block: 6rem;
+      color: var(--color-muted);
+    }
+
+    @media (max-width: 700px) {
+      .project-detail-hero { aspect-ratio: 4 / 3; }
+      .project-detail-body { grid-template-columns: 1fr; }
+      .project-detail-meta { flex-direction: row; flex-wrap: wrap; gap: 1rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Zachary Drolet</a>
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html"    class="nav-link" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="projets.html"  class="nav-link" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="a-propos.html" class="nav-link" data-i18n="nav.about">À propos</a></li>
+        <li><a href="contact.html"  class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="cv.html"       class="nav-link" data-i18n="nav.cv">CV</a></li>
+        <li>
+          <button id="lang-toggle" class="btn-lang" data-i18n="lang.toggle" aria-label="Changer la langue">EN</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main style="padding-top: var(--nav-height);">
+
+    <!-- Image pleine largeur -->
+    <div id="project-hero-wrapper">
+      <!-- Injecté par JS -->
+    </div>
+
+    <section class="section">
+      <div class="container">
+
+        <a href="projets.html" class="back-link" id="back-link">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span data-i18n="nav.projects">Projets</span>
+        </a>
+
+        <!-- Contenu injecté par JS -->
+        <div id="project-content">
+          <div class="project-not-found">
+            <p>Chargement…</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Zachary Drolet — <a href="mailto:zachary.drolet@exemple.com" class="link-underline">zachary.drolet@exemple.com</a></p>
+      <p data-i18n="footer.rights">Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="data/translations.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params  = new URLSearchParams(location.search);
+      const id      = params.get('id');
+      const lang    = typeof Lang !== 'undefined' ? Lang.getCurrent() : 'fr';
+      const project = typeof PROJECTS !== 'undefined'
+        ? PROJECTS.find(p => p.id === id)
+        : null;
+
+      const heroWrapper = document.getElementById('project-hero-wrapper');
+      const content     = document.getElementById('project-content');
+
+      if (!project) {
+        content.innerHTML = `
+          <div class="project-not-found">
+            <p>${lang === 'fr' ? 'Projet introuvable.' : 'Project not found.'}</p>
+          </div>`;
+        return;
+      }
+
+      // Mise à jour du titre de l'onglet
+      const title = lang === 'fr' ? project.titleFR : project.titleEN;
+      document.title = `${title} — Zachary Drolet Architecte`;
+
+      // Image pleine largeur
+      heroWrapper.innerHTML = `
+        <img
+          src="${project.image}"
+          alt="${title}"
+          class="project-detail-hero fade-in"
+          width="1600"
+          height="700"
+        >`;
+
+      // Corps de la page
+      const type = lang === 'fr' ? project.typeFR  : project.typeEN;
+      const desc = lang === 'fr' ? project.descriptionFR : project.descriptionEN;
+
+      content.innerHTML = `
+        <div class="project-detail-body">
+          <div class="fade-in" data-delay="1">
+            <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.5rem);font-weight:300;margin-bottom:1.5rem;">${title}</h1>
+            <div class="divider"></div>
+            <p style="font-size:1.0625rem;line-height:1.85;color:var(--color-muted);">${desc}</p>
+          </div>
+
+          <aside class="project-detail-meta fade-in" data-delay="2">
+            <div class="project-detail-meta-item">
+              <span class="project-detail-meta-label">${lang === 'fr' ? 'Type' : 'Type'}</span>
+              <span class="project-detail-meta-value">${type}</span>
+            </div>
+            <div class="project-detail-meta-item">
+              <span class="project-detail-meta-label">${lang === 'fr' ? 'Année' : 'Year'}</span>
+              <span class="project-detail-meta-value">${project.year}</span>
+            </div>
+            <div class="project-detail-meta-item">
+              <span class="project-detail-meta-label">${lang === 'fr' ? 'Lieu' : 'Location'}</span>
+              <span class="project-detail-meta-value">${project.location}</span>
+            </div>
+          </aside>
+        </div>`;
+
+      // Active les animations sur les éléments injectés
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>

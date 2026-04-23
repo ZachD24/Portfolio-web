@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- REMPLACER : titre de l'onglet -->
-  <title>Emma Renaud — Architecte</title>
-  <meta name="description" content="Portfolio d'architecture d'Emma Renaud, étudiante en architecture à Lyon.">
+  <title>Zachary Drolet — Architecte</title>
+  <meta name="description" content="Portfolio d'architecture de Zachary Drolet, étudiant en architecture.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +19,7 @@
   <!-- ── Navigation ── -->
   <nav class="nav nav--hero" role="navigation" aria-label="Navigation principale">
     <div class="container nav__inner">
-      <!-- REMPLACER : votre nom ou initiales -->
-      <a href="index.html" class="nav__logo">Emma Renaud</a>
+      <a href="index.html" class="nav__logo">Zachary Drolet</a>
 
       <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -50,8 +49,7 @@
         <!-- REMPLACER : votre spécialité ou accroche -->
         <p class="hero__eyebrow hero-animate-1">Portfolio · 2024</p>
 
-        <!-- REMPLACER : votre prénom et nom -->
-        <h1 class="hero__title hero-animate-2">Emma<br>Renaud</h1>
+        <h1 class="hero__title hero-animate-2">Zachary<br>Drolet</h1>
 
         <!-- Traduit automatiquement via data-i18n -->
         <p class="hero__tagline hero-animate-3" data-i18n="hero.tagline">Architecte · Lyon</p>
@@ -94,7 +92,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <!-- REMPLACER : votre nom et email -->
-      <p>Emma Renaud — <a href="mailto:emma.renaud@exemple.fr" class="link-underline">emma.renaud@exemple.fr</a></p>
+      <p>Zachary Drolet — <a href="mailto:zachary.drolet@exemple.com" class="link-underline">zachary.drolet@exemple.com</a></p>
       <p data-i18n="footer.rights">Tous droits réservés</p>
     </div>
   </footer>
@@ -118,7 +116,7 @@
         const title = lang === 'fr' ? p.titleFR : p.titleEN;
         const type  = lang === 'fr' ? p.typeFR  : p.typeEN;
         return `
-          <article class="project-card fade-in" data-delay="${i + 1}">
+          <a href="projet.html?id=${p.id}" class="project-card fade-in" data-delay="${i + 1}" aria-label="${title}">
             <div class="project-card__img-wrapper">
               <img src="${p.image}" alt="${title}" loading="lazy" class="project-img" width="800" height="600">
               <div class="project-overlay">
@@ -129,7 +127,7 @@
               <h3 class="project-card__title">${title}</h3>
               <p class="project-card__meta">${p.year} · ${p.location}</p>
             </div>
-          </article>`;
+          </a>`;
       }).join('');
 
       previewGrid.querySelectorAll('.fade-in').forEach(el => observer.observe(el));

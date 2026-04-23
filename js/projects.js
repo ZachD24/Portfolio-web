@@ -12,7 +12,7 @@ function renderProjects(lang) {
     const type  = lang === 'fr' ? p.typeFR  : p.typeEN;
 
     return `
-      <article class="project-card fade-in" data-delay="${i + 1}">
+      <a href="projet.html?id=${p.id}" class="project-card fade-in" data-delay="${i + 1}" aria-label="${title}">
         <div class="project-card__img-wrapper">
           <img
             src="${p.image}"
@@ -30,7 +30,7 @@ function renderProjects(lang) {
           <h3 class="project-card__title">${title}</h3>
           <p class="project-card__meta">${p.year} · ${p.location}</p>
         </div>
-      </article>`;
+      </a>`;
   }).join('');
 
   // Réactive l'Intersection Observer sur les nouvelles cartes
