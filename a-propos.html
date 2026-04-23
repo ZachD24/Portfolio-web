@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos — Emma Renaud Architecte</title>
+  <meta name="description" content="À propos d'Emma Renaud, étudiante en architecture à Lyon.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Emma Renaud</a>
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html"    class="nav-link" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="projets.html"  class="nav-link" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="a-propos.html" class="nav-link" data-i18n="nav.about">À propos</a></li>
+        <li><a href="contact.html"  class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="cv.html"       class="nav-link" data-i18n="nav.cv">CV</a></li>
+        <li>
+          <button id="lang-toggle" class="btn-lang" data-i18n="lang.toggle" aria-label="Changer la langue">EN</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section" style="padding-top: calc(var(--nav-height) + 3rem);">
+      <div class="container">
+
+        <div class="about-grid">
+
+          <!-- ── Texte ── -->
+          <div class="about-text">
+            <div class="fade-in">
+              <h1 class="section-title" data-i18n="about.title">À propos</h1>
+              <span class="section-title-line"></span>
+            </div>
+
+            <div class="fade-in" style="margin-top: 2rem;" data-delay="1">
+              <!-- REMPLACER : votre biographie -->
+              <p data-i18n="about.bio.1">
+                Étudiante en architecture à l'École Nationale Supérieure d'Architecture de Lyon,
+                je développe une pratique centrée sur la relation entre l'espace bâti et ses usagers.
+                Mes projets explorent les thèmes de la lumière naturelle, de la matérialité et du contexte urbain.
+              </p>
+              <br>
+              <p data-i18n="about.bio.2">
+                Attachée à une approche rigoureuse du dessin et de la maquette, je conçois l'architecture
+                comme un dialogue permanent entre contraintes techniques et aspirations humaines.
+              </p>
+            </div>
+
+            <!-- Compétences -->
+            <div class="skills-section fade-in" data-delay="2">
+              <h3 data-i18n="about.skills.title">Compétences</h3>
+
+              <div class="skills-group">
+                <!-- REMPLACER : vos logiciels -->
+                <h4 data-i18n="about.software">Logiciels</h4>
+                <div class="tags">
+                  <span class="tag">AutoCAD</span>
+                  <span class="tag">Revit</span>
+                  <span class="tag">Rhino 3D</span>
+                  <span class="tag">Grasshopper</span>
+                  <span class="tag">SketchUp</span>
+                  <span class="tag">V-Ray</span>
+                  <span class="tag">Adobe Suite</span>
+                  <span class="tag">Lumion</span>
+                </div>
+              </div>
+
+              <div class="skills-group">
+                <!-- REMPLACER : vos langues -->
+                <h4 data-i18n="about.languages">Langues</h4>
+                <div class="tags">
+                  <span class="tag" data-i18n="about.lang.fr">Français — natif</span>
+                  <span class="tag" data-i18n="about.lang.en">Anglais — courant (C1)</span>
+                  <span class="tag" data-i18n="about.lang.es">Espagnol — notions (A2)</span>
+                </div>
+              </div>
+
+              <div class="skills-group">
+                <!-- REMPLACER : vos centres d'intérêt -->
+                <h4 data-i18n="about.values.title">Intérêts</h4>
+                <div class="tags">
+                  <span class="tag">Architecture vernaculaire</span>
+                  <span class="tag">Photographie</span>
+                  <span class="tag">Maquette artisanale</span>
+                  <span class="tag">Urbanisme durable</span>
+                  <span class="tag">Patrimoine</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Photo ── -->
+          <div class="about-photo-wrapper slide-right">
+            <!--
+              REMPLACER IMAGE :
+              Remplacer l'attribut src ci-dessous par votre photo :
+              src="images/portrait.jpg"
+            -->
+            <img
+              src="https://picsum.photos/seed/portrait-arch/600/800"
+              alt="Portrait d'Emma Renaud"
+              class="about-photo"
+              data-i18n-alt="about.photo.alt"
+              width="600"
+              height="800"
+            >
+            <!-- REMPLACER : légende de la photo -->
+            <p class="about-photo-caption">Lyon, 2024</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Emma Renaud — <a href="mailto:emma.renaud@exemple.fr" class="link-underline">emma.renaud@exemple.fr</a></p>
+      <p data-i18n="footer.rights">Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="data/translations.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- REMPLACER : titre de l'onglet -->
+  <title>Emma Renaud — Architecte</title>
+  <meta name="description" content="Portfolio d'architecture d'Emma Renaud, étudiante en architecture à Lyon.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav nav--hero" role="navigation" aria-label="Navigation principale">
+    <div class="container nav__inner">
+      <!-- REMPLACER : votre nom ou initiales -->
+      <a href="index.html" class="nav__logo">Emma Renaud</a>
+
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" role="list">
+        <li><a href="index.html"    class="nav-link" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="projets.html"  class="nav-link" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="a-propos.html" class="nav-link" data-i18n="nav.about">À propos</a></li>
+        <li><a href="contact.html"  class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="cv.html"       class="nav-link" data-i18n="nav.cv">CV</a></li>
+        <li>
+          <button id="lang-toggle" class="btn-lang" data-i18n="lang.toggle" aria-label="Changer la langue">EN</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <!-- REMPLACER : votre spécialité ou accroche -->
+        <p class="hero__eyebrow hero-animate-1">Portfolio · 2024</p>
+
+        <!-- REMPLACER : votre prénom et nom -->
+        <h1 class="hero__title hero-animate-2">Emma<br>Renaud</h1>
+
+        <!-- Traduit automatiquement via data-i18n -->
+        <p class="hero__tagline hero-animate-3" data-i18n="hero.tagline">Architecte · Lyon</p>
+
+        <div class="hero__cta hero-animate-4">
+          <a href="projets.html" class="btn btn-outline-light" data-i18n="hero.cta">Voir les projets</a>
+          <a href="a-propos.html" class="btn btn-outline-light" data-i18n="nav.about">À propos</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span data-i18n="hero.scroll">Défiler</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── Aperçu projets ── -->
+    <section class="section">
+      <div class="container">
+        <div class="fade-in">
+          <h2 class="section-title" data-i18n="projects.title">Projets</h2>
+          <span class="section-title-line"></span>
+          <p class="section-subtitle" data-i18n="projects.subtitle">Une sélection de travaux universitaires et personnels</p>
+        </div>
+
+        <!-- Les 4 premiers projets en aperçu -->
+        <div class="projects-grid" id="preview-grid">
+          <!-- Généré par JS ci-dessous -->
+        </div>
+
+        <div style="text-align:center; margin-top: 3rem;" class="fade-in">
+          <a href="projets.html" class="btn btn-outline" data-i18n="hero.cta">Voir les projets</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <!-- REMPLACER : votre nom et email -->
+      <p>Emma Renaud — <a href="mailto:emma.renaud@exemple.fr" class="link-underline">emma.renaud@exemple.fr</a></p>
+      <p data-i18n="footer.rights">Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <!-- Scripts — ordre impératif -->
+  <script src="data/translations.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Aperçu : 4 premiers projets sur la page d'accueil
+    document.addEventListener('DOMContentLoaded', () => {
+      const previewGrid = document.getElementById('preview-grid');
+      if (!previewGrid || typeof PROJECTS === 'undefined') return;
+
+      const lang = typeof Lang !== 'undefined' ? Lang.getCurrent() : 'fr';
+      const preview = PROJECTS.slice(0, 4);
+
+      previewGrid.innerHTML = preview.map((p, i) => {
+        const title = lang === 'fr' ? p.titleFR : p.titleEN;
+        const type  = lang === 'fr' ? p.typeFR  : p.typeEN;
+        return `
+          <article class="project-card fade-in" data-delay="${i + 1}">
+            <div class="project-card__img-wrapper">
+              <img src="${p.image}" alt="${title}" loading="lazy" class="project-img" width="800" height="600">
+              <div class="project-overlay">
+                <span class="project-overlay__type">${type}</span>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <h3 class="project-card__title">${title}</h3>
+              <p class="project-card__meta">${p.year} · ${p.location}</p>
+            </div>
+          </article>`;
+      }).join('');
+
+      previewGrid.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
