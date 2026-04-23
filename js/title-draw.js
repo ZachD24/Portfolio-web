@@ -23,48 +23,40 @@
       return;
     }
 
-    const DRAW_DURATION = 1600;  // ms pour tracer chaque ligne
-    const LINE_GAP      = 200;   // ms entre fin d'une ligne et début de la suivante
+    const DRAW_DURATION = 1800;  // ms pour tracer les deux lignes simultanément
     const DASHLEN       = 9000;  // valeur supérieure à toute longueur de path de texte
 
     // Prépare chaque ligne : stroke visible, fill transparent
     lines.forEach(el => {
-      el.style.fill           = 'transparent';
-      el.style.stroke         = 'rgba(255,255,255,0.92)';
-      el.style.strokeWidth    = '0.8';
-      el.style.strokeLinecap  = 'round';
-      el.style.strokeLinejoin = 'round';
+      el.style.fill             = 'transparent';
+      el.style.stroke           = 'rgba(255,255,255,0.92)';
+      el.style.strokeWidth      = '0.8';
+      el.style.strokeLinecap    = 'round';
+      el.style.strokeLinejoin   = 'round';
       el.style.strokeDasharray  = DASHLEN;
       el.style.strokeDashoffset = DASHLEN;
-      el.style.opacity = '1';
+      el.style.opacity          = '1';
     });
 
-    // Trace chaque ligne séquentiellement
-    let cursor = 500; // délai initial (ms)
-
-    lines.forEach((el, i) => {
-      const startAt = cursor;
-
-      setTimeout(() => {
-        // Lance le tracé
-        el.style.transition = `stroke-dashoffset ${DRAW_DURATION}ms cubic-bezier(0.4, 0, 0.2, 1)`;
+    // Les deux lignes partent en même temps
+    setTimeout(() => {
+      lines.forEach(el => {
+        el.style.transition       = `stroke-dashoffset ${DRAW_DURATION}ms cubic-bezier(0.4, 0, 0.2, 1)`;
         el.style.strokeDashoffset = '0';
+      });
 
-        // Après le tracé : fade-in du remplissage blanc
-        setTimeout(() => {
+      // Après le tracé : fade-in du remplissage blanc pour les deux
+      setTimeout(() => {
+        lines.forEach(el => {
           el.style.transition = 'fill 500ms ease, stroke 500ms ease';
           el.style.fill       = 'rgba(255,255,255,0.95)';
           el.style.stroke     = 'rgba(255,255,255,0.1)';
-        }, DRAW_DURATION);
+        });
+      }, DRAW_DURATION);
+    }, 500);
 
-      }, startAt);
-
-      cursor += DRAW_DURATION + LINE_GAP;
-    });
-
-    // Révèle tagline et CTA après que toutes les lignes sont tracées
-    const totalDraw = cursor + 500;
-    showHeroExtras(totalDraw);
+    // Révèle tagline et CTA après la fin du tracé
+    showHeroExtras(500 + DRAW_DURATION + 400);
   }
 
   // Déclenche l'apparition des éléments hero sous le titre

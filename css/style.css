@@ -313,7 +313,20 @@ p {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.45) 70%, rgba(0,0,0,0) 100%);
+}
+
+/* Dégradé de fondu vers le blanc en bas du hero */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  background: linear-gradient(to bottom, transparent 0%, var(--color-bg) 100%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .hero__content {
@@ -897,6 +910,14 @@ p {
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
+  }
+
+  /* Forcer couleur sombre dans le menu mobile ouvert (fond blanc) */
+  .nav-menu.open .nav-link,
+  .nav-menu.open .btn-lang,
+  .nav--hero .nav-menu.open .nav-link,
+  .nav--hero .nav-menu.open .btn-lang {
+    color: var(--color-text);
   }
 
   .nav-link { font-size: 1rem; padding: 0.25rem 0; }

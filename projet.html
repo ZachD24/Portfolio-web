@@ -14,14 +14,115 @@
   <link rel="stylesheet" href="css/animations.css">
 
   <style>
-    .project-detail-hero {
+    /* ── Carousel ─────────────────────────────────────────── */
+    .carousel {
+      position: relative;
       width: 100%;
-      aspect-ratio: 16 / 7;
-      object-fit: cover;
-      display: block;
-      background: var(--color-border);
+      background: #0f0f0f;
+      user-select: none;
     }
 
+    .carousel__viewport {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .carousel__track {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: transform;
+    }
+
+    .carousel__slide {
+      flex: 0 0 100%;
+      width: 100%;
+      min-height: 320px;
+      max-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .carousel__img {
+      max-width: 100%;
+      max-height: 75vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      /* Dragging ne déclenche pas de navigation sur l'image */
+      pointer-events: none;
+    }
+
+    /* Boutons prev / next */
+    .carousel__btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s ease, opacity 0.2s ease;
+      z-index: 10;
+    }
+
+    .carousel__btn:hover { background: rgba(255,255,255,0.25); }
+    .carousel__btn:disabled { opacity: 0.2; cursor: default; }
+
+    .carousel__btn--prev { left: 1rem; }
+    .carousel__btn--next { right: 1rem; }
+
+    /* Caption + indicateurs */
+    .carousel__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.875rem 0 0;
+      flex-wrap: wrap;
+    }
+
+    .carousel__caption {
+      font-size: 0.875rem;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.5;
+      flex: 1;
+      min-width: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .carousel__dots {
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+
+    .carousel__dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-border);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .carousel__dot.active {
+      background: var(--color-accent);
+      transform: scale(1.3);
+    }
+
+    /* ── Layout page projet ───────────────────────────────── */
     .project-detail-body {
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -34,7 +135,6 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      padding-top: 0.5rem;
     }
 
     .project-detail-meta-item {
@@ -61,20 +161,18 @@
       align-items: center;
       gap: 0.5rem;
       font-size: 0.8125rem;
-      font-weight: 400;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--color-muted);
-      transition: color var(--transition-fast);
+      transition: color 0.15s ease;
       margin-bottom: 2rem;
     }
 
     .back-link:hover { color: var(--color-accent); }
 
     .back-link svg {
-      transition: transform var(--transition-fast);
+      transition: transform 0.15s ease;
     }
-
     .back-link:hover svg { transform: translateX(-3px); }
 
     .project-not-found {
@@ -84,9 +182,9 @@
     }
 
     @media (max-width: 700px) {
-      .project-detail-hero { aspect-ratio: 4 / 3; }
       .project-detail-body { grid-template-columns: 1fr; }
       .project-detail-meta { flex-direction: row; flex-wrap: wrap; gap: 1rem 2rem; }
+      .carousel__btn { width: 36px; height: 36px; }
     }
   </style>
 </head>
@@ -116,26 +214,23 @@
 
   <main style="padding-top: var(--nav-height);">
 
-    <!-- Image pleine largeur -->
-    <div id="project-hero-wrapper">
+    <!-- Carousel pleine largeur -->
+    <div id="carousel-wrapper">
       <!-- Injecté par JS -->
     </div>
 
     <section class="section">
       <div class="container">
 
-        <a href="projets.html" class="back-link" id="back-link">
+        <a href="projets.html" class="back-link">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <span data-i18n="nav.projects">Projets</span>
         </a>
 
-        <!-- Contenu injecté par JS -->
         <div id="project-content">
-          <div class="project-not-found">
-            <p>Chargement…</p>
-          </div>
+          <div class="project-not-found"><p>Chargement…</p></div>
         </div>
 
       </div>
@@ -160,39 +255,134 @@
       const params  = new URLSearchParams(location.search);
       const id      = params.get('id');
       const lang    = typeof Lang !== 'undefined' ? Lang.getCurrent() : 'fr';
-      const project = typeof PROJECTS !== 'undefined'
-        ? PROJECTS.find(p => p.id === id)
-        : null;
+      const project = typeof PROJECTS !== 'undefined' ? PROJECTS.find(p => p.id === id) : null;
 
-      const heroWrapper = document.getElementById('project-hero-wrapper');
-      const content     = document.getElementById('project-content');
+      const carouselWrapper = document.getElementById('carousel-wrapper');
+      const content         = document.getElementById('project-content');
 
       if (!project) {
-        content.innerHTML = `
-          <div class="project-not-found">
-            <p>${lang === 'fr' ? 'Projet introuvable.' : 'Project not found.'}</p>
-          </div>`;
+        content.innerHTML = `<div class="project-not-found"><p>${lang === 'fr' ? 'Projet introuvable.' : 'Project not found.'}</p></div>`;
         return;
       }
 
-      // Mise à jour du titre de l'onglet
-      const title = lang === 'fr' ? project.titleFR : project.titleEN;
+      const title  = lang === 'fr' ? project.titleFR : project.titleEN;
+      const type   = lang === 'fr' ? project.typeFR  : project.typeEN;
+      const desc   = lang === 'fr' ? project.descriptionFR : project.descriptionEN;
+      const slides = project.slides && project.slides.length
+        ? project.slides
+        : [{ image: project.image, captionFR: '', captionEN: '' }];
+
       document.title = `${title} — Zachary Drolet Architecte`;
 
-      // Image pleine largeur
-      heroWrapper.innerHTML = `
-        <img
-          src="${project.image}"
-          alt="${title}"
-          class="project-detail-hero fade-in"
-          width="1600"
-          height="700"
-        >`;
+      // ── Carousel ────────────────────────────────────────
+      const multiSlide = slides.length > 1;
 
-      // Corps de la page
-      const type = lang === 'fr' ? project.typeFR  : project.typeEN;
-      const desc = lang === 'fr' ? project.descriptionFR : project.descriptionEN;
+      carouselWrapper.innerHTML = `
+        <div class="carousel" id="carousel" role="region" aria-label="${title}" aria-roledescription="carousel">
+          <div class="carousel__viewport">
+            <div class="carousel__track" id="c-track">
+              ${slides.map((s, i) => `
+                <div class="carousel__slide" role="group" aria-label="Image ${i + 1} sur ${slides.length}" aria-roledescription="slide">
+                  <img
+                    src="${s.image}"
+                    alt="${lang === 'fr' ? (s.captionFR || title) : (s.captionEN || title)}"
+                    class="carousel__img"
+                    loading="${i === 0 ? 'eager' : 'lazy'}"
+                  >
+                </div>`).join('')}
+            </div>
+          </div>
+          ${multiSlide ? `
+            <button class="carousel__btn carousel__btn--prev" id="c-prev" aria-label="${lang === 'fr' ? 'Image précédente' : 'Previous image'}">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M11 4L6 9L11 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="carousel__btn carousel__btn--next" id="c-next" aria-label="${lang === 'fr' ? 'Image suivante' : 'Next image'}">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M7 4L12 9L7 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>` : ''}
+        </div>
+        <div class="container">
+          <div class="carousel__footer">
+            <p class="carousel__caption" id="c-caption" aria-live="polite"></p>
+            ${multiSlide ? `<div class="carousel__dots" id="c-dots" role="tablist" aria-label="Slides"></div>` : ''}
+          </div>
+        </div>`;
 
+      // ── Logique du carousel ──────────────────────────────
+      const track   = document.getElementById('c-track');
+      const caption = document.getElementById('c-caption');
+      const dotsEl  = document.getElementById('c-dots');
+      const btnPrev = document.getElementById('c-prev');
+      const btnNext = document.getElementById('c-next');
+
+      let current = 0;
+
+      // Crée les points indicateurs
+      let dots = [];
+      if (dotsEl) {
+        slides.forEach((_, i) => {
+          const dot = document.createElement('button');
+          dot.className = 'carousel__dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('role', 'tab');
+          dot.setAttribute('aria-label', `Image ${i + 1}`);
+          dot.addEventListener('click', () => goTo(i));
+          dotsEl.appendChild(dot);
+          dots.push(dot);
+        });
+      }
+
+      function goTo(index) {
+        current = Math.max(0, Math.min(index, slides.length - 1));
+        track.style.transform = `translateX(-${current * 100}%)`;
+
+        // Caption avec léger fondu
+        if (caption) {
+          caption.style.opacity = '0';
+          setTimeout(() => {
+            const s = slides[current];
+            caption.textContent = lang === 'fr' ? s.captionFR : s.captionEN;
+            caption.style.opacity = '1';
+          }, 180);
+        }
+
+        // Mise à jour des dots
+        dots.forEach((d, i) => d.classList.toggle('active', i === current));
+
+        // État des boutons
+        if (btnPrev) btnPrev.disabled = current === 0;
+        if (btnNext) btnNext.disabled = current === slides.length - 1;
+      }
+
+      if (btnPrev) btnPrev.addEventListener('click', () => goTo(current - 1));
+      if (btnNext) btnNext.addEventListener('click', () => goTo(current + 1));
+
+      // Clavier
+      document.getElementById('carousel').addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft')  { e.preventDefault(); goTo(current - 1); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); goTo(current + 1); }
+      });
+
+      // Swipe tactile (pointer events)
+      let startX = 0;
+      const vp = carouselWrapper.querySelector('.carousel__viewport');
+
+      vp.addEventListener('pointerdown', e => {
+        startX = e.clientX;
+        vp.setPointerCapture(e.pointerId);
+      }, { passive: true });
+
+      vp.addEventListener('pointerup', e => {
+        const dx = e.clientX - startX;
+        if (Math.abs(dx) > 40) goTo(current + (dx < 0 ? 1 : -1));
+      }, { passive: true });
+
+      // Init
+      goTo(0);
+
+      // ── Corps de la page ─────────────────────────────────
       content.innerHTML = `
         <div class="project-detail-body">
           <div class="fade-in" data-delay="1">
@@ -217,7 +407,6 @@
           </aside>
         </div>`;
 
-      // Active les animations sur les éléments injectés
       document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     });
   </script>
