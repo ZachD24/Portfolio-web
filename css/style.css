@@ -289,6 +289,16 @@ p {
   color: #fff;
 }
 
+/* Canvas du maillage paramétrique */
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Fallback si JS désactivé ou prefers-reduced-motion */
 .hero__bg {
   position: absolute;
   inset: 0;
