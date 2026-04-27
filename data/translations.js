@@ -13,7 +13,7 @@ const TRANSLATIONS = {
     "lang.toggle":       "EN",
 
     // index.html — Hero
-    "hero.tagline":      "Étudiant en Architecture · Université Laval",
+    "hero.tagline":      "Étudiant à la maîtrise d'architecture · Université Laval",
     "hero.cta":          "Voir les projets",
     "hero.scroll":       "Défiler",
 
@@ -72,7 +72,7 @@ const TRANSLATIONS = {
     "lang.toggle":       "FR",
 
     // index.html — Hero
-    "hero.tagline":      "Architecture Student · Université Laval",
+    "hero.tagline":      "Master of Architecture Student · Université Laval",
     "hero.cta":          "View projects",
     "hero.scroll":       "Scroll",
 

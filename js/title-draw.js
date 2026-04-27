@@ -23,7 +23,7 @@
       return;
     }
 
-    const DRAW_DURATION = 1800;  // ms pour tracer les deux lignes simultanément
+    const DRAW_DURATION = 1100;  // ms pour tracer les deux lignes simultanément
     const DASHLEN       = 9000;  // valeur supérieure à toute longueur de path de texte
 
     // Prépare chaque ligne : stroke visible, fill transparent
@@ -45,14 +45,14 @@
         el.style.strokeDashoffset = '0';
       });
 
-      // Après le tracé : fade-in du remplissage blanc pour les deux
+      // Remplit pendant que le tracé se termine (overlap à 65%)
       setTimeout(() => {
         lines.forEach(el => {
-          el.style.transition = 'fill 500ms ease, stroke 500ms ease';
+          el.style.transition = 'fill 600ms ease, stroke 600ms ease';
           el.style.fill       = 'rgba(255,255,255,0.95)';
           el.style.stroke     = 'rgba(255,255,255,0.1)';
         });
-      }, DRAW_DURATION);
+      }, Math.round(DRAW_DURATION * 0.65));
     }, 500);
 
     // Révèle tagline et CTA après la fin du tracé

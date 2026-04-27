@@ -177,12 +177,14 @@ p {
 }
 .nav--hero .nav__logo,
 .nav--hero .nav-link,
-.nav--hero .btn-lang {
+.nav--hero .btn-lang,
+.nav--hero .nav-toggle {
   color: #FFFFFF;
 }
 .nav--hero.nav--scrolled .nav__logo,
 .nav--hero.nav--scrolled .nav-link,
-.nav--hero.nav--scrolled .btn-lang {
+.nav--hero.nav--scrolled .btn-lang,
+.nav--hero.nav--scrolled .nav-toggle {
   color: var(--color-text);
 }
 
@@ -287,6 +289,10 @@ p {
   overflow: hidden;
   background: #0f0f0f;
   color: #fff;
+  /* padding-top pousse le centre visuel vers le bas de la nav,
+     padding-bottom le pousse au-dessus du dégradé */
+  padding-top: var(--nav-height);
+  padding-bottom: 220px;
 }
 
 /* Canvas du maillage paramétrique */
