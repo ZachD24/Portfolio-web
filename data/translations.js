@@ -13,7 +13,7 @@ const TRANSLATIONS = {
     "lang.toggle":       "EN",
 
     // index.html — Hero
-    "hero.tagline":      "Architecte · Lyon",
+    "hero.tagline":      "Étudiant en Architecture · Université Laval",
     "hero.cta":          "Voir les projets",
     "hero.scroll":       "Défiler",
 
@@ -23,14 +23,13 @@ const TRANSLATIONS = {
 
     // a-propos.html
     "about.title":       "À propos",
-    "about.bio.1":       "Étudiant en architecture à l'École Nationale Supérieure d'Architecture de Lyon, je développe une pratique centrée sur la relation entre l'espace bâti et ses usagers. Mes projets explorent les thèmes de la lumière naturelle, de la matérialité et du contexte urbain.",
-    "about.bio.2":       "Attachée à une approche rigoureuse du dessin et de la maquette, je conçois l'architecture comme un dialogue permanent entre contraintes techniques et aspirations humaines.",
+    "about.bio.1":       "Étudiant en architecture à l'Université Laval, je réalise présentement un échange académique à l'École Nationale Supérieure d'Architecture de Lyon (ENSAL). Mon parcours atypique — techniques d'architecture, génie électrique, design de produits — nourrit une approche transversale du projet, à la jonction de la technique et de la création.",
+    "about.bio.2":       "Une expérience de stage chez Yvan Deschênes Architecte m'a permis de développer des compétences concrètes en modélisation et dessin technique. Je m'intéresse particulièrement à l'architecture paramétrique et aux outils computationnels comme Rhino et Grasshopper.",
     "about.skills.title": "Compétences",
     "about.software":    "Logiciels",
     "about.languages":   "Langues",
     "about.lang.fr":     "Français — natif",
-    "about.lang.en":     "Anglais — courant (C1)",
-    "about.lang.es":     "Espagnol — notions (A2)",
+    "about.lang.en":     "Anglais — parlé et écrit",
     "about.values.title": "Intérêts",
     "about.photo.alt":   "Portrait d'Emma Renaud",
 
@@ -73,7 +72,7 @@ const TRANSLATIONS = {
     "lang.toggle":       "FR",
 
     // index.html — Hero
-    "hero.tagline":      "Architect · Lyon",
+    "hero.tagline":      "Architecture Student · Université Laval",
     "hero.cta":          "View projects",
     "hero.scroll":       "Scroll",
 
@@ -83,14 +82,13 @@ const TRANSLATIONS = {
 
     // a-propos.html
     "about.title":       "About",
-    "about.bio.1":       "Architecture student at the École Nationale Supérieure d'Architecture de Lyon (ENSAL), I develop a practice centred on the relationship between built space and its users. My projects explore themes of natural light, materiality, and urban context.",
-    "about.bio.2":       "Committed to a rigorous approach to drawing and model-making, I conceive architecture as a permanent dialogue between technical constraints and human aspirations.",
+    "about.bio.1":       "Architecture student at Université Laval, currently on academic exchange at the École Nationale Supérieure d'Architecture de Lyon (ENSAL). My unconventional path — architectural technology, electrical engineering, product design — informs a cross-disciplinary approach to design, at the intersection of technical rigour and creative thinking.",
+    "about.bio.2":       "An internship at Yvan Deschênes Architecte gave me hands-on experience in 3D modelling and technical drawing. I have a particular interest in parametric architecture and computational tools such as Rhino and Grasshopper.",
     "about.skills.title": "Skills",
     "about.software":    "Software",
     "about.languages":   "Languages",
     "about.lang.fr":     "French — native",
-    "about.lang.en":     "English — fluent (C1)",
-    "about.lang.es":     "Spanish — basic (A2)",
+    "about.lang.en":     "English — spoken and written",
     "about.values.title": "Interests",
     "about.photo.alt":   "Portrait of Emma Renaud",
 
