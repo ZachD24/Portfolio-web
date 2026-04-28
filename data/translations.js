@@ -30,25 +30,13 @@ const TRANSLATIONS = {
     "about.languages":   "Langues",
     "about.lang.fr":     "Français — natif",
     "about.lang.en":     "Anglais — parlé et écrit",
-    "about.values.title": "Intérêts",
     "about.photo.alt":   "Portrait d'Emma Renaud",
 
     // contact.html
     "contact.title":     "Contact",
     "contact.subtitle":  "Pour toute demande de collaboration ou question",
-    "contact.name":      "Nom",
     "contact.email":     "E-mail",
-    "contact.subject":   "Objet",
-    "contact.subject.opt1": "Collaboration",
-    "contact.subject.opt2": "Stage",
-    "contact.subject.opt3": "Question",
-    "contact.subject.opt4": "Autre",
-    "contact.message":   "Message",
-    "contact.rgpd":      "J'accepte que mes données soient utilisées pour répondre à ma demande.",
-    "contact.send":      "Envoyer",
-    "contact.success":   "Message envoyé. Merci !",
     "contact.address":   "Adresse",
-    "contact.phone":     "Téléphone",
 
     // cv.html
     "cv.title":          "Curriculum Vitae",
@@ -89,25 +77,13 @@ const TRANSLATIONS = {
     "about.languages":   "Languages",
     "about.lang.fr":     "French — native",
     "about.lang.en":     "English — spoken and written",
-    "about.values.title": "Interests",
     "about.photo.alt":   "Portrait of Emma Renaud",
 
     // contact.html
     "contact.title":     "Contact",
     "contact.subtitle":  "For any collaboration request or question",
-    "contact.name":      "Name",
     "contact.email":     "Email",
-    "contact.subject":   "Subject",
-    "contact.subject.opt1": "Collaboration",
-    "contact.subject.opt2": "Internship",
-    "contact.subject.opt3": "Question",
-    "contact.subject.opt4": "Other",
-    "contact.message":   "Message",
-    "contact.rgpd":      "I agree that my data may be used to respond to my request.",
-    "contact.send":      "Send",
-    "contact.success":   "Message sent. Thank you!",
     "contact.address":   "Address",
-    "contact.phone":     "Phone",
 
     // cv.html
     "cv.title":          "Curriculum Vitae",

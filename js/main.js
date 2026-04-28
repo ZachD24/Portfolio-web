@@ -65,37 +65,10 @@ function initNav() {
   });
 }
 
-// ── Formulaire de contact ─────────────────────────────────
-function initContactForm() {
-  const form = document.getElementById('contact-form');
-  if (!form) return;
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    // TODO: brancher à Formspree → changer action="https://formspree.io/f/VOTRE_ID"
-    // et retirer ce handler pour laisser l'envoi natif fonctionner
-    const successMsg = document.getElementById('form-success');
-    if (successMsg) {
-      form.style.display = 'none';
-      successMsg.style.display = 'block';
-    }
-  });
-}
-
-// ── Barre de progression de page ─────────────────────────
-function initPageLoader() {
-  const loader = document.createElement('div');
-  loader.className = 'page-loader';
-  document.body.prepend(loader);
-  setTimeout(() => loader.remove(), 700);
-}
-
 // ── Init ──────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
   initObserver();
-  initContactForm();
-  initPageLoader();
 
   // Sur projets.html : initial render via lang courant
   if (document.getElementById('projects-grid') && typeof renderProjects === 'function') {

@@ -141,16 +141,18 @@
       const lang    = typeof Lang !== 'undefined' ? Lang.getCurrent() : 'fr';
       const preview = PROJECTS.slice(0, 3);
 
-      previewGrid.innerHTML = preview.map((p) => {
+      previewGrid.innerHTML = preview.map((p, i) => {
         const title = lang === 'fr' ? p.titleFR : p.titleEN;
         const type  = lang === 'fr' ? p.typeFR  : p.typeEN;
         const desc  = lang === 'fr' ? p.descriptionFR : p.descriptionEN;
+        const num   = String(i + 1).padStart(2, '0');
         return `
           <a href="projet.html?id=${p.id}" class="featured-project fade-in" aria-label="${title}">
             <div class="featured-project__img">
               <img src="${p.image}" alt="${title}" loading="lazy">
             </div>
             <div class="featured-project__info">
+              <p class="featured-project__number">${num}</p>
               <p class="featured-project__type">${type}</p>
               <h3 class="featured-project__title">${title}</h3>
               <p class="featured-project__desc">${desc}</p>

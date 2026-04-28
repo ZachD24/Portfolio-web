@@ -351,14 +351,6 @@ p {
   margin-bottom: 1.5rem;
 }
 
-.hero__title {
-  font-family: var(--font-serif);
-  font-size: clamp(3.5rem, 10vw, 8rem);
-  font-weight: 300;
-  line-height: 1.05;
-  color: #fff;
-  margin-bottom: 1.5rem;
-}
 
 .hero__tagline {
   font-size: clamp(1rem, 2vw, 1.25rem);
@@ -452,26 +444,35 @@ p {
 .featured-grid {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .featured-project {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 420px;
+  grid-template-columns: 5fr 6fr;
+  grid-template-areas: "info img";
+  gap: clamp(2.5rem, 5vw, 5rem);
+  padding: clamp(3rem, 6vw, 5rem) 0;
   border-top: 1px solid var(--color-border);
   text-decoration: none;
   color: inherit;
+  align-items: center;
 }
 
 .featured-grid .featured-project:last-child {
   border-bottom: 1px solid var(--color-border);
 }
 
-.featured-project:nth-child(even) .featured-project__img  { order: 2; }
-.featured-project:nth-child(even) .featured-project__info { order: 1; }
+.featured-project:nth-child(even) {
+  grid-template-areas: "img info";
+  grid-template-columns: 6fr 5fr;
+}
+
+.featured-project__info { grid-area: info; }
+.featured-project__img  { grid-area: img; }
 
 .featured-project__img {
+  aspect-ratio: 4/3;
   overflow: hidden;
 }
 
@@ -480,74 +481,89 @@ p {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
 }
 
 .featured-project:hover .featured-project__img img {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .featured-project__info {
-  padding: clamp(2rem, 5vw, 3.5rem);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1.1rem;
+}
+
+.featured-project__number {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.4rem;
 }
 
 .featured-project__type {
   font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
 }
 
 .featured-project__title {
   font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   color: var(--color-text);
+  margin-bottom: 1.25rem;
+  transition: color 0.2s ease;
+}
+
+.featured-project:hover .featured-project__title {
+  color: var(--color-accent);
 }
 
 .featured-project__desc {
   font-size: 0.9375rem;
-  line-height: 1.75;
+  line-height: 1.8;
   color: var(--color-muted);
+  margin-bottom: 1.5rem;
 }
 
 .featured-project__meta {
   font-size: 0.8125rem;
   color: var(--color-muted);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+  margin-bottom: 2rem;
 }
 
 .featured-project__cta {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.8125rem;
-  letter-spacing: 0.08em;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text);
-  margin-top: 0.25rem;
-  transition: color 0.15s ease, gap 0.15s ease;
+  transition: color 0.2s ease, gap 0.2s ease;
 }
 
 .featured-project:hover .featured-project__cta {
   color: var(--color-accent);
-  gap: 0.7rem;
+  gap: 0.9rem;
 }
 
 @media (max-width: 768px) {
-  .featured-project {
+  .featured-project,
+  .featured-project:nth-child(even) {
     grid-template-columns: 1fr;
-    min-height: auto;
+    grid-template-areas: "img" "info";
+    padding: 2.5rem 0;
+    gap: 1.5rem;
   }
-  .featured-project__img { height: 56vw; }
-  .featured-project:nth-child(even) .featured-project__img  { order: 0; }
-  .featured-project:nth-child(even) .featured-project__info { order: 0; }
+  .featured-project__img { aspect-ratio: 16/9; }
 }
 
 .project-card {
@@ -710,27 +726,6 @@ p {
 }
 
 /* ── Contact ─────────────────────────────────────────────── */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(2rem, 6vw, 5rem);
-  align-items: start;
-}
-
-.contact-info h2 {
-  margin-bottom: 1rem;
-}
-
-.contact-info p {
-  margin-bottom: 2rem;
-}
-
-.contact-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .contact-detail-item {
   display: flex;
   flex-direction: column;
@@ -751,88 +746,6 @@ p {
 }
 
 .contact-detail-value a:hover { color: var(--color-accent); }
-
-/* Formulaire */
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.375rem;
-}
-
-.form-label {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-muted);
-}
-
-.form-input,
-.form-select,
-.form-textarea {
-  width: 100%;
-  padding: 0.875rem 1rem;
-  font-family: var(--font-sans);
-  font-size: 0.9375rem;
-  font-weight: 300;
-  color: var(--color-text);
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  outline: none;
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-  appearance: none;
-}
-
-.form-input:focus,
-.form-select:focus,
-.form-textarea:focus {
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.15);
-}
-
-.form-textarea {
-  min-height: 140px;
-  resize: vertical;
-}
-
-.form-checkbox {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  cursor: pointer;
-}
-
-.form-checkbox input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  margin-top: 3px;
-  accent-color: var(--color-accent);
-  cursor: pointer;
-}
-
-.form-checkbox-label {
-  font-size: 0.8125rem;
-  color: var(--color-muted);
-  line-height: 1.5;
-}
-
-.form-success {
-  display: none;
-  padding: 1rem 1.25rem;
-  background: rgba(201, 169, 110, 0.1);
-  border: 1px solid rgba(201, 169, 110, 0.3);
-  border-radius: var(--radius);
-  color: var(--color-accent-dark);
-  font-size: 0.9375rem;
-}
 
 /* ── CV ──────────────────────────────────────────────────── */
 .cv-header {
@@ -993,7 +906,6 @@ p {
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; }
   .about-photo-wrapper { order: -1; max-width: 320px; }
-  .contact-grid { grid-template-columns: 1fr; }
   .cv-columns { grid-template-columns: 1fr; }
 }
 
