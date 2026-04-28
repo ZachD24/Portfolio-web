@@ -10,35 +10,35 @@
 
 const PROJECTS = [
   {
-    id: "tour-lumiere",
-    titleFR: "Tour Lumière",
-    titleEN: "Light Tower",
-    year: 2024,
-    typeFR: "Concours international",
-    typeEN: "International competition",
-    location: "Lyon, France",
-    // REMPLACER IMAGE GRILLE → "images/projects/tour-lumiere.jpg"
-    image: "https://picsum.photos/seed/tour-lumiere/800/600",
-    descriptionFR: "Immeuble de bureaux mixte de 22 étages avec façade double-peau bioclimatique. Le projet explore la relation entre lumière naturelle et espace de travail collectif.",
-    descriptionEN: "22-floor mixed office tower with a bioclimatic double-skin facade. The project explores the relationship between natural light and collective workspaces.",
+    id: "the-nest",
+    titleFR: "The Nest",
+    titleEN: "The Nest",
+    year: 2025,
+    typeFR: "Réhabilitation patrimoniale",
+    typeEN: "Heritage rehabilitation",
+    location: "Champoly, France",
+    // REMPLACER IMAGE GRILLE → "images/projects/the-nest.jpg"
+    image: "https://picsum.photos/seed/the-nest/800/600",
+    descriptionFR: "Réhabilitation du château des Cornes d'Urfé, forteresse médiévale construite sur un promontoire naturel dans la commune de Champoly. Le projet transforme la ruine en hôtel : les espaces publics (restaurant, bar avec terrasse) occupent l'extérieur du château dans une ancienne grange réhabilitée, tandis que les chambres, la plateforme d'observation et les salles de massage investissent le volume intérieur de la ruine.\n\nLes façades des nouveaux bâtiments sont conçues parametriquement à l'aide d'un script Grasshopper générant des panneaux de bois de dimensions et d'épaisseurs variables, rappelant l'irrégularité des murs de pierre. Un atrium central organisé autour d'un puits de lumière — soutenu par des colonnes arborescentes également modélisées parametriquement — structure la circulation horizontale. La circulation verticale est assurée par une nouvelle tour bâtie à l'emplacement d'une ancienne tour effondrée.\n\nRéalisé avec Manon Borrini · Atelier HTC, ENSAL, 2025",
+    descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé, a medieval fortress on a natural promontory in Champoly, France. The project converts the ruin into a hotel: public spaces (restaurant, bar with terrace) occupy the castle's exterior within a rehabilitated barn, while private spaces — bedrooms, observation platform, massage rooms — fill the interior volume of the ruin.\n\nNew façades are designed parametrically using a Grasshopper script that generates wooden panels of varying dimensions and thickness, echoing the irregularity of the stone walls. A central atrium organised around a skylight — supported by tree-like columns also modelled parametrically — structures the horizontal circulation. Vertical circulation is handled by a new tower built on the footprint of a former collapsed turret.\n\nWith Manon Borrini · Atelier HTC, ENSAL, 2025",
     slides: [
       {
-        // REMPLACER → "images/projects/tour-lumiere-01.jpg"
-        image: "https://picsum.photos/seed/tl-01/1400/900",
-        captionFR: "Vue d'ensemble depuis le quai — perspective nord-ouest",
-        captionEN: "Overview from the quay — north-west perspective",
+        // REMPLACER → "images/projects/the-nest-01.jpg"
+        image: "https://picsum.photos/seed/tn-01/1400/900",
+        captionFR: "Rendu extérieur — intégration de l'hôtel dans les murs de la ruine",
+        captionEN: "Exterior render — hotel integrated within the ruin walls",
       },
       {
-        // REMPLACER → "images/projects/tour-lumiere-02.jpg"
-        image: "https://picsum.photos/seed/tl-02/900/1300",
-        captionFR: "Détail de la façade double-peau en position estivale",
-        captionEN: "Double-skin facade detail in summer configuration",
+        // REMPLACER → "images/projects/the-nest-02.jpg"
+        image: "https://picsum.photos/seed/tn-02/1400/900",
+        captionFR: "Rendu intérieur — atrium avec colonnes arborescentes et puits de lumière",
+        captionEN: "Interior render — atrium with tree-like columns and skylight",
       },
       {
-        // REMPLACER → "images/projects/tour-lumiere-03.jpg"
-        image: "https://picsum.photos/seed/tl-03/1600/900",
-        captionFR: "Coupe transversale — circulation verticale et plateaux de bureaux",
-        captionEN: "Cross-section — vertical circulation and office floors",
+        // REMPLACER → "images/projects/the-nest-03.jpg"
+        image: "https://picsum.photos/seed/tn-03/1600/900",
+        captionFR: "Script Grasshopper — façade paramétrique en panneaux de bois de dimensions variables",
+        captionEN: "Grasshopper script — parametric facade with variable-dimension wooden panels",
       },
     ],
   },
