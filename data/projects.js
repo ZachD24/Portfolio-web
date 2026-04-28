@@ -19,8 +19,40 @@ const PROJECTS = [
     location: "Champoly, France",
     // REMPLACER IMAGE GRILLE → "images/projects/the-nest.jpg"
     image: "https://picsum.photos/seed/the-nest/800/600",
-    descriptionFR: "Réhabilitation du château des Cornes d'Urfé, forteresse médiévale construite sur un promontoire naturel dans la commune de Champoly. Le projet transforme la ruine en hôtel : les espaces publics (restaurant, bar avec terrasse) occupent l'extérieur du château dans une ancienne grange réhabilitée, tandis que les chambres, la plateforme d'observation et les salles de massage investissent le volume intérieur de la ruine.\n\nLes façades des nouveaux bâtiments sont conçues parametriquement à l'aide d'un script Grasshopper générant des panneaux de bois de dimensions et d'épaisseurs variables, rappelant l'irrégularité des murs de pierre. Un atrium central organisé autour d'un puits de lumière — soutenu par des colonnes arborescentes également modélisées parametriquement — structure la circulation horizontale. La circulation verticale est assurée par une nouvelle tour bâtie à l'emplacement d'une ancienne tour effondrée.\n\nRéalisé avec Manon Borrini · Atelier HTC, ENSAL, 2025",
-    descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé, a medieval fortress on a natural promontory in Champoly, France. The project converts the ruin into a hotel: public spaces (restaurant, bar with terrace) occupy the castle's exterior within a rehabilitated barn, while private spaces — bedrooms, observation platform, massage rooms — fill the interior volume of the ruin.\n\nNew façades are designed parametrically using a Grasshopper script that generates wooden panels of varying dimensions and thickness, echoing the irregularity of the stone walls. A central atrium organised around a skylight — supported by tree-like columns also modelled parametrically — structures the horizontal circulation. Vertical circulation is handled by a new tower built on the footprint of a former collapsed turret.\n\nWith Manon Borrini · Atelier HTC, ENSAL, 2025",
+    descriptionFR: "Réhabilitation du château des Cornes d'Urfé en hôtel. Façades paramétriques en bois, atrium avec puits de lumière et colonnes arborescentes conçus sous Grasshopper. Avec Manon Borrini · Atelier HTC, ENSAL, 2025",
+    descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé into a hotel. Parametric wooden facades, atrium with skylight and tree-like columns designed in Grasshopper. With Manon Borrini · Atelier HTC, ENSAL, 2025",
+    sections: [
+      {
+        headingFR: "Programme",
+        headingEN: "Programme",
+        textFR: "Le projet est guidé par la géométrie du château : les murs de l'hôtel suivent ceux de la ruine, l'entrée principale actuelle est conservée et une entrée secondaire traverse le donjon par l'accès historique. Les espaces publics comme le restaurant se trouvent à l'extérieur du château dans une ancienne grange réhabilitée. Les espaces semi-privés — lobby, cour intérieure, bar avec terrasse — occupent la moitié du volume intérieur, sous la hauteur des murs afin de préserver la silhouette du château. L'autre moitié accueille les espaces privés : chambres, plateforme d'observation, salles de massage et locaux du personnel.",
+        textEN: "The project is guided by the castle's geometry: the hotel walls follow those of the ruin, the existing main entrance is preserved, and a secondary entrance passes through the keep via the historic access. Public spaces such as the restaurant are located outside the castle in a rehabilitated barn. Semi-private spaces — lobby, inner courtyard, bar with terrace — occupy half the interior volume, kept below the wall height to preserve the castle's silhouette. The other half houses private spaces: bedrooms, observation platform, massage rooms, and staff areas.",
+      },
+      {
+        headingFR: "Structure",
+        headingEN: "Structure",
+        textFR: "Une structure indépendante de poteaux-poutres, implantée à environ un mètre des ruines existantes, crée une zone tampon structurelle qui protège les murs historiques tout en permettant les tolérances de construction et la maintenance à long terme. Visuellement, le projet semble reposer sur le château, mais l'ensemble du système est autonome, garantissant à la fois durabilité structurelle et respect du bâti ancien.",
+        textEN: "An independent post-and-beam structure set approximately one metre from the existing ruins creates a structural buffer zone protecting the historic walls while allowing construction tolerances and long-term maintenance. Visually, the project appears to rest on the castle, but the entire system is self-supporting, ensuring both structural durability and respect for the historic fabric.",
+      },
+      {
+        headingFR: "Façade paramétrique",
+        headingEN: "Parametric facade",
+        textFR: "Les façades des nouveaux bâtiments sont conçues en bois afin de créer une distinction claire avec les ruines historiques. Un script Grasshopper génère des panneaux de dimensions et d'épaisseurs variables, rappelant l'irrégularité des murs de pierre. Sur la façade principale, les panneaux ayant l'épaisseur minimale sont automatiquement transformés en panneaux de verre, créant des ouvertures de formes irrégulières comme celles qui parsèment la ruine.",
+        textEN: "New building facades are clad in wood to create a clear distinction from the historic ruins. A Grasshopper script generates panels of varying dimensions and thickness, echoing the irregularity of the stone walls. On the main facade, panels assigned the minimum thickness are automatically converted to glass, creating irregular openings that echo those eroded into the ruin over centuries.",
+      },
+      {
+        headingFR: "Atrium et puits de lumière",
+        headingEN: "Atrium and skylight",
+        textFR: "La circulation horizontale s'organise autour d'un atrium éclairé par un puits de lumière. Un second script Grasshopper contrôle la géométrie de l'ellipse, le rayon et les panneaux de verre qui composent le puits. Les colonnes arborescentes qui le soutiennent — dont les dimensions, le nombre de branches et la trajectoire sont également paramétrables — assurent la transition entre la structure et la toiture.",
+        textEN: "Horizontal circulation is organised around an atrium lit by a skylight. A second Grasshopper script controls the ellipse geometry, radius, and glass panel layout of the skylight. The tree-like columns supporting it — whose dimensions, branch count, and trajectory are all parametrically controlled — provide the transition between the structural system and the roof.",
+      },
+      {
+        headingFR: "Réalisé avec",
+        headingEN: "Credits",
+        textFR: "Manon Borrini · Atelier HTC, ENSAL Lyon, 2025",
+        textEN: "Manon Borrini · Atelier HTC, ENSAL Lyon, 2025",
+      },
+    ],
     slides: [
       {
         // REMPLACER → "images/projects/the-nest-01.jpg"

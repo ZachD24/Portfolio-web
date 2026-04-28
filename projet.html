@@ -383,12 +383,25 @@
       goTo(0);
 
       // ── Corps de la page ─────────────────────────────────
+      function renderBody() {
+        if (project.sections && project.sections.length) {
+          return project.sections.map((s, i) => `
+            <div style="padding-top:${i > 0 ? '1.75rem' : '0'};${i > 0 ? 'border-top:1px solid var(--color-border);margin-top:1.75rem;' : ''}">
+              <h3 style="font-family:var(--font-serif);font-size:1.0625rem;font-weight:400;color:var(--color-accent);letter-spacing:0.04em;margin-bottom:0.6rem;">${lang === 'fr' ? s.headingFR : s.headingEN}</h3>
+              <p style="font-size:1rem;line-height:1.85;color:var(--color-muted);">${lang === 'fr' ? s.textFR : s.textEN}</p>
+            </div>`).join('');
+        }
+        return desc.split('\n\n').map(p =>
+          `<p style="font-size:1.0625rem;line-height:1.85;color:var(--color-muted);margin-bottom:1rem;">${p}</p>`
+        ).join('');
+      }
+
       content.innerHTML = `
         <div class="project-detail-body">
           <div class="fade-in" data-delay="1">
             <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.5rem);font-weight:300;margin-bottom:1.5rem;">${title}</h1>
             <div class="divider"></div>
-            <p style="font-size:1.0625rem;line-height:1.85;color:var(--color-muted);">${desc}</p>
+            ${renderBody()}
           </div>
 
           <aside class="project-detail-meta fade-in" data-delay="2">
