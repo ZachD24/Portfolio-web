@@ -102,8 +102,8 @@
           <p class="section-subtitle" data-i18n="projects.subtitle">Une sélection de travaux universitaires et personnels</p>
         </div>
 
-        <!-- Les 4 premiers projets en aperçu -->
-        <div class="projects-grid" id="preview-grid">
+        <!-- Les 3 projets vedette -->
+        <div class="featured-grid" id="preview-grid">
           <!-- Généré par JS ci-dessous -->
         </div>
 
@@ -133,28 +133,29 @@
   <script src="js/hero-canvas.js"></script>
   <script src="js/title-draw.js"></script>
   <script>
-    // Aperçu : 4 premiers projets sur la page d'accueil
+    // Aperçu : 3 projets vedette sur la page d'accueil
     document.addEventListener('DOMContentLoaded', () => {
       const previewGrid = document.getElementById('preview-grid');
       if (!previewGrid || typeof PROJECTS === 'undefined') return;
 
-      const lang = typeof Lang !== 'undefined' ? Lang.getCurrent() : 'fr';
-      const preview = PROJECTS.slice(0, 4);
+      const lang    = typeof Lang !== 'undefined' ? Lang.getCurrent() : 'fr';
+      const preview = PROJECTS.slice(0, 3);
 
-      previewGrid.innerHTML = preview.map((p, i) => {
+      previewGrid.innerHTML = preview.map((p) => {
         const title = lang === 'fr' ? p.titleFR : p.titleEN;
         const type  = lang === 'fr' ? p.typeFR  : p.typeEN;
+        const desc  = lang === 'fr' ? p.descriptionFR : p.descriptionEN;
         return `
-          <a href="projet.html?id=${p.id}" class="project-card fade-in" data-delay="${i + 1}" aria-label="${title}">
-            <div class="project-card__img-wrapper">
-              <img src="${p.image}" alt="${title}" loading="lazy" class="project-img" width="800" height="600">
-              <div class="project-overlay">
-                <span class="project-overlay__type">${type}</span>
-              </div>
+          <a href="projet.html?id=${p.id}" class="featured-project fade-in" aria-label="${title}">
+            <div class="featured-project__img">
+              <img src="${p.image}" alt="${title}" loading="lazy">
             </div>
-            <div class="project-card__info">
-              <h3 class="project-card__title">${title}</h3>
-              <p class="project-card__meta">${p.year} · ${p.location}</p>
+            <div class="featured-project__info">
+              <p class="featured-project__type">${type}</p>
+              <h3 class="featured-project__title">${title}</h3>
+              <p class="featured-project__desc">${desc}</p>
+              <p class="featured-project__meta">${p.year} · ${p.location}</p>
+              <span class="featured-project__cta">${lang === 'fr' ? 'Voir le projet' : 'View project'} →</span>
             </div>
           </a>`;
       }).join('');

@@ -442,10 +442,112 @@ p {
   gap: 1.5rem;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .projects-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* ── Featured projects (accueil) ────────────────────────── */
+.featured-grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.featured-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 420px;
+  border-top: 1px solid var(--color-border);
+  text-decoration: none;
+  color: inherit;
+}
+
+.featured-grid .featured-project:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.featured-project:nth-child(even) .featured-project__img  { order: 2; }
+.featured-project:nth-child(even) .featured-project__info { order: 1; }
+
+.featured-project__img {
+  overflow: hidden;
+}
+
+.featured-project__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.featured-project:hover .featured-project__img img {
+  transform: scale(1.03);
+}
+
+.featured-project__info {
+  padding: clamp(2rem, 5vw, 3.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.1rem;
+}
+
+.featured-project__type {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.featured-project__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+.featured-project__desc {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--color-muted);
+}
+
+.featured-project__meta {
+  font-size: 0.8125rem;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+}
+
+.featured-project__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-top: 0.25rem;
+  transition: color 0.15s ease, gap 0.15s ease;
+}
+
+.featured-project:hover .featured-project__cta {
+  color: var(--color-accent);
+  gap: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .featured-project {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .featured-project__img { height: 56vw; }
+  .featured-project:nth-child(even) .featured-project__img  { order: 0; }
+  .featured-project:nth-child(even) .featured-project__info { order: 0; }
 }
 
 .project-card {
