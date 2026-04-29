@@ -55,8 +55,8 @@ const PROJECTS = [
     ],
     slides: [
       {
-        // SLIDE 1 → remplacer par : "images/projects/the-nest-01.jpg"
-        image: "images/placeholder.svg",
+        // SLIDE 1 → remplacer par : "images/projects/the-nest.jpg"
+        image: "images/projects/the-nest.jpg",
         captionFR: "Rendu extérieur — intégration de l'hôtel dans les murs de la ruine",
         captionEN: "Exterior render — hotel integrated within the ruin walls",
       },
