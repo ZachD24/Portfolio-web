@@ -78,6 +78,31 @@
       margin-top: 0.5rem;
     }
 
+    /* ── Galerie slides ───────────────────────────────────── */
+    .slides-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .slides-gallery__item {
+      margin: 0;
+    }
+    .slides-gallery__img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+    }
+    .slides-gallery__caption {
+      font-size: 0.8125rem;
+      font-style: italic;
+      color: var(--color-muted);
+      margin-top: 0.5rem;
+    }
+
     /* ── Layout page projet ───────────────────────────────── */
     .project-detail-body {
       display: grid;
@@ -230,8 +255,24 @@
       // ── Image hero pleine largeur ──────────────────────────
       carouselWrapper.innerHTML = `
         <div class="project-hero">
-          <img src="${slides[0].image}" alt="${title}" class="project-hero__img" loading="eager">
+          <img src="${project.image}" alt="${title}" class="project-hero__img" loading="eager">
         </div>`;
+
+      // ── Galerie des slides ─────────────────────────────────
+      function renderGallery() {
+        if (!project.slides || !project.slides.length) return '';
+        return `
+          <div class="slides-gallery">
+            ${project.slides.map(s => {
+              const caption = lang === 'fr' ? (s.captionFR || '') : (s.captionEN || '');
+              return `
+                <figure class="slides-gallery__item">
+                  <img src="${s.image}" alt="${caption}" class="slides-gallery__img" loading="lazy">
+                  ${caption ? `<figcaption class="slides-gallery__caption">${caption}</figcaption>` : ''}
+                </figure>`;
+            }).join('')}
+          </div>`;
+      }
 
       // ── Corps de la page ───────────────────────────────────
       function renderBody() {
@@ -266,6 +307,7 @@
             <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3.5rem);font-weight:300;margin-bottom:1.5rem;">${title}</h1>
             <div class="divider"></div>
             ${renderBody()}
+            ${renderGallery()}
           </div>
 
           <aside class="project-detail-meta fade-in" data-delay="2">
