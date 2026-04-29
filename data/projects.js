@@ -62,7 +62,7 @@ const PROJECTS = [
       },
       {
         // SLIDE 2 → remplacer par : "images/projects/the-nest-02.jpg"
-        image: "images/placeholder.svg",
+        image: "images/projects/the-nest-01.jpg",
         captionFR: "Rendu intérieur — atrium avec colonnes arborescentes et puits de lumière",
         captionEN: "Interior render — atrium with tree-like columns and skylight",
       },
