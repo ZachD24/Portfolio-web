@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#EFEBE2"/>
+  <!-- Frame border -->
+  <rect x="8" y="8" width="784" height="584" rx="18" fill="none" stroke="#2E2E2E" stroke-width="14"/>
+  <!-- Sun -->
+  <circle cx="225" cy="205" r="68" fill="#D4921A"/>
+  <!-- Back mountain -->
+  <polygon points="430,530 680,255 820,530" fill="#1A7A7A"/>
+  <!-- Front mountain -->
+  <polygon points="-20,530 295,215 590,530" fill="#2A9898"/>
+</svg>

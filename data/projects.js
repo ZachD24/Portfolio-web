@@ -18,7 +18,7 @@ const PROJECTS = [
     typeEN: "Heritage rehabilitation",
     location: "Champoly, France",
     // REMPLACER IMAGE GRILLE → "images/projects/the-nest.jpg"
-    image: "https://picsum.photos/seed/the-nest/800/600",
+    image: "images/placeholder.svg",
     descriptionFR: "Réhabilitation du château des Cornes d'Urfé en hôtel. Façades paramétriques en bois, atrium avec puits de lumière et colonnes arborescentes conçus sous Grasshopper. Avec Manon Borrini · Atelier HTC, ENSAL, 2025",
     descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé into a hotel. Parametric wooden facades, atrium with skylight and tree-like columns designed in Grasshopper. With Manon Borrini · Atelier HTC, ENSAL, 2025",
     sections: [
@@ -56,19 +56,19 @@ const PROJECTS = [
     slides: [
       {
         // REMPLACER → "images/projects/the-nest-01.jpg"
-        image: "https://picsum.photos/seed/tn-01/1400/900",
+        image: "images/placeholder.svg",
         captionFR: "Rendu extérieur — intégration de l'hôtel dans les murs de la ruine",
         captionEN: "Exterior render — hotel integrated within the ruin walls",
       },
       {
         // REMPLACER → "images/projects/the-nest-02.jpg"
-        image: "https://picsum.photos/seed/tn-02/1400/900",
+        image: "images/placeholder.svg",
         captionFR: "Rendu intérieur — atrium avec colonnes arborescentes et puits de lumière",
         captionEN: "Interior render — atrium with tree-like columns and skylight",
       },
       {
         // REMPLACER → "images/projects/the-nest-03.jpg"
-        image: "https://picsum.photos/seed/tn-03/1600/900",
+        image: "images/placeholder.svg",
         captionFR: "Script Grasshopper — façade paramétrique en panneaux de bois de dimensions variables",
         captionEN: "Grasshopper script — parametric facade with variable-dimension wooden panels",
       },
@@ -82,22 +82,22 @@ const PROJECTS = [
     typeFR: "Projet universitaire",
     typeEN: "Academic project",
     location: "Villeurbanne, France",
-    image: "https://picsum.photos/seed/residence/800/600",
+    image: "images/placeholder.svg",
     descriptionFR: "200 logements étudiants organisés autour d'une cour commune végétalisée. L'accent est mis sur les espaces de convivialité et la flexibilité des typologies.",
     descriptionEN: "200 student housing units organised around a shared green courtyard. Emphasis on convivial spaces and flexible typologies.",
     slides: [
       {
-        image: "https://picsum.photos/seed/re-01/1400/900",
+        image: "images/placeholder.svg",
         captionFR: "Vue aérienne — organisation autour de la cour végétalisée centrale",
         captionEN: "Aerial view — organisation around the central green courtyard",
       },
       {
-        image: "https://picsum.photos/seed/re-02/1200/800",
+        image: "images/placeholder.svg",
         captionFR: "Rez-de-chaussée — espaces communs et locaux associatifs",
         captionEN: "Ground floor — common spaces and association rooms",
       },
       {
-        image: "https://picsum.photos/seed/re-03/800/1100",
+        image: "images/placeholder.svg",
         captionFR: "Logement type — studio de 18 m² en configuration double",
         captionEN: "Typical unit — 18 m² studio in double configuration",
       },
@@ -111,22 +111,22 @@ const PROJECTS = [
     typeFR: "Projet universitaire",
     typeEN: "Academic project",
     location: "Grenoble, France",
-    image: "https://picsum.photos/seed/musee/800/600",
+    image: "images/placeholder.svg",
     descriptionFR: "Équipement culturel de 3 500 m² implanté sur un site industriel réhabilité. La structure en béton apparent dialogue avec les vestiges de l'ancienne usine.",
     descriptionEN: "3,500 m² cultural facility on a rehabilitated industrial site. The exposed concrete structure dialogues with the remnants of the former factory.",
     slides: [
       {
-        image: "https://picsum.photos/seed/mm-01/1600/900",
+        image: "images/placeholder.svg",
         captionFR: "Implantation — dialogue entre le bâtiment neuf et les vestiges industriels",
         captionEN: "Site plan — dialogue between new building and industrial remains",
       },
       {
-        image: "https://picsum.photos/seed/mm-02/1200/900",
+        image: "images/placeholder.svg",
         captionFR: "Hall d'entrée — béton apparent et lumière zénithale",
         captionEN: "Entrance hall — exposed concrete and zenithal light",
       },
       {
-        image: "https://picsum.photos/seed/mm-03/900/1200",
+        image: "images/placeholder.svg",
         captionFR: "Galerie permanente — maquette de présentation 1:200",
         captionEN: "Permanent gallery — presentation model 1:200",
       },
@@ -140,22 +140,22 @@ const PROJECTS = [
     typeFR: "Projet universitaire",
     typeEN: "Academic project",
     location: "Lyon, France",
-    image: "https://picsum.photos/seed/ilot/800/600",
+    image: "images/placeholder.svg",
     descriptionFR: "48 logements sociaux et intermédiaires articulés autour d'un passage public. Réponse à la densification douce du tissu urbain existant.",
     descriptionEN: "48 social and intermediate housing units articulated around a public passage. A response to the gentle densification of the existing urban fabric.",
     slides: [
       {
-        image: "https://picsum.photos/seed/lc-01/1400/900",
+        image: "images/placeholder.svg",
         captionFR: "Plan masse — intégration dans le tissu pavillonnaire existant",
         captionEN: "Site plan — integration within the existing residential fabric",
       },
       {
-        image: "https://picsum.photos/seed/lc-02/1600/800",
+        image: "images/placeholder.svg",
         captionFR: "Coupe longitudinale — passage public traversant et jardins partagés",
         captionEN: "Longitudinal section — public passage and shared gardens",
       },
       {
-        image: "https://picsum.photos/seed/lc-03/800/1000",
+        image: "images/placeholder.svg",
         captionFR: "Élévation principale — rythme des loggias et variation des matériaux",
         captionEN: "Main elevation — rhythm of loggias and material variation",
       },
@@ -169,22 +169,22 @@ const PROJECTS = [
     typeFR: "Aménagement urbain",
     typeEN: "Urban design",
     location: "Lyon, France",
-    image: "https://picsum.photos/seed/berges/800/600",
+    image: "images/placeholder.svg",
     descriptionFR: "Réaménagement d'un kilomètre de berges fluviales en promenade paysagère. Intégration d'équipements sportifs, culturels et de repos au fil de l'eau.",
     descriptionEN: "Redevelopment of one kilometre of riverbanks into a landscaped promenade. Integration of sports, cultural and recreational facilities along the water.",
     slides: [
       {
-        image: "https://picsum.photos/seed/ab-01/1600/700",
+        image: "images/placeholder.svg",
         captionFR: "Plan de composition paysagère — trois séquences thématiques",
         captionEN: "Landscape composition plan — three thematic sequences",
       },
       {
-        image: "https://picsum.photos/seed/ab-02/1400/900",
+        image: "images/placeholder.svg",
         captionFR: "Séquence centrale — estacade bois et scène flottante",
         captionEN: "Central sequence — timber jetty and floating stage",
       },
       {
-        image: "https://picsum.photos/seed/ab-03/1200/900",
+        image: "images/placeholder.svg",
         captionFR: "Mobilier urbain — bancs intégrés en béton préfabriqué",
         captionEN: "Urban furniture — integrated precast concrete benches",
       },
@@ -198,22 +198,22 @@ const PROJECTS = [
     typeFR: "Rénovation patrimoniale",
     typeEN: "Heritage renovation",
     location: "Vieux-Lyon, France",
-    image: "https://picsum.photos/seed/hotel/800/600",
+    image: "images/placeholder.svg",
     descriptionFR: "Reconversion d'un hôtel particulier du XVIIe siècle en espace culturel et résidentiel. Dialogue entre l'existant historique et les interventions contemporaines.",
     descriptionEN: "Conversion of a 17th-century townhouse into a cultural and residential space. Dialogue between the historic fabric and contemporary interventions.",
     slides: [
       {
-        image: "https://picsum.photos/seed/rp-01/1200/900",
+        image: "images/placeholder.svg",
         captionFR: "Cour intérieure — état existant avant intervention",
         captionEN: "Inner courtyard — existing state before intervention",
       },
       {
-        image: "https://picsum.photos/seed/rp-02/900/1200",
+        image: "images/placeholder.svg",
         captionFR: "Escalier d'honneur — restauration des boiseries XVIIe et nouvelle rampe",
         captionEN: "Main staircase — 17th-century woodwork restoration and new railing",
       },
       {
-        image: "https://picsum.photos/seed/rp-03/1600/900",
+        image: "images/placeholder.svg",
         captionFR: "Galerie d'exposition — extension contemporaine en acier Corten",
         captionEN: "Exhibition gallery — contemporary Corten steel extension",
       },
@@ -227,22 +227,22 @@ const PROJECTS = [
     typeFR: "Habitat individuel",
     typeEN: "Single-family house",
     location: "Ain, France",
-    image: "https://picsum.photos/seed/maison/800/600",
+    image: "images/placeholder.svg",
     descriptionFR: "Maison passive en ossature bois sur une parcelle en pente. Organisation du plan en terrasses successives pour optimiser les vues et l'ensoleillement.",
     descriptionEN: "Passive timber-frame house on a sloping plot. Plan organised as successive terraces to optimise views and sunlight.",
     slides: [
       {
-        image: "https://picsum.photos/seed/hi-01/1400/900",
+        image: "images/placeholder.svg",
         captionFR: "Vue depuis le jardin — terrasses successives et toiture végétalisée",
         captionEN: "View from the garden — successive terraces and green roof",
       },
       {
-        image: "https://picsum.photos/seed/hi-02/1600/900",
+        image: "images/placeholder.svg",
         captionFR: "Séjour — double hauteur et mur vitré plein sud",
         captionEN: "Living room — double height and full south glazing",
       },
       {
-        image: "https://picsum.photos/seed/hi-03/900/1200",
+        image: "images/placeholder.svg",
         captionFR: "Détail constructif — assemblage de l'ossature bois en CLT",
         captionEN: "Construction detail — CLT timber frame assembly",
       },
@@ -256,22 +256,22 @@ const PROJECTS = [
     typeFR: "Équipement public",
     typeEN: "Public facility",
     location: "Bron, France",
-    image: "https://picsum.photos/seed/mediatheque/800/600",
+    image: "images/placeholder.svg",
     descriptionFR: "Médiathèque de quartier de 1 800 m² ancrée dans un tissu pavillonnaire. La toiture végétalisée et les façades en brique locale renforcent l'ancrage territorial.",
     descriptionEN: "1,800 m² neighbourhood media library set within a residential fabric. The green roof and local brick facades reinforce the building's territorial rootedness.",
     slides: [
       {
-        image: "https://picsum.photos/seed/ep-01/1400/900",
+        image: "images/placeholder.svg",
         captionFR: "Façade principale — brique locale et claustra en terre cuite",
         captionEN: "Main facade — local brick and terracotta brise-soleil",
       },
       {
-        image: "https://picsum.photos/seed/ep-02/1600/800",
+        image: "images/placeholder.svg",
         captionFR: "Salle de lecture — lumière naturelle filtrée par la toiture végétalisée",
         captionEN: "Reading room — natural light filtered through the green roof",
       },
       {
-        image: "https://picsum.photos/seed/ep-03/800/1100",
+        image: "images/placeholder.svg",
         captionFR: "Maquette — toiture et organisation intérieure à l'échelle 1:100",
         captionEN: "Physical model — roof and interior layout at 1:100 scale",
       },
