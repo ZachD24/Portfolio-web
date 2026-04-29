@@ -269,6 +269,9 @@ p {
   gap: 5px;
   padding: 6px;
   z-index: 110;
+  color: var(--color-text);
+  background: none;
+  border: none;
 }
 .nav-toggle span {
   display: block;
