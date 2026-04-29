@@ -161,6 +161,9 @@ p {
   right: 0;
   z-index: 100;
   height: var(--nav-height);
+  background: var(--color-bg);
+  box-shadow: 0 1px 0 var(--color-border);
+  color: var(--color-text);
   transition: background var(--transition-med), box-shadow var(--transition-med);
 }
 
@@ -174,6 +177,7 @@ p {
 /* Nav transparente sur hero uniquement */
 .nav--hero {
   background: transparent;
+  box-shadow: none;
 }
 .nav--hero .nav__logo,
 .nav--hero .nav-link,
