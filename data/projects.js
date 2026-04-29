@@ -18,7 +18,7 @@ const PROJECTS = [
     typeEN: "Heritage rehabilitation",
     location: "Champoly, France",
     // REMPLACER IMAGE GRILLE → "images/projects/the-nest.jpg"
-    image: "images/placeholder.svg",
+    image: "images/projects/the-nest.jpg",
     descriptionFR: "Réhabilitation du château des Cornes d'Urfé en hôtel. Façades paramétriques en bois, atrium avec puits de lumière et colonnes arborescentes conçus sous Grasshopper. Avec Manon Borrini · Atelier HTC, ENSAL, 2025",
     descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé into a hotel. Parametric wooden facades, atrium with skylight and tree-like columns designed in Grasshopper. With Manon Borrini · Atelier HTC, ENSAL, 2025",
     sections: [
