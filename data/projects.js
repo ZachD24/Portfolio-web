@@ -352,7 +352,7 @@ const PROJECTS = [
         headingEN: "Grasshopper Script",
         textFR: "Un script Grasshopper contrôle la géométrie du mur paramétrique : les modules de façade varient en profondeur et en distribution selon des paramètres ajustables, créant un relief dynamique qui réagit à la lumière.",
         textEN: "A Grasshopper script controls the parametric wall geometry: facade modules vary in depth and distribution according to adjustable parameters, creating a dynamic relief that responds to light.",
-        layout: "grid",
+        layout: "flex",
         images: [
           // IMAGE 03 → remplacer par : "images/projects/le-mirage-03.jpg"
           { src: "images/projects/le-mirage-03.jpg", captionFR: "Script Grasshopper — paramètres de façade", captionEN: "Grasshopper script — facade parameters" },
