@@ -328,38 +328,36 @@ const PROJECTS = [
         headingEN: "Process",
         textFR: "L'outil de génération d'image par IA Midjourney a été utilisé pour créer le collage à partir d'une maquette précise : assembler des éléments en béton inspirés du style architectural de Tadao Ando, en utilisant le plus possible les images fournies. Le style est celui du collage papier superposé.",
         textEN: "The AI image generator Midjourney was used to create the collage from a precise prompt: assemble concrete elements inspired by Tadao Ando's architectural style, using the provided images as much as possible. The style is superimposed paper collage.",
+        layout: "grid",
+        images: [
+          // IMAGE 04 → remplacer par : "images/projects/1-62-04.jpg"
+          { src: "images/projects/1-62-04.jpg", captionFR: "", captionEN: "" },
+          // IMAGE 05 → remplacer par : "images/projects/1-62-05.jpg"
+          { src: "images/projects/1-62-05.jpg", captionFR: "", captionEN: "" },
+          // IMAGE 06 → remplacer par : "images/projects/1-62-06.jpg"
+          { src: "images/projects/1-62-06.jpg", captionFR: "", captionEN: "" },
+        ],
       },
       {
         headingFR: "Itération",
         headingEN: "Iteration",
         textFR: "Plusieurs essais initiaux ont été réalisés avec Midjourney avant d'obtenir le résultat final. À partir de la première image, des modifications successives ont été apportées afin d'obtenir le rendu souhaité.",
         textEN: "Several initial attempts were made with Midjourney before reaching the final result. Starting from the first image, successive modifications were applied to achieve the desired outcome.",
+        layout: "grid",
+        images: [
+          // IMAGE 01 → remplacer par : "images/projects/1-62-01.jpg"
+          { src: "images/projects/1-62-01.jpg", captionFR: "", captionEN: "" },
+          // IMAGE 02 → remplacer par : "images/projects/1-62-02.jpg"
+          { src: "images/projects/1-62-02.jpg", captionFR: "", captionEN: "" },
+          // IMAGE 03 → remplacer par : "images/projects/1-62-03.jpg"
+          { src: "images/projects/1-62-03.jpg", captionFR: "", captionEN: "" },
+        ],
       },
       {
         headingFR: "Réalisé avec",
         headingEN: "Credits",
         textFR: "Jérémy Pelchat · Ariane Ouellet-Pelletier · ARC-2041, Université Laval, Automne 2024",
         textEN: "Jérémy Pelchat · Ariane Ouellet-Pelletier · ARC-2041, Université Laval, Fall 2024",
-      },
-    ],
-    slides: [
-      {
-        // SLIDE 1 → remplacer par : "images/projects/1-62-01.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Collage final — assemblage d'éléments en béton inspirés de Tadao Ando",
-        captionEN: "Final collage — assembly of concrete elements inspired by Tadao Ando",
-      },
-      {
-        // SLIDE 2 → remplacer par : "images/projects/1-62-02.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Coupe et maquette du projet architectural",
-        captionEN: "Section and model of the architectural project",
-      },
-      {
-        // SLIDE 3 → remplacer par : "images/projects/1-62-03.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Processus d'itération avec Midjourney — essais initiaux et résultat final",
-        captionEN: "Iteration process with Midjourney — initial attempts and final result",
       },
     ],
   },
