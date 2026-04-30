@@ -51,6 +51,13 @@ const PROJECTS = [
         headingEN: "Parametric facade",
         textFR: "Les façades des nouveaux bâtiments sont conçues en bois afin de créer une distinction claire avec les ruines historiques. Un script Grasshopper génère des panneaux de dimensions et d'épaisseurs variables, rappelant l'irrégularité des murs de pierre. Sur la façade principale, les panneaux ayant l'épaisseur minimale sont automatiquement transformés en panneaux de verre, créant des ouvertures de formes irrégulières comme celles qui parsèment la ruine.",
         textEN: "New building facades are clad in wood to create a clear distinction from the historic ruins. A Grasshopper script generates panels of varying dimensions and thickness, echoing the irregularity of the stone walls. On the main facade, panels assigned the minimum thickness are automatically converted to glass, creating irregular openings that echo those eroded into the ruin over centuries.",
+        layout: "flex",
+        images: [
+          // IMAGE 08 → déposer : "images/projects/the-nest-08.jpg"
+          { src: "images/projects/the-nest-08.jpg", captionFR: "", captionEN: "" },
+          // IMAGE 09 → déposer : "images/projects/the-nest-09.jpg"
+          { src: "images/projects/the-nest-09.jpg", captionFR: "", captionEN: "" },
+        ],
       },
       {
         headingFR: "Atrium et puits de lumière",
