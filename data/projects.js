@@ -118,6 +118,8 @@ const PROJECTS = [
         textFR: "Les parois de l'atelier principal de l'école des métiers et de l'accueil du centre d'interprétation sont constituées de lattes de bois disposées en éventail, évoquant le mouvement naturel du grain de bois.",
         textEN: "The walls of the trades school's main workshop and the interpretation centre entrance are composed of fanned wooden slats that evoke the natural movement of wood grain.",
         image: "images/projects/le-cercle-01.jpg",
+        imageCaptionFR: "Rendu intérieur du centre d'interprétation culturel",
+        imageCaptionEN: "Interior render of the cultural interpretation centre",
       },
       {
         headingFR: "Réalisé avec",
