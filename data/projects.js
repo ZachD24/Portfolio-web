@@ -229,32 +229,32 @@ const PROJECTS = [
     titleFR: "La Clairière",
     titleEN: "The Clearing",
     year: 2024,
-    typeFR: "Habitat individuel",
-    typeEN: "Single-family residence",
-    location: "Laurentides, Québec",
+    typeFR: "Chalet privé",
+    typeEN: "Private cottage",
+    location: "Parc national de la Jacques-Cartier, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/la-clairiere.jpg"
     image: "images/projects/la-clairiere.jpg",
-    heroCaptionFR: "",
-    heroCaptionEN: "",
-    descriptionFR: "Chalet d'un étage conçu selon les préférences d'une camarade : ouverture sur la nature, terrasse donnant sur la rivière et accueil des invités. Le toit porté par des colonnes laisse entrer un ruban de lumière naturelle et donne l'illusion de flotter. Louis Saint-Pierre · Atelier 2a, ARC-1112, Université Laval, 2024",
+    heroCaptionFR: "Maquette",
+    heroCaptionEN: "Model",
+    descriptionFR: "Chalet conçu selon les préférences d'une camarade : ouverture sur la nature, terrasse donnant sur la rivière et espace pour accueillir des invités. Le toit porté par des colonnes laisse entrer un ruban de lumière naturelle et donne l'illusion de flotter. Louis Saint-Pierre · Atelier 2a, ARC-1112, Université Laval, 2024",
     descriptionEN: "A one-storey chalet designed to a classmate's preferences: openness to nature, a terrace overlooking the river, and space for guests. Columns support the roof, allowing a continuous glass ribbon to flood the interior with natural light and give the illusion of a floating roof. Louis Saint-Pierre · Atelier 2a, ARC-1112, Université Laval, 2024",
     sections: [
       {
         headingFR: "Objectif",
         headingEN: "Objective",
-        textFR: "Concevoir un chalet dans la nature selon les préférences d'une camarade de classe. Les points importants sont de réaliser un chalet d'un étage pour un couple avec une place de rassemblement pour accueillir des invités, le tout en étant le plus ouvert possible vers la nature.",
+        textFR: "L'objectif est de concevoir un chalet dans la nature selon les préférences d'une camarade de classe. Les points importants étaient de réaliser un chalet d'un étage pour un couple avec une place de rassemblement pour accueillir des invités, le tout en étant le plus ouvert possible vers la nature.",
         textEN: "Design a nature retreat based on a classmate's preferences. The key requirements are a one-storey chalet for a couple with a gathering space for guests, as open as possible to the surrounding nature.",
         image: "images/projects/la-clairiere-01.jpg",
       },
       {
         headingFR: "Concept",
         headingEN: "Concept",
-        textFR: "Une terrasse assez grande pour plusieurs personnes donne sur la rivière. Afin de faire entrer la nature dans le chalet, le toit est supporté par des colonnes, permettant de placer un ruban de verre en haut des murs. Cela fait entrer de la lumière naturelle partout, permet de percevoir le ciel dans n'importe quelle direction et donne l'illusion que la toiture flotte lorsqu'on approche l'avant du bâtiment.",
-        textEN: "A terrace large enough for several people overlooks the river. To bring nature inside, the roof is supported by columns, allowing a continuous glass ribbon along the top of the walls. This fills every space with natural light, frames views of the sky from any direction, and creates the illusion of a floating roof when approaching the front of the building.",
+        textFR: "Une terrasse sur pilotis assez grande pour plusieurs personnes donne sur la rivière. Afin de faire entrer la nature dans le chalet, le toit est supporté par des colonnes, permettant de placer un ruban de verre en haut des murs. Cela fait entrer de la lumière naturelle partout dans le chalet, permet de percevoir le ciel dans n'importe quelle direction et donne l'illusion que la toiture flotte lorsqu'on approche l'avant du bâtiment. Les pilotis accentuent cet effet en faisant flotter le bâtiment entre le sol et le toit.",
+        textEN: "A terrace on stilts large enough for several people overlooks the river. To bring nature inside, the roof is supported by columns, allowing a continuous glass ribbon along the top of the walls. This fills every space with natural light, frames views of the sky from any direction, and creates the illusion of a floating roof when approaching the front of the building. The stilts enhance this effect, making the building appear to float between the ground and the roof.",
         layout: "grid",
         images: [
           { src: "images/projects/la-clairiere-03.jpg", captionFR: "Élévation avant", captionEN: "Front elevation" },
-          { src: "images/projects/la-clairiere-04.jpg", captionFR: "Élévation latérale", captionEN: "Side elevation" },
+          { src: "images/projects/la-clairiere-04.jpg", captionFR: "Élévation arrière", captionEN: "Rear elevation" },
         ],
       },
       {
@@ -262,7 +262,7 @@ const PROJECTS = [
         headingEN: "Plans",
         layout: "grid",
         images: [
-          { src: "images/projects/la-clairiere-02.jpg", captionFR: "Plan de masse", captionEN: "Site plan" },
+          { src: "images/projects/la-clairiere-02.jpg", captionFR: "Plan de site", captionEN: "Site plan" },
           { src: "images/projects/la-clairiere-05.jpg", captionFR: "Coupe transversale", captionEN: "Cross section" },
         ],
       },
@@ -290,8 +290,8 @@ const PROJECTS = [
     location: "Université Laval, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/1-62.jpg"
     image: "images/projects/1-62.png",
-    heroCaptionFR: "",
-    heroCaptionEN: "",
+    heroCaptionFR: "Collage",
+    heroCaptionEN: "Collage",
     descriptionFR: "Collage architectural réalisé par itération avec Midjourney : assemblage d'éléments en béton inspirés du style brutaliste de Tadao Ando, superposés en collage papier. Avec Jérémy Pelchat · Ariane Ouellet-Pelletier · ARC-2041, Université Laval, Automne 2024",
     descriptionEN: "Architectural collage created through iterative use of Midjourney: an assembly of concrete elements inspired by Tadao Ando's brutalist style, superimposed as a paper collage. With Jérémy Pelchat · Ariane Ouellet-Pelletier · ARC-2041, Université Laval, Fall 2024",
     sections: [
@@ -342,8 +342,8 @@ const PROJECTS = [
     location: "Université Laval, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/le-mirage.jpg"
     image: "images/projects/le-mirage.jpg",
-    heroCaptionFR: "",
-    heroCaptionEN: "",
+    heroCaptionFR: "Rendu extérieur",
+    heroCaptionEN: "Exterior render",
     descriptionFR: "Exploration de la présence d'une structure monolithique paramétrique dans un désert de sable. Un mur Grasshopper à modules en saillie crée un jeu de lumière et d'ombre évoquant l'illusion du mirage. Avec Jérémy Pelchat, Jade Tremblay, Laura Henrichon · Samuel Bernier-Lavigne · ARC-2042, Université Laval, Hiver 2025",
     descriptionEN: "An exploration of a parametric monolithic structure in a sand desert. A Grasshopper wall of protruding modules creates an interplay of light and shadow evoking the illusion of the mirage. With Jérémy Pelchat, Jade Tremblay, Laura Henrichon · Samuel Bernier-Lavigne · ARC-2042, Université Laval, Winter 2025",
     sections: [
@@ -392,8 +392,8 @@ const PROJECTS = [
     heroCover: false,
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/uni-sons.jpg"
     image: "images/projects/uni-sons-01.jpg",
-    heroCaptionFR: "",
-    heroCaptionEN: "",
+    heroCaptionFR: "Produit final",
+    heroCaptionEN: "Final product",
     descriptionFR: "Jouet sensoriel en bois prenant la forme d'animaux emboîtables qui produisent des sons. Chaque animal intègre un module sonore activé par la manipulation. Avec Kalina Alarie, Audrey Bergeron · Gabrielle Roberge · DES-1710, Université Laval, Automne 2022",
     descriptionEN: "A sensory wooden toy in the shape of interlocking animals that produce sounds. Each animal integrates a sound module activated by handling. With Kalina Alarie, Audrey Bergeron · Gabrielle Roberge · DES-1710, Université Laval, Fall 2022",
     sections: [
