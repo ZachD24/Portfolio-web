@@ -60,6 +60,17 @@ const PROJECTS = [
         image: "images/projects/the-nest-01.jpg",
       },
       {
+        headingFR: "Château des Cornes d'Urfé",
+        headingEN: "Château des Cornes d'Urfé",
+        layout: "grid",
+        images: [
+          // IMAGE 06 → déposer : "images/projects/the-nest-06.jpg"
+          { src: "images/projects/the-nest-06.jpg", captionFR: "", captionEN: "" },
+          // IMAGE 07 → déposer : "images/projects/the-nest-07.jpg"
+          { src: "images/projects/the-nest-07.jpg", captionFR: "", captionEN: "" },
+        ],
+      },
+      {
         headingFR: "Réalisé avec",
         headingEN: "Credits",
         textFR: "Manon Borrini · Atelier HTC, ENSAL Lyon, 2025",
