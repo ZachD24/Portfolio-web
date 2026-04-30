@@ -19,6 +19,8 @@ const PROJECTS = [
     location: "Champoly, France",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/the-nest.jpg"
     image: "images/projects/the-nest.jpg",
+    heroCaptionFR: "Rendu intérieur — atrium avec colonnes arborescentes et puits de lumière",
+    heroCaptionEN: "Interior render — atrium with tree-like columns and skylight",
     descriptionFR: "Réhabilitation du château des Cornes d'Urfé en hôtel. Façades paramétriques en bois, atrium avec puits de lumière et colonnes arborescentes conçus sous Grasshopper. Avec Manon Borrini · Atelier HTC, ENSAL, 2025",
     descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé into a hotel. Parametric wooden facades, atrium with skylight and tree-like columns designed in Grasshopper. With Manon Borrini · Atelier HTC, ENSAL, 2025",
     sections: [
@@ -75,6 +77,8 @@ const PROJECTS = [
     location: "Île de Tekakwitha, Kahnawake",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/le-cercle.jpg"
     image: "images/projects/le-cercle.jpg",
+    heroCaptionFR: "Rendu intérieur — lattes de bois en éventail, atelier principal",
+    heroCaptionEN: "Interior render — fanned wooden slats, main workshop",
     descriptionFR: "Conception d'un centre d'interprétation culturelle pour les Mohawks de la réserve de Kahnawake, constitué d'un centre d'interprétation, d'un pavillon résidentiel et d'une école de métiers. Claude Fugère · Atelier 4, ARC-2012, Université Laval, 2025",
     descriptionEN: "Design of a cultural interpretation centre for the Mohawks of the Kahnawake reserve, comprising an interpretation centre, a residential pavilion, and a trades school. Claude Fugère · Atelier 4, ARC-2012, Université Laval, 2025",
     sections: [
@@ -133,6 +137,8 @@ const PROJECTS = [
     location: "2–6 rue de l'Hôtel-Dieu, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/fantaisie-interieure.jpg"
     image: "images/projects/fantaisie-interieure.jpg",
+    heroCaptionFR: "",
+    heroCaptionEN: "",
     descriptionFR: "Réhabilitation des maisons Baillargé en résidence temporaire pour personnes atteintes du cancer, connectée par tunnel à l'Hôpital Hôtel-Dieu. Les circulations sont reportées sur des coursives extérieures et des passerelles sillonnent la cour. Szende Szenteu-Nejur · Atelier 3, ARC-2011, Université Laval, 2024",
     descriptionEN: "Rehabilitation of the Maisons Baillargé into temporary housing for cancer patients, connected by tunnel to the Hôtel-Dieu hospital. Circulation is moved to external walkways and bridges traverse the courtyard. Szende Szenteu-Nejur · Atelier 3, ARC-2011, Université Laval, 2024",
     sections: [
@@ -179,6 +185,8 @@ const PROJECTS = [
     location: "Rue Champlain, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/les-deux-freres.jpg"
     image: "images/projects/les-deux-freres.jpg",
+    heroCaptionFR: "",
+    heroCaptionEN: "",
     descriptionFR: "Complexe multilogement sur la rue Champlain composé de deux bâtiments distincts — familial et étudiant — séparés par un corridor partagé qui favorise l'esprit communautaire. Avec Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
     descriptionEN: "A multi-unit residential complex on Rue Champlain composed of two distinct buildings — family and student — separated by a shared corridor fostering community spirit. With Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
     sections: [
@@ -226,6 +234,8 @@ const PROJECTS = [
     location: "Laurentides, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/la-clairiere.jpg"
     image: "images/projects/la-clairiere.jpg",
+    heroCaptionFR: "",
+    heroCaptionEN: "",
     descriptionFR: "Chalet d'un étage conçu selon les préférences d'une camarade : ouverture sur la nature, terrasse donnant sur la rivière et accueil des invités. Le toit porté par des colonnes laisse entrer un ruban de lumière naturelle et donne l'illusion de flotter. Louis Saint-Pierre · Atelier 2a, ARC-1112, Université Laval, 2024",
     descriptionEN: "A one-storey chalet designed to a classmate's preferences: openness to nature, a terrace overlooking the river, and space for guests. Columns support the roof, allowing a continuous glass ribbon to flood the interior with natural light and give the illusion of a floating roof. Louis Saint-Pierre · Atelier 2a, ARC-1112, Université Laval, 2024",
     sections: [
@@ -280,6 +290,8 @@ const PROJECTS = [
     location: "Université Laval, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/1-62.jpg"
     image: "images/projects/1-62.png",
+    heroCaptionFR: "",
+    heroCaptionEN: "",
     descriptionFR: "Collage architectural réalisé par itération avec Midjourney : assemblage d'éléments en béton inspirés du style brutaliste de Tadao Ando, superposés en collage papier. Avec Jérémy Pelchat · Ariane Ouellet-Pelletier · ARC-2041, Université Laval, Automne 2024",
     descriptionEN: "Architectural collage created through iterative use of Midjourney: an assembly of concrete elements inspired by Tadao Ando's brutalist style, superimposed as a paper collage. With Jérémy Pelchat · Ariane Ouellet-Pelletier · ARC-2041, Université Laval, Fall 2024",
     sections: [
@@ -331,6 +343,8 @@ const PROJECTS = [
     location: "Université Laval, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/le-mirage.jpg"
     image: "images/projects/le-mirage.jpg",
+    heroCaptionFR: "",
+    heroCaptionEN: "",
     descriptionFR: "Exploration de la présence d'une structure monolithique paramétrique dans un désert de sable. Un mur Grasshopper à modules en saillie crée un jeu de lumière et d'ombre évoquant l'illusion du mirage. Avec Jérémy Pelchat, Jade Tremblay, Laura Henrichon · Samuel Bernier-Lavigne · ARC-2042, Université Laval, Hiver 2025",
     descriptionEN: "An exploration of a parametric monolithic structure in a sand desert. A Grasshopper wall of protruding modules creates an interplay of light and shadow evoking the illusion of the mirage. With Jérémy Pelchat, Jade Tremblay, Laura Henrichon · Samuel Bernier-Lavigne · ARC-2042, Université Laval, Winter 2025",
     sections: [
@@ -379,6 +393,8 @@ const PROJECTS = [
     heroCover: false,
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/uni-sons.jpg"
     image: "images/projects/uni-sons-01.jpg",
+    heroCaptionFR: "",
+    heroCaptionEN: "",
     descriptionFR: "Jouet sensoriel en bois prenant la forme d'animaux emboîtables qui produisent des sons. Chaque animal intègre un module sonore activé par la manipulation. Avec Kalina Alarie, Audrey Bergeron · Gabrielle Roberge · DES-1710, Université Laval, Automne 2022",
     descriptionEN: "A sensory wooden toy in the shape of interlocking animals that produce sounds. Each animal integrates a sound module activated by handling. With Kalina Alarie, Audrey Bergeron · Gabrielle Roberge · DES-1710, Université Laval, Fall 2022",
     sections: [
