@@ -244,7 +244,7 @@ const PROJECTS = [
         layout: "grid",
         images: [
           { src: "images/projects/la-clairiere-03.jpg", captionFR: "Élévation avant", captionEN: "Front elevation" },
-          { src: "images/projects/la-clairiere-05.jpg", captionFR: "Coupe transversale", captionEN: "Cross section" },
+          { src: "images/projects/la-clairiere-04.jpg", captionFR: "Élévation latérale", captionEN: "Side elevation" },
         ],
       },
       {
@@ -253,7 +253,7 @@ const PROJECTS = [
         layout: "grid",
         images: [
           { src: "images/projects/la-clairiere-02.jpg", captionFR: "Plan de masse", captionEN: "Site plan" },
-          { src: "images/projects/la-clairiere-04.jpg", captionFR: "Élévation latérale", captionEN: "Side elevation" },
+          { src: "images/projects/la-clairiere-05.jpg", captionFR: "Coupe transversale", captionEN: "Cross section" },
         ],
       },
       {
