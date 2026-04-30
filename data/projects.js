@@ -11,7 +11,7 @@
 const PROJECTS = [
   {
     id: "the-nest",
-    titleFR: "The Nest",
+    titleFR: "Le Nid",
     titleEN: "The Nest",
     year: 2025,
     typeFR: "Réhabilitation patrimoniale",
@@ -21,8 +21,8 @@ const PROJECTS = [
     image: "images/projects/the-nest.jpg",
     heroCaptionFR: "Rendu intérieur — atrium avec colonnes arborescentes et puits de lumière",
     heroCaptionEN: "Interior render — atrium with tree-like columns and skylight",
-    descriptionFR: "Réhabilitation du château des Cornes d'Urfé en hôtel. Façades paramétriques en bois, atrium avec puits de lumière et colonnes arborescentes conçus sous Grasshopper. Avec Manon Borrini · Atelier HTC, ENSAL, 2025",
-    descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé into a hotel. Parametric wooden facades, atrium with skylight and tree-like columns designed in Grasshopper. With Manon Borrini · Atelier HTC, ENSAL, 2025",
+    descriptionFR: "Réhabilitation du château des Cornes d'Urfé en hôtel. Façades paramétriques en bois, atrium avec puits de lumière et colonnes arborescentes conçus sous Grasshopper.",
+    descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé into a hotel. Parametric wooden facades, atrium with skylight and tree-like columns designed in Grasshopper.",
     sections: [
       {
         headingFR: "Programme",
@@ -79,8 +79,8 @@ const PROJECTS = [
     image: "images/projects/le-cercle.jpg",
     heroCaptionFR: "Rendu intérieur — Pavillon résidentiel",
     heroCaptionEN: "Interior render — Residential Pavilion",
-    descriptionFR: "Conception d'un centre d'interprétation culturelle pour les Mohawks de la réserve de Kahnawake, constitué d'un centre d'interprétation, d'un pavillon résidentiel et d'une école de métiers. Claude Fugère · Atelier 4, ARC-2012, Université Laval, 2025",
-    descriptionEN: "Design of a cultural interpretation centre for the Mohawks of the Kahnawake reserve, comprising an interpretation centre, a residential pavilion, and a trades school. Claude Fugère · Atelier 4, ARC-2012, Université Laval, 2025",
+    descriptionFR: "Conception d'un centre d'interprétation culturelle pour les Mohawks de la réserve de Kahnawake, constitué d'un centre d'interprétation, d'un pavillon résidentiel et d'une école de métiers.",
+    descriptionEN: "Design of a cultural interpretation centre for the Mohawks of the Kahnawake reserve, comprising an interpretation centre, a residential pavilion, and a trades school.",
     sections: [
       {
         headingFR: "Concept",
@@ -141,8 +141,8 @@ const PROJECTS = [
     image: "images/projects/fantaisie-interieure.jpg",
     heroCaptionFR: "Rendu de la cour intérieure",
     heroCaptionEN: "Interior Courtyard Render",
-    descriptionFR: "Réhabilitation des maisons Baillargé en résidence temporaire pour personnes atteintes du cancer, connectée par tunnel à l'Hôpital Hôtel-Dieu. Les circulations sont reportées sur des coursives extérieures et des passerelles sillonnent la cour. Szende Szenteu-Nejur · Atelier 3, ARC-2011, Université Laval, 2024",
-    descriptionEN: "Rehabilitation of the Maisons Baillargé into temporary housing for cancer patients, connected by tunnel to the Hôtel-Dieu hospital. Circulation is moved to external walkways and bridges traverse the courtyard. Szende Szenteu-Nejur · Atelier 3, ARC-2011, Université Laval, 2024",
+    descriptionFR: "Réhabilitation des maisons Baillargé en résidence temporaire pour personnes atteintes du cancer, connectée par tunnel à l'Hôpital Hôtel-Dieu. Les circulations sont reportées sur des coursives extérieures et des passerelles sillonnent la cour.",
+    descriptionEN: "Rehabilitation of the Maisons Baillargé into temporary housing for cancer patients, connected by tunnel to the Hôtel-Dieu hospital. Circulation is moved to external walkways and bridges traverse the courtyard.",
     sections: [
       {
         headingFR: "Programme",
