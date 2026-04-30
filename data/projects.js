@@ -381,38 +381,32 @@ const PROJECTS = [
         headingEN: "Concept",
         textFR: "Le Mirage explore la présence d'une structure architecturale monolithique dans un désert de sable. Le mur paramétrique, composé de modules en saillie, crée un jeu de lumière et d'ombre qui fait référence à l'illusion visuelle du mirage. Les rendus intérieur et extérieur mettent en valeur la géométrie rigoureuse de la structure dans son environnement aride.",
         textEN: "Le Mirage explores the presence of a monolithic architectural structure in a sand desert. The parametric wall, composed of protruding modules, creates an interplay of light and shadow referencing the visual illusion of a mirage. Interior and exterior renders highlight the rigorous geometry of the structure within its arid environment.",
+        layout: "grid",
+        images: [
+          // IMAGE 01 → remplacer par : "images/projects/le-mirage-01.jpg"
+          { src: "images/projects/le-mirage-01.jpg", captionFR: "Rendu extérieur", captionEN: "Exterior render" },
+          // IMAGE 02 → remplacer par : "images/projects/le-mirage-02.jpg"
+          { src: "images/projects/le-mirage-02.jpg", captionFR: "Rendu intérieur", captionEN: "Interior render" },
+        ],
       },
       {
         headingFR: "Script Grasshopper",
         headingEN: "Grasshopper Script",
         textFR: "Un script Grasshopper contrôle la géométrie du mur paramétrique : les modules de façade varient en profondeur et en distribution selon des paramètres ajustables, créant un relief dynamique qui réagit à la lumière.",
         textEN: "A Grasshopper script controls the parametric wall geometry: facade modules vary in depth and distribution according to adjustable parameters, creating a dynamic relief that responds to light.",
+        layout: "grid",
+        images: [
+          // IMAGE 03 → remplacer par : "images/projects/le-mirage-03.jpg"
+          { src: "images/projects/le-mirage-03.jpg", captionFR: "Script Grasshopper — paramètres de façade", captionEN: "Grasshopper script — facade parameters" },
+          // IMAGE 04 → remplacer par : "images/projects/le-mirage-04.jpg"
+          { src: "images/projects/le-mirage-04.jpg", captionFR: "Détail du mur paramétrique", captionEN: "Parametric wall detail" },
+        ],
       },
       {
         headingFR: "Réalisé avec",
         headingEN: "Credits",
         textFR: "Jérémy Pelchat, Jade Tremblay, Laura Henrichon · Samuel Bernier-Lavigne · ARC-2042, Université Laval, Hiver 2025",
         textEN: "Jérémy Pelchat, Jade Tremblay, Laura Henrichon · Samuel Bernier-Lavigne · ARC-2042, Université Laval, Winter 2025",
-      },
-    ],
-    slides: [
-      {
-        // SLIDE 1 → remplacer par : "images/projects/le-mirage-01.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Rendu extérieur — structure monolithique dans le désert de sable",
-        captionEN: "Exterior render — monolithic structure in the sand desert",
-      },
-      {
-        // SLIDE 2 → remplacer par : "images/projects/le-mirage-02.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Rendu intérieur — jeu de lumière à travers les modules en saillie",
-        captionEN: "Interior render — light interplay through the protruding modules",
-      },
-      {
-        // SLIDE 3 → remplacer par : "images/projects/le-mirage-03.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Script Grasshopper — mur paramétrique à modules variables",
-        captionEN: "Grasshopper script — parametric wall with variable modules",
       },
     ],
   },
