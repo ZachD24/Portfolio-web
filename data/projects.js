@@ -72,24 +72,24 @@ const PROJECTS = [
     titleFR: "Le Cercle",
     titleEN: "The Circle",
     year: 2025,
-    typeFR: "Projet universitaire",
-    typeEN: "Academic project",
+    typeFR: "centre d'interprétation culturelle",
+    typeEN: "Cultural Interpretation Centre",
     location: "Île de Tekakwitha, Kahnawake",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/le-cercle.jpg"
     image: "images/projects/le-cercle.jpg",
-    heroCaptionFR: "Rendu intérieur — lattes de bois en éventail, atelier principal",
-    heroCaptionEN: "Interior render — fanned wooden slats, main workshop",
+    heroCaptionFR: "Rendu intérieur — Pavillon résidentiel",
+    heroCaptionEN: "Interior render — Residential Pavilion",
     descriptionFR: "Conception d'un centre d'interprétation culturelle pour les Mohawks de la réserve de Kahnawake, constitué d'un centre d'interprétation, d'un pavillon résidentiel et d'une école de métiers. Claude Fugère · Atelier 4, ARC-2012, Université Laval, 2025",
     descriptionEN: "Design of a cultural interpretation centre for the Mohawks of the Kahnawake reserve, comprising an interpretation centre, a residential pavilion, and a trades school. Claude Fugère · Atelier 4, ARC-2012, Université Laval, 2025",
     sections: [
       {
         headingFR: "Concept",
         headingEN: "Concept",
-        textFR: "Symbole central dans la culture Mohawk, le cercle structure le projet : les bâtiments s'organisent autour d'un cœur commun, marqué par le feu sacré des conseils de clan. Par sa forme courbe et l'usage du bois, l'architecture évoque la maison longue traditionnelle. La toiture unifiée des espaces publics renforce la circularité et clarifie la distinction entre les bâtiments privés et collectifs, tandis qu'à l'arrière un sentier sensoriel relie le projet à la nature en racontant l'histoire des Mohawks.",
-        textEN: "A central symbol in Mohawk culture, the circle structures the project: buildings are organised around a common heart marked by the sacred clan council fire. Through its curved form and use of wood, the architecture evokes the traditional longhouse. The unified roof over public spaces reinforces the circular layout and clarifies the distinction between private and collective buildings, while a sensory trail at the rear connects the project to nature and tells the story of the Mohawks.",
+        textFR: "Symbole central dans la culture Mohawk, le cercle structure le projet en organisant les bâtiments autour d'un cœur commun. Par sa forme courbe et l'usage du bois, l'architecture évoque la maison longue traditionnelle ce qui est particulièrement marquant dans le pavillon résidentiel. La toiture unifiée des espaces publics renforce la circularité et clarifie la distinction entre les bâtiments privés et collectifs.",
+        textEN: "A central symbol in Mohawk culture, the circle structures the project: buildings are organised around a common heart marked by the sacred clan council fire. Through its curved form and use of wood, the architecture evokes the traditional longhouse. The unified roof over public spaces reinforces the circular layout and clarifies the distinction between private and collective buildings.",
         layout: "grid",
         images: [
-          { src: "images/projects/le-cercle-02.jpg", captionFR: "Maquette physique éclairée", captionEN: "Lit physical model" },
+          { src: "images/projects/le-cercle-02.jpg", captionFR: "Maquette éclairée", captionEN: "Lit model" },
         ],
       },
       {
@@ -100,7 +100,7 @@ const PROJECTS = [
         layout: "grid",
         images: [
           { src: "images/projects/le-cercle-05.jpg", captionFR: "Plan de masse", captionEN: "Site plan" },
-          { src: "images/projects/le-cercle-06.jpg", captionFR: "Plan d'étage", captionEN: "Floor plan" },
+          { src: "images/projects/le-cercle-06.jpg", captionFR: "Plan d'étage du pavillon résidentiel", captionEN: "Floor plan of the Residential Pavilion" },
         ],
       },
       {
@@ -108,8 +108,8 @@ const PROJECTS = [
         headingEN: "Elevations",
         layout: "full",
         images: [
-          { src: "images/projects/le-cercle-03.jpg", captionFR: "Élévation nord", captionEN: "North elevation" },
-          { src: "images/projects/le-cercle-04.jpg", captionFR: "Élévation sud", captionEN: "South elevation" },
+          { src: "images/projects/le-cercle-03.jpg", captionFR: "Coupe du centre d'interprétation culturelle et du pavillon résidentiel", captionEN: "Section of the Cultural Interpretation Centre and Residential Pavilion" },
+          { src: "images/projects/le-cercle-04.jpg", captionFR: "Coupe de l'école des métiers", captionEN: "Section of the Trades School" },
         ],
       },
       {
