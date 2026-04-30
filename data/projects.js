@@ -137,8 +137,8 @@ const PROJECTS = [
     location: "2–6 rue de l'Hôtel-Dieu, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/fantaisie-interieure.jpg"
     image: "images/projects/fantaisie-interieure.jpg",
-    heroCaptionFR: "",
-    heroCaptionEN: "",
+    heroCaptionFR: "Rendu de la cour intérieure",
+    heroCaptionEN: "Interior Courtyard Render",
     descriptionFR: "Réhabilitation des maisons Baillargé en résidence temporaire pour personnes atteintes du cancer, connectée par tunnel à l'Hôpital Hôtel-Dieu. Les circulations sont reportées sur des coursives extérieures et des passerelles sillonnent la cour. Szende Szenteu-Nejur · Atelier 3, ARC-2011, Université Laval, 2024",
     descriptionEN: "Rehabilitation of the Maisons Baillargé into temporary housing for cancer patients, connected by tunnel to the Hôtel-Dieu hospital. Circulation is moved to external walkways and bridges traverse the courtyard. Szende Szenteu-Nejur · Atelier 3, ARC-2011, Université Laval, 2024",
     sections: [
@@ -154,17 +154,17 @@ const PROJECTS = [
         ],
       },
       {
-        headingFR: "Circulation",
-        headingEN: "Circulation",
+        headingFR: "Shéma de circulation",
+        headingEN: "Circulation Diagram",
         textFR: "Afin de maximiser l'espace disponible à l'intérieur, les couloirs de circulation ont été placés sur des coursives extérieures. La circulation verticale peut se faire dans le bâtiment, à l'extrémité des coursives ou en empruntant les passerelles qui sillonnent la cour.",
         textEN: "To maximise usable interior space, circulation corridors were placed on external walkways. Vertical circulation can occur within the building, at the ends of the walkways, or by crossing the bridges that traverse the courtyard.",
         image: "images/projects/fantaisie-interieure-02.jpg",
       },
       {
-        headingFR: "Regard critique",
-        headingEN: "Critical Reflection",
-        textFR: "Le grand défi du projet était de trouver une disposition des pièces puisque le bâtiment est trop mince pour accueillir deux studios séparés par un couloir. La solution des coursives extérieures permet une circulation fonctionnelle tout en maximisant l'espace intérieur. Le parcours des passerelles extérieures pourrait être revisité afin de les rendre plus plausibles à une réelle construction.",
-        textEN: "The main challenge was finding a room layout since the building is too narrow to accommodate two studios separated by a corridor. The external walkway solution enables functional circulation while maximising interior space. The outdoor walkway route could be reconsidered to make it more feasible for real construction.",
+        headingFR: "Élévation latérale",
+        headingEN: "Lateral Elevation",
+        textFR: "",
+        textEN: "",
         image: "images/projects/fantaisie-interieure-01.jpg",
       },
       {
