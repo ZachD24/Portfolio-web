@@ -29,6 +29,89 @@
       display: block;
     }
 
+    /* Hero sans recadrage (heroCover: false) */
+    .project-hero--contain {
+      max-height: none;
+      background: var(--color-card-bg);
+    }
+    .project-hero--contain .project-hero__img {
+      height: auto;
+      object-fit: initial;
+    }
+
+    /* ── Grille images section (prototypage) ──────────────── */
+    .section-images-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .section-images-grid__item {
+      margin: 0;
+    }
+    .section-images-grid__item img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: contain;
+      background: var(--color-card-bg);
+      display: block;
+    }
+    .section-images-grid__item figcaption {
+      font-size: 0.8125rem;
+      font-style: italic;
+      color: var(--color-muted);
+      margin-top: 0.4rem;
+    }
+
+    /* ── Images numérotées (instructions) ─────────────────── */
+    .section-images-numbered {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .section-images-numbered__item {
+      position: relative;
+      margin: 0;
+    }
+    .section-images-numbered__num {
+      position: absolute;
+      top: 0.6rem;
+      left: 0.6rem;
+      font-family: var(--font-serif);
+      font-size: 0.9rem;
+      color: var(--color-accent);
+      background: rgba(255,255,255,0.92);
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+    .section-images-numbered__item img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: contain;
+      background: var(--color-card-bg);
+      display: block;
+    }
+    .section-images-numbered__item figcaption {
+      font-size: 0.8125rem;
+      font-style: italic;
+      color: var(--color-muted);
+      margin-top: 0.4rem;
+    }
+
+    @media (max-width: 640px) {
+      .section-images-grid,
+      .section-images-numbered { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 641px) and (max-width: 900px) {
+      .section-images-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     /* ── Sections avec images inline ──────────────────────── */
     .sections-wrapper {
       margin-top: 1.5rem;
@@ -243,58 +326,71 @@
         return;
       }
 
-      const title  = lang === 'fr' ? project.titleFR : project.titleEN;
-      const type   = lang === 'fr' ? project.typeFR  : project.typeEN;
-      const desc   = lang === 'fr' ? project.descriptionFR : project.descriptionEN;
-      const slides = project.slides && project.slides.length
-        ? project.slides
-        : [{ image: project.image, captionFR: '', captionEN: '' }];
+      const title = lang === 'fr' ? project.titleFR : project.titleEN;
+      const type  = lang === 'fr' ? project.typeFR  : project.typeEN;
+      const desc  = lang === 'fr' ? project.descriptionFR : project.descriptionEN;
 
       document.title = `${title} — Zachary Drolet Architecte`;
 
-      // ── Image hero pleine largeur ──────────────────────────
+      // ── Hero ───────────────────────────────────────────────
+      const heroClass = project.heroCover === false
+        ? 'project-hero project-hero--contain'
+        : 'project-hero';
       carouselWrapper.innerHTML = `
-        <div class="project-hero">
+        <div class="${heroClass}">
           <img src="${project.image}" alt="${title}" class="project-hero__img" loading="eager">
         </div>`;
 
-      // ── Galerie des slides ─────────────────────────────────
+      // ── Grille d'images (grid ou numbered) ────────────────
+      function renderImageBlock(images, layout) {
+        const cls = layout === 'numbered'
+          ? 'section-images-numbered'
+          : 'section-images-grid';
+        return `<div class="${cls}">
+          ${images.map((img, i) => {
+            const cap = lang === 'fr' ? (img.captionFR || '') : (img.captionEN || '');
+            return `<figure class="${cls}__item">
+              ${layout === 'numbered'
+                ? `<span class="${cls}__num">${i + 1}</span>`
+                : ''}
+              <img src="${img.src}" alt="${cap}" loading="lazy">
+              ${cap ? `<figcaption>${cap}</figcaption>` : ''}
+            </figure>`;
+          }).join('')}
+        </div>`;
+      }
+
+      // ── Galerie des slides (anciens projets) ───────────────
       function renderGallery() {
         if (!project.slides || !project.slides.length) return '';
-        return `
-          <div class="slides-gallery">
-            ${project.slides.map(s => {
-              const caption = lang === 'fr' ? (s.captionFR || '') : (s.captionEN || '');
-              return `
-                <figure class="slides-gallery__item">
-                  <img src="${s.image}" alt="${caption}" class="slides-gallery__img" loading="lazy">
-                  ${caption ? `<figcaption class="slides-gallery__caption">${caption}</figcaption>` : ''}
-                </figure>`;
-            }).join('')}
-          </div>`;
+        return `<div class="slides-gallery">
+          ${project.slides.map(s => {
+            const cap = lang === 'fr' ? (s.captionFR || '') : (s.captionEN || '');
+            return `<figure class="slides-gallery__item">
+              <img src="${s.image}" alt="${cap}" class="slides-gallery__img" loading="lazy">
+              ${cap ? `<figcaption class="slides-gallery__caption">${cap}</figcaption>` : ''}
+            </figure>`;
+          }).join('')}
+        </div>`;
       }
 
       // ── Corps de la page ───────────────────────────────────
       function renderBody() {
         if (project.sections && project.sections.length) {
-          const sectionsHTML = project.sections.map(s => {
-            const heading = lang === 'fr' ? s.headingFR : s.headingEN;
-            const text    = lang === 'fr' ? s.textFR    : s.textEN;
-            const caption = s.image
-              ? (lang === 'fr' ? (s.captionFR || '') : (s.captionEN || ''))
-              : '';
-            return `
-              <div class="section-block">
+          return `<div class="sections-wrapper">
+            ${project.sections.map(s => {
+              const heading = lang === 'fr' ? s.headingFR : s.headingEN;
+              const text    = lang === 'fr' ? (s.textFR || '') : (s.textEN || '');
+              return `<div class="section-block">
                 <h3 class="section-block__heading">${heading}</h3>
-                <p class="section-block__text">${text}</p>
-                ${s.image ? `
-                  <div class="section-block__img-wrapper">
-                    <img src="${s.image}" alt="${heading}" class="section-block__img" loading="lazy">
-                    ${caption ? `<p class="section-block__caption">${caption}</p>` : ''}
-                  </div>` : ''}
+                ${text ? `<p class="section-block__text">${text}</p>` : ''}
+                ${s.images && s.images.length ? renderImageBlock(s.images, s.layout) : ''}
+                ${s.image ? `<div class="section-block__img-wrapper">
+                  <img src="${s.image}" alt="${heading}" class="section-block__img" loading="lazy">
+                </div>` : ''}
               </div>`;
-          }).join('');
-          return `<div class="sections-wrapper">${sectionsHTML}</div>`;
+            }).join('')}
+          </div>`;
         }
         return (desc || '').split('\n\n').map(p =>
           `<p style="font-size:1.0625rem;line-height:1.85;color:var(--color-muted);margin-bottom:1rem;">${p}</p>`
@@ -309,7 +405,6 @@
             ${renderBody()}
             ${renderGallery()}
           </div>
-
           <aside class="project-detail-meta fade-in" data-delay="2">
             <div class="project-detail-meta-item">
               <span class="project-detail-meta-label">${lang === 'fr' ? 'Type' : 'Type'}</span>

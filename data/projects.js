@@ -424,6 +424,7 @@ const PROJECTS = [
     typeFR: "Design de produits",
     typeEN: "Product design",
     location: "Université Laval, Québec",
+    heroCover: false,
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/uni-sons.jpg"
     image: "images/placeholder.svg",
     descriptionFR: "Jouet sensoriel en bois prenant la forme d'animaux emboîtables qui produisent des sons. Chaque animal intègre un module sonore activé par la manipulation. Avec Kalina Alarie, Audrey Bergeron · Gabrielle Roberge · DES-1710, Université Laval, Automne 2022",
@@ -436,36 +437,38 @@ const PROJECTS = [
         textEN: "UNI-SONS is a sensory wooden toy where each piece takes the shape of an animal. The animals interlock with one another and contain an integrated sound module activated by handling. The project responds to a sensory development objective for children, combining organic form, natural material, and sound interaction.",
       },
       {
-        headingFR: "Documentation technique",
-        headingEN: "Technical Documentation",
-        textFR: "Le projet comprend une photographie du produit final, un prototype en carton, une axonométrie explosée, une coupe technique détaillée et des graphiques d'instructions d'utilisation.",
-        textEN: "The project includes a photograph of the final product, a cardboard prototype, an exploded axonometric drawing, a detailed technical section, and usage instruction graphics.",
+        headingFR: "Prototypage",
+        headingEN: "Prototyping",
+        textFR: "Le processus de conception a inclus la fabrication de prototypes en carton pour tester les formes et l'assemblage, suivie d'une documentation technique complète : axonométrie explosée et coupe détaillée du mécanisme sonore.",
+        textEN: "The design process included building cardboard prototypes to test forms and assembly, followed by complete technical documentation: an exploded axonometric drawing and a detailed section of the sound mechanism.",
+        layout: "grid",
+        images: [
+          // IMAGE 1 → remplacer par : "images/projects/uni-sons-01.jpg"
+          { src: "images/placeholder.svg", captionFR: "Prototypes en carton", captionEN: "Cardboard prototypes" },
+          // IMAGE 2 → remplacer par : "images/projects/uni-sons-02.jpg"
+          { src: "images/placeholder.svg", captionFR: "Axonométrie explosée", captionEN: "Exploded axonometric" },
+          // IMAGE 3 → remplacer par : "images/projects/uni-sons-03.jpg"
+          { src: "images/placeholder.svg", captionFR: "Coupe technique", captionEN: "Technical section" },
+        ],
+      },
+      {
+        headingFR: "Instructions",
+        headingEN: "Instructions",
+        layout: "numbered",
+        images: [
+          // IMAGE 4 → remplacer par : "images/projects/uni-sons-04.jpg"
+          { src: "images/placeholder.svg", captionFR: "", captionEN: "" },
+          // IMAGE 5 → remplacer par : "images/projects/uni-sons-05.jpg"
+          { src: "images/placeholder.svg", captionFR: "", captionEN: "" },
+          // IMAGE 6 → remplacer par : "images/projects/uni-sons-06.jpg"
+          { src: "images/placeholder.svg", captionFR: "", captionEN: "" },
+        ],
       },
       {
         headingFR: "Réalisé avec",
         headingEN: "Credits",
         textFR: "Kalina Alarie, Audrey Bergeron · Gabrielle Roberge · DES-1710, Université Laval, Automne 2022",
         textEN: "Kalina Alarie, Audrey Bergeron · Gabrielle Roberge · DES-1710, Université Laval, Fall 2022",
-      },
-    ],
-    slides: [
-      {
-        // SLIDE 1 → remplacer par : "images/projects/uni-sons-01.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Produit final — animaux en bois emboîtables et module sonore",
-        captionEN: "Final product — interlocking wooden animals and sound module",
-      },
-      {
-        // SLIDE 2 → remplacer par : "images/projects/uni-sons-02.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Prototype en carton et axonométrie explosée",
-        captionEN: "Cardboard prototype and exploded axonometric drawing",
-      },
-      {
-        // SLIDE 3 → remplacer par : "images/projects/uni-sons-03.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Graphiques d'instructions d'utilisation",
-        captionEN: "Usage instruction graphics",
       },
     ],
   },
