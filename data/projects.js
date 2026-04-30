@@ -426,7 +426,7 @@ const PROJECTS = [
     location: "Université Laval, Québec",
     heroCover: false,
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/uni-sons.jpg"
-    image: "images/placeholder.svg",
+    image: "images/projects/uni-sons-01.jpg",
     descriptionFR: "Jouet sensoriel en bois prenant la forme d'animaux emboîtables qui produisent des sons. Chaque animal intègre un module sonore activé par la manipulation. Avec Kalina Alarie, Audrey Bergeron · Gabrielle Roberge · DES-1710, Université Laval, Automne 2022",
     descriptionEN: "A sensory wooden toy in the shape of interlocking animals that produce sounds. Each animal integrates a sound module activated by handling. With Kalina Alarie, Audrey Bergeron · Gabrielle Roberge · DES-1710, Université Laval, Fall 2022",
     sections: [
@@ -444,11 +444,11 @@ const PROJECTS = [
         layout: "grid",
         images: [
           // IMAGE 1 → remplacer par : "images/projects/uni-sons-01.jpg"
-          { src: "images/placeholder.svg", captionFR: "Prototypes en carton", captionEN: "Cardboard prototypes" },
+          { src: "images/projects/uni-sons-02.jpg", captionFR: "Prototypes en carton", captionEN: "Cardboard prototypes" },
           // IMAGE 2 → remplacer par : "images/projects/uni-sons-02.jpg"
-          { src: "images/placeholder.svg", captionFR: "Axonométrie explosée", captionEN: "Exploded axonometric" },
+          { src: "images/projects/uni-sons-03.jpg", captionFR: "Axonométrie explosée", captionEN: "Exploded axonometric" },
           // IMAGE 3 → remplacer par : "images/projects/uni-sons-03.jpg"
-          { src: "images/placeholder.svg", captionFR: "Coupe technique", captionEN: "Technical section" },
+          { src: "images/projects/uni-sons-04.jpg", captionFR: "Coupe technique", captionEN: "Technical section" },
         ],
       },
       {
@@ -457,11 +457,11 @@ const PROJECTS = [
         layout: "numbered",
         images: [
           // IMAGE 4 → remplacer par : "images/projects/uni-sons-04.jpg"
-          { src: "images/placeholder.svg", captionFR: "", captionEN: "" },
+          { src: "images/projects/uni-sons-05.jpg", captionFR: "", captionEN: "" },
           // IMAGE 5 → remplacer par : "images/projects/uni-sons-05.jpg"
-          { src: "images/placeholder.svg", captionFR: "", captionEN: "" },
+          { src: "images/projects/uni-sons-06.jpg", captionFR: "", captionEN: "" },
           // IMAGE 6 → remplacer par : "images/projects/uni-sons-06.jpg"
-          { src: "images/placeholder.svg", captionFR: "", captionEN: "" },
+          { src: "images/projects/uni-sons-07.jpg", captionFR: "", captionEN: "" },
         ],
       },
       {
