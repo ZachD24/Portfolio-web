@@ -200,21 +200,20 @@
       .section-images-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
-    /* ── Images même hauteur, largeur naturelle (flex) ──────── */
+    /* ── Images même hauteur, pleine largeur partagée (flex) ── */
     .section-images-flex {
       display: flex;
       gap: 1.25rem;
       margin-top: 1.25rem;
+      align-items: flex-start;
     }
     .section-images-flex__item {
-      flex: 1 1 0;
       min-width: 0;
       margin: 0;
     }
     .section-images-flex__item img {
       width: 100%;
-      height: clamp(180px, 35vh, 400px);
-      object-fit: contain;
+      height: auto;
       display: block;
       cursor: zoom-in;
     }
@@ -226,12 +225,8 @@
     }
 
     @media (max-width: 600px) {
-      .section-images-flex {
-        flex-direction: column;
-      }
-      .section-images-flex__item img {
-        height: auto;
-      }
+      .section-images-flex { flex-direction: column; }
+      .section-images-flex__item { flex: none !important; }
     }
 
     /* ── Images pleine largeur empilées (élévations panoramiques) */
@@ -608,6 +603,23 @@
         </div>`;
 
       document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+      // ── Flex galleries — ratio-based equal height ──────────
+      document.querySelectorAll('.section-images-flex').forEach(gallery => {
+        const items = Array.from(gallery.querySelectorAll('.section-images-flex__item'));
+        const imgs  = items.map(item => item.querySelector('img'));
+        let loaded  = 0;
+        function applyRatios() {
+          items.forEach((item, i) => {
+            const ratio = imgs[i].naturalWidth / imgs[i].naturalHeight;
+            item.style.flex = `${ratio} 1 0`;
+          });
+        }
+        imgs.forEach(img => {
+          if (img.complete && img.naturalWidth) { loaded++; if (loaded === imgs.length) applyRatios(); }
+          else img.addEventListener('load', () => { loaded++; if (loaded === imgs.length) applyRatios(); });
+        });
+      });
 
       // ── Lightbox ───────────────────────────────────────────
       const lb      = document.getElementById('lightbox');
