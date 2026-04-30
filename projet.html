@@ -207,12 +207,14 @@
       margin-top: 1.25rem;
     }
     .section-images-flex__item {
-      flex: 0 0 auto;
+      flex: 1 1 0;
+      min-width: 0;
       margin: 0;
     }
     .section-images-flex__item img {
-      height: clamp(200px, 38vh, 460px);
-      width: auto;
+      width: 100%;
+      height: clamp(180px, 35vh, 400px);
+      object-fit: contain;
       display: block;
       cursor: zoom-in;
     }
@@ -221,6 +223,15 @@
       font-style: italic;
       color: var(--color-muted);
       margin-top: 0.4rem;
+    }
+
+    @media (max-width: 600px) {
+      .section-images-flex {
+        flex-direction: column;
+      }
+      .section-images-flex__item img {
+        height: auto;
+      }
     }
 
     /* ── Images pleine largeur empilées (élévations panoramiques) */
