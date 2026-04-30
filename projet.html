@@ -487,9 +487,10 @@
       const heroClass = project.heroCover === false
         ? 'project-hero project-hero--contain'
         : 'project-hero';
+      const heroCaption = lang === 'fr' ? (project.heroCaptionFR || '') : (project.heroCaptionEN || '');
       carouselWrapper.innerHTML = `
         <div class="${heroClass}">
-          <img src="${project.image}" alt="${title}" class="project-hero__img" loading="eager">
+          <img src="${project.image}" alt="${title}" class="project-hero__img" loading="eager" data-caption="${heroCaption}">
         </div>`;
 
       // ── Grille d'images (grid, numbered ou full) ──────────
@@ -640,7 +641,7 @@
         const fig = imgs[current].closest('figure');
         lbCap.textContent = fig
           ? (fig.querySelector('figcaption')?.textContent || '')
-          : (imgs[current].alt || '');
+          : (imgs[current].dataset.caption || imgs[current].alt || '');
         lbCount.textContent = imgs.length > 1 ? `${current + 1} / ${imgs.length}` : '';
         lb.classList.add('is-open');
         document.body.style.overflow = 'hidden';
