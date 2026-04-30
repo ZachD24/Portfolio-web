@@ -27,12 +27,22 @@ const PROJECTS = [
         headingEN: "Programme",
         textFR: "Le projet est guidé par la géométrie du château : les murs de l'hôtel suivent ceux de la ruine, l'entrée principale actuelle est conservée et une entrée secondaire traverse le donjon par l'accès historique. Les espaces publics comme le restaurant se trouvent à l'extérieur du château dans une ancienne grange réhabilitée. Les espaces semi-privés — lobby, cour intérieure, bar avec terrasse — occupent la moitié du volume intérieur, sous la hauteur des murs afin de préserver la silhouette du château. L'autre moitié accueille les espaces privés : chambres, plateforme d'observation, salles de massage et locaux du personnel.",
         textEN: "The project is guided by the castle's geometry: the hotel walls follow those of the ruin, the existing main entrance is preserved, and a secondary entrance passes through the keep via the historic access. Public spaces such as the restaurant are located outside the castle in a rehabilitated barn. Semi-private spaces — lobby, inner courtyard, bar with terrace — occupy half the interior volume, kept below the wall height to preserve the castle's silhouette. The other half houses private spaces: bedrooms, observation platform, massage rooms, and staff areas.",
+        layout: "grid",
+        images: [
+          { src: "images/projects/the-nest-04.jpg", captionFR: "Plan de site", captionEN: "Site plan" },
+          { src: "images/projects/the-nest-05.jpg", captionFR: "Plan d'étage", captionEN: "Floor plan" },
+        ],
       },
       {
         headingFR: "Structure",
         headingEN: "Structure",
         textFR: "Une structure indépendante de poteaux-poutres, implantée à environ un mètre des ruines existantes, crée une zone tampon structurelle qui protège les murs historiques tout en permettant les tolérances de construction et la maintenance à long terme. Visuellement, le projet semble reposer sur le château, mais l'ensemble du système est autonome, garantissant à la fois durabilité structurelle et respect du bâti ancien.",
         textEN: "An independent post-and-beam structure set approximately one metre from the existing ruins creates a structural buffer zone protecting the historic walls while allowing construction tolerances and long-term maintenance. Visually, the project appears to rest on the castle, but the entire system is self-supporting, ensuring both structural durability and respect for the historic fabric.",
+        layout: "grid",
+        images: [
+          { src: "images/projects/the-nest-02.jpg", captionFR: "Élévation", captionEN: "Elevation" },
+          { src: "images/projects/the-nest-03.jpg", captionFR: "Coupe", captionEN: "Section" },
+        ],
       },
       {
         headingFR: "Façade paramétrique",
@@ -45,32 +55,13 @@ const PROJECTS = [
         headingEN: "Atrium and skylight",
         textFR: "La circulation horizontale s'organise autour d'un atrium éclairé par un puits de lumière. Un second script Grasshopper contrôle la géométrie de l'ellipse, le rayon et les panneaux de verre qui composent le puits. Les colonnes arborescentes qui le soutiennent — dont les dimensions, le nombre de branches et la trajectoire sont également paramétrables — assurent la transition entre la structure et la toiture.",
         textEN: "Horizontal circulation is organised around an atrium lit by a skylight. A second Grasshopper script controls the ellipse geometry, radius, and glass panel layout of the skylight. The tree-like columns supporting it — whose dimensions, branch count, and trajectory are all parametrically controlled — provide the transition between the structural system and the roof.",
+        image: "images/projects/the-nest-01.jpg",
       },
       {
         headingFR: "Réalisé avec",
         headingEN: "Credits",
         textFR: "Manon Borrini · Atelier HTC, ENSAL Lyon, 2025",
         textEN: "Manon Borrini · Atelier HTC, ENSAL Lyon, 2025",
-      },
-    ],
-    slides: [
-      {
-        // SLIDE 1 → remplacer par : "images/projects/the-nest.jpg"
-        image: "images/projects/the-nest.jpg",
-        captionFR: "Rendu extérieur — intégration de l'hôtel dans les murs de la ruine",
-        captionEN: "Exterior render — hotel integrated within the ruin walls",
-      },
-      {
-        // SLIDE 2 → remplacer par : "images/projects/the-nest-02.jpg"
-        image: "images/projects/the-nest-01.jpg",
-        captionFR: "Rendu intérieur — atrium avec colonnes arborescentes et puits de lumière",
-        captionEN: "Interior render — atrium with tree-like columns and skylight",
-      },
-      {
-        // SLIDE 3 → remplacer par : "images/projects/the-nest-03.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Script Grasshopper — façade paramétrique en panneaux de bois de dimensions variables",
-        captionEN: "Grasshopper script — parametric facade with variable-dimension wooden panels",
       },
     ],
   },
@@ -88,54 +79,47 @@ const PROJECTS = [
     descriptionEN: "Design of a cultural interpretation centre for the Mohawks of the Kahnawake reserve, comprising an interpretation centre, a residential pavilion, and a trades school. Claude Fugère · Atelier 4, ARC-2012, Université Laval, 2025",
     sections: [
       {
-        headingFR: "Objectif du projet",
-        headingEN: "Project Objective",
-        textFR: "Concevoir un centre d'interprétation culturelle pour les Mohawks de la réserve de Kahnawake. Le centre doit être situé sur l'île de Tekakwitha, au nord de la réserve, et être constitué d'un centre d'interprétation, d'un pavillon résidentiel et d'une école de métiers.",
-        textEN: "Design a cultural interpretation centre for the Mohawks of the Kahnawake reserve. The centre is to be located on Île de Tekakwitha, north of the reserve, and consist of an interpretation centre, a residential pavilion, and a trades school.",
-      },
-      {
         headingFR: "Concept",
         headingEN: "Concept",
         textFR: "Symbole central dans la culture Mohawk, le cercle structure le projet : les bâtiments s'organisent autour d'un cœur commun, marqué par le feu sacré des conseils de clan. Par sa forme courbe et l'usage du bois, l'architecture évoque la maison longue traditionnelle. La toiture unifiée des espaces publics renforce la circularité et clarifie la distinction entre les bâtiments privés et collectifs, tandis qu'à l'arrière un sentier sensoriel relie le projet à la nature en racontant l'histoire des Mohawks.",
         textEN: "A central symbol in Mohawk culture, the circle structures the project: buildings are organised around a common heart marked by the sacred clan council fire. Through its curved form and use of wood, the architecture evokes the traditional longhouse. The unified roof over public spaces reinforces the circular layout and clarifies the distinction between private and collective buildings, while a sensory trail at the rear connects the project to nature and tells the story of the Mohawks.",
+        layout: "grid",
+        images: [
+          { src: "images/projects/le-cercle-02.jpg", captionFR: "Maquette physique éclairée", captionEN: "Lit physical model" },
+        ],
       },
       {
         headingFR: "Programme",
         headingEN: "Programme",
         textFR: "Le complexe comprend trois composantes : l'école des métiers (accueil, salles de formation théorique, ateliers pratiques, laboratoire d'innovation, espaces collaboratifs), le pavillon résidentiel (chambres, salon, cuisine collective, buanderie) et le centre d'interprétation culturelle (accueil, ateliers culturels, salle d'exposition principale, auditorium polyvalent, bureaux).",
         textEN: "The complex comprises three components: the trades school (reception, theoretical training rooms, practical workshops, innovation lab, collaborative spaces), the residential pavilion (bedrooms, lounge, communal kitchen, laundry), and the cultural interpretation centre (reception, cultural workshops, main exhibition hall, multipurpose auditorium, offices).",
+        layout: "grid",
+        images: [
+          { src: "images/projects/le-cercle-05.jpg", captionFR: "Plan de masse", captionEN: "Site plan" },
+          { src: "images/projects/le-cercle-06.jpg", captionFR: "Plan d'étage", captionEN: "Floor plan" },
+        ],
+      },
+      {
+        headingFR: "Élévations",
+        headingEN: "Elevations",
+        layout: "full",
+        images: [
+          { src: "images/projects/le-cercle-03.jpg", captionFR: "Élévation nord", captionEN: "North elevation" },
+          { src: "images/projects/le-cercle-04.jpg", captionFR: "Élévation sud", captionEN: "South elevation" },
+        ],
       },
       {
         headingFR: "Détails constructifs",
         headingEN: "Construction Details",
         textFR: "Les parois de l'atelier principal de l'école des métiers et de l'accueil du centre d'interprétation sont constituées de lattes de bois disposées en éventail, évoquant le mouvement naturel du grain de bois.",
         textEN: "The walls of the trades school's main workshop and the interpretation centre entrance are composed of fanned wooden slats that evoke the natural movement of wood grain.",
+        image: "images/projects/le-cercle-01.jpg",
       },
       {
         headingFR: "Réalisé avec",
         headingEN: "Credits",
         textFR: "Claude Fugère · Atelier 4, ARC-2012, Université Laval, 2025",
         textEN: "Claude Fugère · Atelier 4, ARC-2012, Université Laval, 2025",
-      },
-    ],
-    slides: [
-      {
-        // SLIDE 1 → remplacer par : "images/projects/le-cercle-01.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Vue d'ensemble du complexe depuis l'île de Tekakwitha",
-        captionEN: "Overall view of the complex from Île de Tekakwitha",
-      },
-      {
-        // SLIDE 2 → remplacer par : "images/projects/le-cercle-02.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Rendu extérieur — accueil du centre d'interprétation",
-        captionEN: "Exterior render — interpretation centre entrance",
-      },
-      {
-        // SLIDE 3 → remplacer par : "images/projects/le-cercle-03.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Plan d'ensemble et organisation circulaire du complexe",
-        captionEN: "Site plan and circular organisation of the complex",
       },
     ],
   },
@@ -157,44 +141,31 @@ const PROJECTS = [
         headingEN: "Programme",
         textFR: "La fonction proposée est une résidence temporaire pour personnes atteintes du cancer. Le programme a été choisi pour redonner au bâtiment une fonction dans le domaine de la santé et profiter de sa proximité à l'Hôpital Hôtel-Dieu, auquel il est connecté par un tunnel. La fonction a été choisie parce que l'hôpital se spécialise en cardiologie, mais il y a peu d'endroits à proximité où les patients suivant un traitement de longue durée peuvent séjourner.",
         textEN: "The proposed programme is temporary housing for cancer patients. The programme was chosen to restore a health-related function to the building and take advantage of its proximity to the Hôtel-Dieu hospital, to which it is connected by a tunnel. This function was selected because the hospital specialises in cardiology, but there are few nearby places where long-term patients can stay.",
+        layout: "grid",
+        images: [
+          { src: "images/projects/fantaisie-interieure-03.jpg", captionFR: "Plan rez-de-chaussée", captionEN: "Ground floor plan" },
+          { src: "images/projects/fantaisie-interieure-04.jpg", captionFR: "Plan type des logements", captionEN: "Typical floor plan" },
+        ],
       },
       {
         headingFR: "Circulation",
         headingEN: "Circulation",
         textFR: "Afin de maximiser l'espace disponible à l'intérieur, les couloirs de circulation ont été placés sur des coursives extérieures. La circulation verticale peut se faire dans le bâtiment, à l'extrémité des coursives ou en empruntant les passerelles qui sillonnent la cour.",
         textEN: "To maximise usable interior space, circulation corridors were placed on external walkways. Vertical circulation can occur within the building, at the ends of the walkways, or by crossing the bridges that traverse the courtyard.",
+        image: "images/projects/fantaisie-interieure-02.jpg",
       },
       {
         headingFR: "Regard critique",
         headingEN: "Critical Reflection",
         textFR: "Le grand défi du projet était de trouver une disposition des pièces puisque le bâtiment est trop mince pour accueillir deux studios séparés par un couloir. La solution des coursives extérieures permet une circulation fonctionnelle tout en maximisant l'espace intérieur. Le parcours des passerelles extérieures pourrait être revisité afin de les rendre plus plausibles à une réelle construction.",
         textEN: "The main challenge was finding a room layout since the building is too narrow to accommodate two studios separated by a corridor. The external walkway solution enables functional circulation while maximising interior space. The outdoor walkway route could be reconsidered to make it more feasible for real construction.",
+        image: "images/projects/fantaisie-interieure-01.jpg",
       },
       {
         headingFR: "Réalisé avec",
         headingEN: "Credits",
         textFR: "Szende Szenteu-Nejur · Atelier 3, ARC-2011, Université Laval, 2024",
         textEN: "Szende Szenteu-Nejur · Atelier 3, ARC-2011, Université Laval, 2024",
-      },
-    ],
-    slides: [
-      {
-        // SLIDE 1 → remplacer par : "images/projects/fantaisie-interieure-01.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Rendu extérieur — façade avant avec coursives extérieures",
-        captionEN: "Exterior render — front facade with external walkways",
-      },
-      {
-        // SLIDE 2 → remplacer par : "images/projects/fantaisie-interieure-02.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Vue des passerelles sillonnant la cour intérieure",
-        captionEN: "View of bridges traversing the interior courtyard",
-      },
-      {
-        // SLIDE 3 → remplacer par : "images/projects/fantaisie-interieure-03.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Plans et coupes — disposition des logements sur plusieurs niveaux",
-        captionEN: "Plans and sections — unit layout across multiple floors",
       },
     ],
   },
@@ -216,6 +187,20 @@ const PROJECTS = [
         headingEN: "Programme",
         textFR: "Le complexe est composé de deux bâtiments distincts : un bâtiment familial et un bâtiment étudiant, séparés par un corridor partagé. Les appartements familiaux et étudiants sont répartis sur plusieurs niveaux avec des accès indépendants, tout en restant connectés pour encourager l'esprit communautaire entre les deux types de résidents.",
         textEN: "The complex consists of two distinct buildings: a family building and a student building, separated by a shared corridor. Family and student apartments are distributed across several levels with independent access, while remaining connected to encourage community spirit between both types of residents.",
+        layout: "grid",
+        images: [
+          { src: "images/projects/les-deux-freres-01.jpg", captionFR: "Rendu extérieur — rue Champlain", captionEN: "Exterior render — Rue Champlain" },
+        ],
+      },
+      {
+        headingFR: "Plans",
+        headingEN: "Floor Plans",
+        image: "images/projects/les-deux-freres-02.jpg",
+      },
+      {
+        headingFR: "Élévations",
+        headingEN: "Elevations",
+        image: "images/projects/les-deux-freres-03.jpg",
       },
       {
         headingFR: "Regard critique",
@@ -228,26 +213,6 @@ const PROJECTS = [
         headingEN: "Credits",
         textFR: "Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
         textEN: "Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
-      },
-    ],
-    slides: [
-      {
-        // SLIDE 1 → remplacer par : "images/projects/les-deux-freres-01.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Rendu extérieur — façade sur la rue Champlain",
-        captionEN: "Exterior render — facade on Rue Champlain",
-      },
-      {
-        // SLIDE 2 → remplacer par : "images/projects/les-deux-freres-02.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Coupe perspective — organisation des appartements familiaux et étudiants",
-        captionEN: "Perspective section — layout of family and student apartments",
-      },
-      {
-        // SLIDE 3 → remplacer par : "images/projects/les-deux-freres-03.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Vue du corridor partagé entre les deux bâtiments",
-        captionEN: "View of the shared corridor between the two buildings",
       },
     ],
   },
@@ -269,12 +234,27 @@ const PROJECTS = [
         headingEN: "Objective",
         textFR: "Concevoir un chalet dans la nature selon les préférences d'une camarade de classe. Les points importants sont de réaliser un chalet d'un étage pour un couple avec une place de rassemblement pour accueillir des invités, le tout en étant le plus ouvert possible vers la nature.",
         textEN: "Design a nature retreat based on a classmate's preferences. The key requirements are a one-storey chalet for a couple with a gathering space for guests, as open as possible to the surrounding nature.",
+        image: "images/projects/la-clairiere-01.jpg",
       },
       {
         headingFR: "Concept",
         headingEN: "Concept",
         textFR: "Une terrasse assez grande pour plusieurs personnes donne sur la rivière. Afin de faire entrer la nature dans le chalet, le toit est supporté par des colonnes, permettant de placer un ruban de verre en haut des murs. Cela fait entrer de la lumière naturelle partout, permet de percevoir le ciel dans n'importe quelle direction et donne l'illusion que la toiture flotte lorsqu'on approche l'avant du bâtiment.",
         textEN: "A terrace large enough for several people overlooks the river. To bring nature inside, the roof is supported by columns, allowing a continuous glass ribbon along the top of the walls. This fills every space with natural light, frames views of the sky from any direction, and creates the illusion of a floating roof when approaching the front of the building.",
+        layout: "grid",
+        images: [
+          { src: "images/projects/la-clairiere-03.jpg", captionFR: "Élévation avant", captionEN: "Front elevation" },
+          { src: "images/projects/la-clairiere-05.jpg", captionFR: "Coupe transversale", captionEN: "Cross section" },
+        ],
+      },
+      {
+        headingFR: "Plans",
+        headingEN: "Plans",
+        layout: "grid",
+        images: [
+          { src: "images/projects/la-clairiere-02.jpg", captionFR: "Plan de masse", captionEN: "Site plan" },
+          { src: "images/projects/la-clairiere-04.jpg", captionFR: "Élévation latérale", captionEN: "Side elevation" },
+        ],
       },
       {
         headingFR: "Regard critique",
@@ -287,26 +267,6 @@ const PROJECTS = [
         headingEN: "Credits",
         textFR: "Louis Saint-Pierre · Atelier 2a, ARC-1112, Université Laval, 2024",
         textEN: "Louis Saint-Pierre · Atelier 2a, ARC-1112, Université Laval, 2024",
-      },
-    ],
-    slides: [
-      {
-        // SLIDE 1 → remplacer par : "images/projects/la-clairiere-01.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Perspective extérieure — terrasse donnant sur la rivière",
-        captionEN: "Exterior perspective — terrace overlooking the river",
-      },
-      {
-        // SLIDE 2 → remplacer par : "images/projects/la-clairiere-02.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Perspective intérieure — ruban de lumière naturelle",
-        captionEN: "Interior perspective — continuous natural light ribbon",
-      },
-      {
-        // SLIDE 3 → remplacer par : "images/projects/la-clairiere-03.jpg"
-        image: "images/placeholder.svg",
-        captionFR: "Plan et maquette du chalet",
-        captionEN: "Chalet floor plan and physical model",
       },
     ],
   },

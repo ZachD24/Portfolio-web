@@ -204,6 +204,29 @@
       .section-images-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
+    /* ── Images pleine largeur empilées (élévations panoramiques) */
+    .section-images-full {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1.25rem;
+    }
+    .section-images-full__item {
+      margin: 0;
+    }
+    .section-images-full__item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: zoom-in;
+    }
+    .section-images-full__item figcaption {
+      font-size: 0.8125rem;
+      font-style: italic;
+      color: var(--color-muted);
+      margin-top: 0.4rem;
+    }
+
     /* ── Galerie slides ───────────────────────────────────── */
     .slides-gallery {
       display: grid;
@@ -444,8 +467,19 @@
           <img src="${project.image}" alt="${title}" class="project-hero__img" loading="eager">
         </div>`;
 
-      // ── Grille d'images (grid ou numbered) ────────────────
+      // ── Grille d'images (grid, numbered ou full) ──────────
       function renderImageBlock(images, layout) {
+        if (layout === 'full') {
+          return `<div class="section-images-full">
+            ${images.map(img => {
+              const cap = lang === 'fr' ? (img.captionFR || '') : (img.captionEN || '');
+              return `<figure class="section-images-full__item">
+                <img src="${img.src}" alt="${cap}" loading="lazy">
+                ${cap ? `<figcaption>${cap}</figcaption>` : ''}
+              </figure>`;
+            }).join('')}
+          </div>`;
+        }
         const cls = layout === 'numbered'
           ? 'section-images-numbered'
           : 'section-images-grid';
