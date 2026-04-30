@@ -326,8 +326,8 @@ const PROJECTS = [
     titleFR: "Le Mirage",
     titleEN: "The Mirage",
     year: 2025,
-    typeFR: "Figuration numérique",
-    typeEN: "Digital figuration",
+    typeFR: "Expérimentation numérique",
+    typeEN: "Digital experimentation",
     location: "Université Laval, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/le-mirage.jpg"
     image: "images/projects/le-mirage.jpg",
@@ -337,8 +337,8 @@ const PROJECTS = [
       {
         headingFR: "Concept",
         headingEN: "Concept",
-        textFR: "Le Mirage explore la présence d'une structure architecturale monolithique dans un désert de sable. Le mur paramétrique, composé de modules en saillie, crée un jeu de lumière et d'ombre qui fait référence à l'illusion visuelle du mirage. Les rendus intérieur et extérieur mettent en valeur la géométrie rigoureuse de la structure dans son environnement aride.",
-        textEN: "Le Mirage explores the presence of a monolithic architectural structure in a sand desert. The parametric wall, composed of protruding modules, creates an interplay of light and shadow referencing the visual illusion of a mirage. Interior and exterior renders highlight the rigorous geometry of the structure within its arid environment.",
+        textFR: "L'objectif du projet était de de placer une structure paramétrique dans un environnement inhabituel. Nous avons choisi de placer une structure monolithique qui fait contrast au désert de sable qui l'entoure. Malgré cette dualité, le mur de briques paramétriques forme un mouvement qui fait écho aux dunes de sable.",
+        textEN: "The goal of the project was to place a parametric structure in an unusual environment. We chose to place a monolithic structure that contrasts with the surrounding sand desert. Despite this duality, the parametric brick wall forms a movement that echoes the sand dunes.",
         layout: "grid",
         images: [
           // IMAGE 01 → remplacer par : "images/projects/le-mirage-01.jpg"
@@ -350,8 +350,8 @@ const PROJECTS = [
       {
         headingFR: "Script Grasshopper",
         headingEN: "Grasshopper Script",
-        textFR: "Un script Grasshopper contrôle la géométrie du mur paramétrique : les modules de façade varient en profondeur et en distribution selon des paramètres ajustables, créant un relief dynamique qui réagit à la lumière.",
-        textEN: "A Grasshopper script controls the parametric wall geometry: facade modules vary in depth and distribution according to adjustable parameters, creating a dynamic relief that responds to light.",
+        textFR: "Un script Grasshopper contrôle la géométrie du mur paramétrique permetant de controler le mouvement de la façade et la distribution des briques selon des paramètres ajustables.",
+        textEN: "A Grasshopper script controls the parametric wall geometry, allowing the facade modules to vary in depth and distribution according to adjustable parameters.",
         layout: "flex",
         images: [
           // IMAGE 03 → remplacer par : "images/projects/le-mirage-03.jpg"
