@@ -385,14 +385,14 @@ const PROJECTS = [
       {
         headingFR: "Concept",
         headingEN: "Concept",
-        textFR: "UNI-SONS est un jouet sensoriel en bois dont chaque pièce prend la forme d'un animal. Les animaux s'emboîtent entre eux et contiennent un module sonore intégré activé par la manipulation. Le projet répond à un objectif d'éveil sensoriel pour les enfants, alliant forme organique, matériau naturel et interaction sonore.",
-        textEN: "UNI-SONS is a sensory wooden toy where each piece takes the shape of an animal. The animals interlock with one another and contain an integrated sound module activated by handling. The project responds to a sensory development objective for children, combining organic form, natural material, and sound interaction.",
+        textFR: "UNI-SONS est un jouet sensoriel en bois visant en aider le développement des enfants en bas âge. Chaque pièce prend la forme d'une moitié d'animal qui créent des sons différent lorsqu'on les secoue en fonction des particules qui sont à l'intérieur. L'objectif est de stimuler les sens des enfants tout en favorisant leur motricité fine en leur donnant le défi de trouver les bonnes combinaisons de pièces à l'aide des sons.",
+        textEN: "UNI-SONS is a sensory wooden toy aimed at supporting the development of young children. Each piece takes the shape of half an animal that produces different sounds when shaken, depending on the particles inside. The goal is to stimulate children's senses while promoting fine motor skills by challenging them to find the correct combinations of pieces using the sounds.",
       },
       {
         headingFR: "Prototypage",
         headingEN: "Prototyping",
-        textFR: "Le processus de conception a inclus la fabrication de prototypes en carton pour tester les formes et l'assemblage, suivie d'une documentation technique complète : axonométrie explosée et coupe détaillée du mécanisme sonore.",
-        textEN: "The design process included building cardboard prototypes to test forms and assembly, followed by complete technical documentation: an exploded axonometric drawing and a detailed section of the sound mechanism.",
+        textFR: "Le processus de conception a inclus la fabrication de prototypes en carton pour tester les formes et l'assemblage. Une version finale en bois a finalement été réalisée à la main dans un atelier de menuiserie.",
+        textEN: "The design process included building cardboard prototypes to test forms and assembly, followed by a final version handcrafted in a woodworking workshop.",
         layout: "grid",
         images: [
           // IMAGE 1 → remplacer par : "images/projects/uni-sons-01.jpg"
