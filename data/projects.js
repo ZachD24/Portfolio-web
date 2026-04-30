@@ -286,8 +286,8 @@ const PROJECTS = [
       {
         headingFR: "Démarche",
         headingEN: "Process",
-        textFR: "L'outil de génération d'image par IA Midjourney a été utilisé pour créer le collage à partir d'une maquette précise : assembler des éléments en béton inspirés du style architectural de Tadao Ando, en utilisant le plus possible les images fournies. Le style est celui du collage papier superposé.",
-        textEN: "The AI image generator Midjourney was used to create the collage from a precise prompt: assemble concrete elements inspired by Tadao Ando's architectural style, using the provided images as much as possible. The style is superimposed paper collage.",
+        textFR: "L'objectif était d'explorer les possibiliter formelles du béton en créant un collage, une maquette et une coupe d'un bâtiment fictif ayant la forme de la maquette. L'outil de génération d'image par IA Midjourney a été utilisé pour créer le collage à partir de maquettes, de photos et de dessins. Plusieurs essais ont été réalisés avec Midjourney avant d'obtenir l'image d'origine à partir duquel des modifications successives ont été apportées afin d'obtenir le rendu souhaité.",
+        textEN: "The objective was to explore the formal possibilities of concrete by creating a collage, a model, and a section of a fictitious building based on the model's form. The AI image generator Midjourney was used to create the collage from models, photos, and drawings. Several attempts were made with Midjourney before obtaining the original image, from which successive modifications were made to achieve the desired rendering.",
         layout: "grid",
         images: [
           // IMAGE 04 → remplacer par : "images/projects/1-62-04.jpg"
@@ -299,11 +299,10 @@ const PROJECTS = [
         ],
       },
       {
-        headingFR: "Itération",
-        headingEN: "Iteration",
-        textFR: "Plusieurs essais initiaux ont été réalisés avec Midjourney avant d'obtenir le résultat final. À partir de la première image, des modifications successives ont été apportées afin d'obtenir le rendu souhaité.",
-        textEN: "Several initial attempts were made with Midjourney before reaching the final result. Starting from the first image, successive modifications were applied to achieve the desired outcome.",
-        layout: "grid",
+        headingFR: "Maquette et coupe",
+        headingEN: "Model and Section",
+        textFR: "",
+        textEN: "",
         images: [
           // IMAGE 01 → remplacer par : "images/projects/1-62-01.jpg"
           { src: "images/projects/1-62-01.jpg", captionFR: "", captionEN: "" },
