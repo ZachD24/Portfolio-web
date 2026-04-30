@@ -564,6 +564,7 @@
                 ${s.images && s.images.length ? renderImageBlock(s.images, s.layout) : ''}
                 ${s.image ? `<div class="section-block__img-wrapper">
                   <img src="${s.image}" alt="${heading}" class="section-block__img" loading="lazy">
+                  ${(lang === 'fr' ? s.imageCaptionFR : s.imageCaptionEN) ? `<p class="section-block__caption">${lang === 'fr' ? s.imageCaptionFR : s.imageCaptionEN}</p>` : ''}
                 </div>` : ''}
                 ${text ? `<p class="section-block__text" style="margin-top:1rem;">${text}</p>` : ''}
               </div>`;
