@@ -180,24 +180,24 @@ const PROJECTS = [
     titleFR: "Les Deux Frères",
     titleEN: "The Two Brothers",
     year: 2024,
-    typeFR: "Complexe multilogement",
+    typeFR: "Multilogement",
     typeEN: "Multi-unit residential",
     location: "Rue Champlain, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/les-deux-freres.jpg"
     image: "images/projects/les-deux-freres.jpg",
-    heroCaptionFR: "",
-    heroCaptionEN: "",
-    descriptionFR: "Complexe multilogement sur la rue Champlain composé de deux bâtiments distincts — familial et étudiant — séparés par un corridor partagé qui favorise l'esprit communautaire. Avec Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
+    heroCaptionFR: "Rendu extérieur",
+    heroCaptionEN: "Exterior render",
+    descriptionFR: "Complexe multilogement sur la rue Champlain composé de deux bâtiments distincts — familial et étudiant — reliés par des coursives extérieures qui favorisent l'esprit communautaire. Avec Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
     descriptionEN: "A multi-unit residential complex on Rue Champlain composed of two distinct buildings — family and student — separated by a shared corridor fostering community spirit. With Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
     sections: [
       {
         headingFR: "Programme",
         headingEN: "Programme",
-        textFR: "Le complexe est composé de deux bâtiments distincts : un bâtiment familial et un bâtiment étudiant, séparés par un corridor partagé. Les appartements familiaux et étudiants sont répartis sur plusieurs niveaux avec des accès indépendants, tout en restant connectés pour encourager l'esprit communautaire entre les deux types de résidents.",
-        textEN: "The complex consists of two distinct buildings: a family building and a student building, separated by a shared corridor. Family and student apartments are distributed across several levels with independent access, while remaining connected to encourage community spirit between both types of residents.",
+        textFR: "Le complexe est composé de deux bâtiments distincts : un bâtiment familial et un bâtiment étudiant qui sont reliés par des coursives. Les espaces extérieurs sont conçus pour encourager l'esprit communautaire entre les deux types de résidents.",
+        textEN: "The complex consists of two distinct buildings: a family building and a student building, connected by external walkways. The outdoor spaces are designed to encourage community spirit between both types of residents.",
         layout: "grid",
         images: [
-          { src: "images/projects/les-deux-freres-01.jpg", captionFR: "Rendu extérieur — rue Champlain", captionEN: "Exterior render — Rue Champlain" },
+          { src: "images/projects/les-deux-freres-01.jpg", captionFR: "Montage Photoshop", captionEN: "Photoshop Montage — Rue Champlain" },
         ],
       },
       {
