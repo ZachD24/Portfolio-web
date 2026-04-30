@@ -486,11 +486,11 @@
               const text    = lang === 'fr' ? (s.textFR || '') : (s.textEN || '');
               return `<div class="section-block">
                 <h3 class="section-block__heading">${heading}</h3>
-                ${text ? `<p class="section-block__text">${text}</p>` : ''}
                 ${s.images && s.images.length ? renderImageBlock(s.images, s.layout) : ''}
                 ${s.image ? `<div class="section-block__img-wrapper">
                   <img src="${s.image}" alt="${heading}" class="section-block__img" loading="lazy">
                 </div>` : ''}
+                ${text ? `<p class="section-block__text" style="margin-top:1rem;">${text}</p>` : ''}
               </div>`;
             }).join('')}
           </div>`;
