@@ -319,7 +319,7 @@ const PROJECTS = [
     typeEN: "Architectural conceptualisation",
     location: "Université Laval, Québec",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/1-62.jpg"
-    image: "images/projects/1-62.jpg",
+    image: "images/projects/1-62.png",
     descriptionFR: "Collage architectural réalisé par itération avec Midjourney : assemblage d'éléments en béton inspirés du style brutaliste de Tadao Ando, superposés en collage papier. Avec Jérémy Pelchat · Ariane Ouellet-Pelletier · ARC-2041, Université Laval, Automne 2024",
     descriptionEN: "Architectural collage created through iterative use of Midjourney: an assembly of concrete elements inspired by Tadao Ando's brutalist style, superimposed as a paper collage. With Jérémy Pelchat · Ariane Ouellet-Pelletier · ARC-2041, Université Laval, Fall 2024",
     sections: [
