@@ -536,7 +536,10 @@
       const lbCap   = document.getElementById('lightbox-caption');
       const lbCount = document.getElementById('lightbox-counter');
 
-      const imgs = Array.from(document.querySelectorAll('#project-content img'));
+      // Hero image + toutes les images du contenu
+      const heroImgEl   = carouselWrapper.querySelector('img');
+      const contentImgs = Array.from(document.querySelectorAll('#project-content img'));
+      const imgs        = heroImgEl ? [heroImgEl, ...contentImgs] : contentImgs;
       let current = 0;
 
       function lbOpen(i) {
