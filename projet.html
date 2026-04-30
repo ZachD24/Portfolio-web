@@ -581,7 +581,9 @@
         lbImg.src = imgs[current].src;
         lbImg.alt = imgs[current].alt;
         const fig = imgs[current].closest('figure');
-        lbCap.textContent = fig ? (fig.querySelector('figcaption')?.textContent || '') : '';
+        lbCap.textContent = fig
+          ? (fig.querySelector('figcaption')?.textContent || '')
+          : (imgs[current].alt || '');
         lbCount.textContent = imgs.length > 1 ? `${current + 1} / ${imgs.length}` : '';
         lb.classList.add('is-open');
         document.body.style.overflow = 'hidden';
