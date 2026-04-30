@@ -19,8 +19,8 @@ const PROJECTS = [
     location: "Champoly, France",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/the-nest.jpg"
     image: "images/projects/the-nest.jpg",
-    heroCaptionFR: "Rendu intérieur — atrium avec colonnes arborescentes et puits de lumière",
-    heroCaptionEN: "Interior render — atrium with tree-like columns and skylight",
+    heroCaptionFR: "Rendu extérieur",
+    heroCaptionEN: "Exterior render",
     descriptionFR: "Réhabilitation du château des Cornes d'Urfé en hôtel. Façades paramétriques en bois, atrium avec puits de lumière et colonnes arborescentes conçus sous Grasshopper.",
     descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé into a hotel. Parametric wooden facades, atrium with skylight and tree-like columns designed in Grasshopper.",
     sections: [
@@ -32,7 +32,7 @@ const PROJECTS = [
         layout: "grid",
         images: [
           { src: "images/projects/the-nest-04.jpg", captionFR: "Plan de site", captionEN: "Site plan" },
-          { src: "images/projects/the-nest-05.jpg", captionFR: "Plan d'étage", captionEN: "Floor plan" },
+          { src: "images/projects/the-nest-05.jpg", captionFR: "Plan du rez-de-chaussée", captionEN: "Ground floor plan" },
         ],
       },
       {
@@ -54,9 +54,9 @@ const PROJECTS = [
         layout: "flex",
         images: [
           // IMAGE 08 → déposer : "images/projects/the-nest-08.jpg"
-          { src: "images/projects/the-nest-08.jpg", captionFR: "", captionEN: "" },
+          { src: "images/projects/the-nest-08.jpg", captionFR: "Script Grasshopper", captionEN: "Grasshopper script" },
           // IMAGE 09 → déposer : "images/projects/the-nest-09.jpg"
-          { src: "images/projects/the-nest-09.jpg", captionFR: "", captionEN: "" },
+          { src: "images/projects/the-nest-09.jpg", captionFR: "Façade paramétrique", captionEN: "Parametric facade" },
         ],
       },
       {
