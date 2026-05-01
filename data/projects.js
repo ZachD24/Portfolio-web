@@ -27,8 +27,8 @@ const PROJECTS = [
       {
         headingFR: "Programme",
         headingEN: "Programme",
-        textFR: "Le projet est guidé par la géométrie du château : les murs de l'hôtel suivent ceux de la ruine, l'entrée principale actuelle est conservée et une entrée secondaire traverse le donjon par l'accès historique. Les espaces publics comme le restaurant se trouvent à l'extérieur du château dans une ancienne grange réhabilitée. Les espaces semi-privés — lobby, cour intérieure, bar avec terrasse — occupent la moitié du volume intérieur, sous la hauteur des murs afin de préserver la silhouette du château. L'autre moitié accueille les espaces privés : chambres, plateforme d'observation, salles de massage et locaux du personnel.",
-        textEN: "The project is guided by the castle's geometry: the hotel walls follow those of the ruin, the existing main entrance is preserved, and a secondary entrance passes through the keep via the historic access. Public spaces such as the restaurant are located outside the castle in a rehabilitated barn. Semi-private spaces — lobby, inner courtyard, bar with terrace — occupy half the interior volume, kept below the wall height to preserve the castle's silhouette. The other half houses private spaces: bedrooms, observation platform, massage rooms, and staff areas.",
+        textFR: "L'objectif est de réhabiliter le château des Cornes d’Urfé, une forteresse médiévale qui a été habitée par la famille Urfé jusqu’au milieu du XVIIe siècle. Après avoir fait une analyse du site et et de son histoire, nous avons choisi de transformer le château en hôtel afin de lui redonner une fonction habitée, qui fait écho à sa vocation résidentielle d’origine. Le projet est guidé par la géométrie du château : les murs de l'hôtel suivent ceux de la ruine, l'entrée principale actuelle est conservée et une entrée secondaire traverse le donjon par l'accès historique. Les espaces publics comme le restaurant se trouvent à l'extérieur du château dans une ancienne grange réhabilitée. Les espaces semi-privés occupent la moitié du volume intérieur. L'autre moitié qui s'élève par dessus les murs de la ruine accueille les espaces privés.",
+        textEN: "The objective is to rehabilitate the Château des Cornes d’Urfé, a medieval fortress that was inhabited by the Urfé family until the mid-17th century. After analyzing the site and its history, we chose to transform the château into a hotel to give it a renewed inhabited function, echoing its original residential purpose. The project is guided by the castle's geometry: the hotel walls follow those of the ruin, the existing main entrance is preserved, and a secondary entrance passes through the keep via the historic access. Public spaces such as the restaurant are located outside the castle in a rehabilitated barn. Semi-private spaces occupy half the interior volume. The other half, which rises above the ruin walls, houses private spaces.",
         layout: "grid",
         images: [
           { src: "images/projects/the-nest-04.jpg", captionFR: "Plan de site", captionEN: "Site plan" },
@@ -38,19 +38,19 @@ const PROJECTS = [
       {
         headingFR: "Structure",
         headingEN: "Structure",
-        textFR: "Une structure indépendante de poteaux-poutres, implantée à environ un mètre des ruines existantes, crée une zone tampon structurelle qui protège les murs historiques tout en permettant les tolérances de construction et la maintenance à long terme. Visuellement, le projet semble reposer sur le château, mais l'ensemble du système est autonome, garantissant à la fois durabilité structurelle et respect du bâti ancien.",
-        textEN: "An independent post-and-beam structure set approximately one metre from the existing ruins creates a structural buffer zone protecting the historic walls while allowing construction tolerances and long-term maintenance. Visually, the project appears to rest on the castle, but the entire system is self-supporting, ensuring both structural durability and respect for the historic fabric.",
+        textFR: "Une structure indépendante de poteaux-poutres, implantée à environ un mètre des ruines existantes, crée une zone tampon structurelle qui protège les murs historiques tout en permettant les tolérances de construction et la maintenance à long terme. Visuellement, le projet semble reposer sur le château, mais l'ensemble du système est autonome, garantissant à la fois durabilité structurelle et respect du bâti ancien. L’emplacement des fenêtres est guidé par les percements existants des murs, qu’ils soient historiques ou issus de l’érosion. Ces ouvertures cadrent le paysage pour offrir aux chambres des vues privilégiées sur l’environnement.",
+        textEN: "An independent post-and-beam structure set approximately one metre from the existing ruins creates a structural buffer zone protecting the historic walls while allowing construction tolerances and long-term maintenance. Visually, the project appears to rest on the castle, but the entire system is self-supporting, ensuring both structural durability and respect for the historic fabric. The window placements are guided by the existing wall openings, whether historical or resulting from erosion. These openings frame the landscape to provide the rooms with privileged views of the surroundings.",
         layout: "grid",
         images: [
-          { src: "images/projects/the-nest-02.jpg", captionFR: "Élévation", captionEN: "Elevation" },
+          { src: "images/projects/the-nest-02.jpg", captionFR: "Élévation nord-est - cadrage des fenêtres par la ruine", captionEN: "North-east elevation - window framing by the ruin" },
           { src: "images/projects/the-nest-03.jpg", captionFR: "Coupe", captionEN: "Section" },
         ],
       },
       {
         headingFR: "Façade paramétrique",
         headingEN: "Parametric facade",
-        textFR: "Les façades des nouveaux bâtiments sont conçues en bois afin de créer une distinction claire avec les ruines historiques. Un script Grasshopper génère des panneaux de dimensions et d'épaisseurs variables, rappelant l'irrégularité des murs de pierre. Sur la façade principale, les panneaux ayant l'épaisseur minimale sont automatiquement transformés en panneaux de verre, créant des ouvertures de formes irrégulières comme celles qui parsèment la ruine.",
-        textEN: "New building facades are clad in wood to create a clear distinction from the historic ruins. A Grasshopper script generates panels of varying dimensions and thickness, echoing the irregularity of the stone walls. On the main facade, panels assigned the minimum thickness are automatically converted to glass, creating irregular openings that echo those eroded into the ruin over centuries.",
+        textFR: "Les façades des ajouts sont conçues en bois afin de créer une distinction claire avec les ruines historiques. Afin de rappeler l'irrégularité des murs de pierre, un script grasshopper et un scripts python génèrent des panneaux de dimensions et d'épaisseurs aléatoires qui peuvent être modifiés rapidement jusqu’à l’obtention d’un résultat satisfaisant. ",
+        textEN: "The facades of the additions are designed in wood to create a clear distinction from the historic ruins. To evoke the irregularity of stone walls, a Grasshopper script and Python scripts generate panels of random dimensions and thicknesses that can be quickly modified until a satisfactory result is achieved.",
         layout: "flex",
         images: [
           // IMAGE 08 → déposer : "images/projects/the-nest-08.jpg"
@@ -60,10 +60,10 @@ const PROJECTS = [
         ],
       },
       {
-        headingFR: "Atrium et puits de lumière",
-        headingEN: "Atrium and skylight",
-        textFR: "La circulation horizontale s'organise autour d'un atrium éclairé par un puits de lumière. Un second script Grasshopper contrôle la géométrie de l'ellipse, le rayon et les panneaux de verre qui composent le puits. Les colonnes arborescentes qui le soutiennent — dont les dimensions, le nombre de branches et la trajectoire sont également paramétrables — assurent la transition entre la structure et la toiture.",
-        textEN: "Horizontal circulation is organised around an atrium lit by a skylight. A second Grasshopper script controls the ellipse geometry, radius, and glass panel layout of the skylight. The tree-like columns supporting it — whose dimensions, branch count, and trajectory are all parametrically controlled — provide the transition between the structural system and the roof.",
+        headingFR: "Atrium",
+        headingEN: "Atrium",
+        textFR: "Les espaces privés s'organisent autour d'un atrium éclairé par un puits de lumière. Un second script Grasshopper contrôle la géométrie des colonnes arborescentes et du puits de lumière qu'elles soutiennent.",
+        textEN: "Private spaces are organised around an atrium lit by a skylight. A second Grasshopper script controls the geometry of the tree-like columns and the skylight they support.",
         image: "images/projects/the-nest-01.jpg",
       },
       {
