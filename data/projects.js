@@ -1,12 +1,4 @@
-// data/projects.js
-// ============================================================
-// SOURCE UNIQUE de tous les projets du portfolio
-//
-// Pour remplacer les images :
-//   - card (grille)  : changer "image"
-//   - slides (détail): changer "image" dans chaque objet de "slides"
-// Légendes dans les deux langues : captionFR / captionEN
-// ============================================================
+// data/projects.js — SOURCE UNIQUE de tous les projets du portfolio
 
 const PROJECTS = [
   {
@@ -17,18 +9,17 @@ const PROJECTS = [
     typeFR: "Réhabilitation patrimoniale",
     typeEN: "Heritage rehabilitation",
     location: "Champoly, France",
-    // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/the-nest.jpg"
     image: "images/projects/the-nest.jpg",
     heroCaptionFR: "Rendu extérieur",
     heroCaptionEN: "Exterior render",
-    descriptionFR: "Réhabilitation en hôtel du château des Cornes d’Urfé, une forteresse médiévale habitée par la famille Urfé jusqu’au milieu du XVIIe siècle.",
+    descriptionFR: "Réhabilitation en hôtel du château des Cornes d'Urfé, une forteresse médiévale habitée par la famille Urfé jusqu'au milieu du XVIIe siècle.",
     descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé, a medieval fortress that was inhabited by the Urfé family until the mid-17th century, into a hotel.",
     sections: [
       {
         headingFR: "Programme",
         headingEN: "Programme",
-        textFR: "L’objectif est de réhabiliter le château des Cornes d’Urfé, une forteresse médiévale qui a été habitée par la famille Urfé jusqu’au milieu du XVIIe siècle. Après avoir fait une analyse du site et de son histoire, nous avons choisi de transformer le château en hôtel afin de lui redonner une fonction habitée, qui fait écho à sa vocation résidentielle d’origine. Le projet est guidé par la géométrie du château : les murs de l’hôtel suivent ceux de la ruine, l’entrée principale actuelle est conservée et une entrée secondaire traverse le donjon par l’accès historique. Les espaces publics comme le restaurant se trouvent à l’extérieur du château dans une ancienne grange réhabilitée. Les espaces semi-privés occupent la moitié du volume intérieur. L’autre moitié qui s’élève au-dessus des murs de la ruine accueille les espaces privés.",
-        textEN: "The objective is to rehabilitate the Château des Cornes d’Urfé, a medieval fortress that was inhabited by the Urfé family until the mid-17th century. After analyzing the site and its history, we chose to transform the château into a hotel to give it a renewed inhabited function, echoing its original residential purpose. The project is guided by the castle's geometry: the hotel walls follow those of the ruin, the existing main entrance is preserved, and a secondary entrance passes through the keep via the historic access. Public spaces such as the restaurant are located outside the castle in a rehabilitated barn. Semi-private spaces occupy half the interior volume. The other half, which rises above the ruin walls, houses private spaces.",
+        textFR: "L'objectif est de réhabiliter le château des Cornes d'Urfé, une forteresse médiévale qui a été habitée par la famille Urfé jusqu'au milieu du XVIIe siècle. Après avoir fait une analyse du site et de son histoire, nous avons choisi de transformer le château en hôtel afin de lui redonner une fonction habitée, qui fait écho à sa vocation résidentielle d'origine. Le projet est guidé par la géométrie du château : les murs de l'hôtel suivent ceux de la ruine, l'entrée principale actuelle est conservée et une entrée secondaire traverse le donjon par l'accès historique. Les espaces publics comme le restaurant se trouvent à l'extérieur du château dans une ancienne grange réhabilitée. Les espaces semi-privés occupent la moitié du volume intérieur. L'autre moitié qui s'élève au-dessus des murs de la ruine accueille les espaces privés.",
+        textEN: "The objective is to rehabilitate the Château des Cornes d'Urfé, a medieval fortress that was inhabited by the Urfé family until the mid-17th century. After analyzing the site and its history, we chose to transform the château into a hotel to give it a renewed inhabited function, echoing its original residential purpose. The project is guided by the castle's geometry: the hotel walls follow those of the ruin, the existing main entrance is preserved, and a secondary entrance passes through the keep via the historic access. Public spaces such as the restaurant are located outside the castle in a rehabilitated barn. Semi-private spaces occupy half the interior volume. The other half, which rises above the ruin walls, houses private spaces.",
         layout: "grid",
         images: [
           { src: "images/projects/the-nest-04.jpg", captionFR: "Plan de site", captionEN: "Site plan" },
@@ -38,7 +29,7 @@ const PROJECTS = [
       {
         headingFR: "Structure",
         headingEN: "Structure",
-        textFR: "Une structure indépendante de poteaux-poutres, implantée à environ un mètre des ruines existantes, crée une zone tampon structurelle qui protège les murs historiques tout en permettant les tolérances de construction et la maintenance à long terme. Visuellement, le projet semble reposer sur le château, mais l'ensemble du système est autonome, garantissant à la fois durabilité structurelle et respect du bâti ancien. L’emplacement des fenêtres est guidé par les percements existants des murs, qu’ils soient historiques ou issus de l’érosion. Ces ouvertures cadrent le paysage pour offrir aux chambres des vues privilégiées sur l’environnement.",
+        textFR: "Une structure indépendante de poteaux-poutres, implantée à environ un mètre des ruines existantes, crée une zone tampon structurelle qui protège les murs historiques tout en permettant les tolérances de construction et la maintenance à long terme. Visuellement, le projet semble reposer sur le château, mais l'ensemble du système est autonome, garantissant à la fois durabilité structurelle et respect du bâti ancien. L'emplacement des fenêtres est guidé par les percements existants des murs, qu'ils soient historiques ou issus de l'érosion. Ces ouvertures cadrent le paysage pour offrir aux chambres des vues privilégiées sur l'environnement.",
         textEN: "An independent post-and-beam structure set approximately one metre from the existing ruins creates a structural buffer zone protecting the historic walls while allowing construction tolerances and long-term maintenance. Visually, the project appears to rest on the castle, but the entire system is self-supporting, ensuring both structural durability and respect for the historic fabric. The window placements are guided by the existing wall openings, whether historical or resulting from erosion. These openings frame the landscape to provide the rooms with privileged views of the surroundings.",
         layout: "grid",
         images: [
@@ -49,13 +40,11 @@ const PROJECTS = [
       {
         headingFR: "Façades paramétriques",
         headingEN: "Parametric facades",
-        textFR: "Les façades des ajouts sont conçues en bois afin de créer une distinction claire avec les ruines historiques. Afin de rappeler l’irrégularité des murs de pierre, un script Grasshopper et des scripts Python génèrent des panneaux de dimensions et d’épaisseurs aléatoires qui peuvent être modifiés rapidement jusqu’à l’obtention d’un résultat satisfaisant.",
+        textFR: "Les façades des ajouts sont conçues en bois afin de créer une distinction claire avec les ruines historiques. Afin de rappeler l'irrégularité des murs de pierre, un script Grasshopper et des scripts Python génèrent des panneaux de dimensions et d'épaisseurs aléatoires qui peuvent être modifiés rapidement jusqu'à l'obtention d'un résultat satisfaisant.",
         textEN: "The facades of the additions are designed in wood to create a clear distinction from the historic ruins. To evoke the irregularity of stone walls, a Grasshopper script and Python scripts generate panels of random dimensions and thicknesses that can be quickly modified until a satisfactory result is achieved.",
         layout: "flex",
         images: [
-          // IMAGE 08 → déposer : "images/projects/the-nest-08.jpg"
           { src: "images/projects/the-nest-08.jpg", captionFR: "Script Grasshopper", captionEN: "Grasshopper script" },
-          // IMAGE 09 → déposer : "images/projects/the-nest-09.jpg"
           { src: "images/projects/the-nest-09.jpg", captionFR: "Façade paramétrique", captionEN: "Parametric facade" },
         ],
       },
@@ -71,9 +60,7 @@ const PROJECTS = [
         headingEN: "Château des Cornes d'Urfé",
         layout: "grid",
         images: [
-          // IMAGE 06 → déposer : "images/projects/the-nest-06.jpg"
           { src: "images/projects/the-nest-06.jpg", captionFR: "Photo de l'extérieur du château", captionEN: "Exterior photo of the castle" },
-          // IMAGE 07 → déposer : "images/projects/the-nest-07.jpg"
           { src: "images/projects/the-nest-07.jpg", captionFR: "Photo prise depuis le donjon", captionEN: "Photo taken from the dungeon" },
         ],
       },
@@ -93,7 +80,6 @@ const PROJECTS = [
     typeFR: "Centre d'interprétation culturel",
     typeEN: "Cultural Interpretation Centre",
     location: "Île de Tekakwitha, Kahnawake",
-    // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/le-cercle.jpg"
     image: "images/projects/le-cercle.jpg",
     heroCaptionFR: "Rendu intérieur — Pavillon résidentiel",
     heroCaptionEN: "Interior render — Residential Pavilion",
@@ -155,7 +141,6 @@ const PROJECTS = [
     typeFR: "Réhabilitation patrimoniale",
     typeEN: "Heritage rehabilitation",
     location: "2–6 rue de l'Hôtel-Dieu, Québec",
-    // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/fantaisie-interieure.jpg"
     image: "images/projects/fantaisie-interieure.jpg",
     heroCaptionFR: "Rendu de la cour intérieure",
     heroCaptionEN: "Interior Courtyard Render",
@@ -183,8 +168,6 @@ const PROJECTS = [
       {
         headingFR: "Élévation latérale",
         headingEN: "Lateral Elevation",
-        textFR: "",
-        textEN: "",
         image: "images/projects/fantaisie-interieure-01.jpg",
       },
       {
@@ -203,7 +186,6 @@ const PROJECTS = [
     typeFR: "Multilogement",
     typeEN: "Multi-unit residential",
     location: "Rue Champlain, Québec",
-    // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/les-deux-freres.jpg"
     image: "images/projects/les-deux-freres.jpg",
     heroCaptionFR: "Rendu extérieur",
     heroCaptionEN: "Exterior render",
@@ -246,7 +228,6 @@ const PROJECTS = [
     typeFR: "Chalet privé",
     typeEN: "Private cottage",
     location: "Parc national de la Jacques-Cartier, Québec",
-    // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/la-clairiere.jpg"
     image: "images/projects/la-clairiere.jpg",
     heroCaptionFR: "Maquette",
     heroCaptionEN: "Model",
@@ -296,7 +277,6 @@ const PROJECTS = [
     typeFR: "Conceptualisation architecturale",
     typeEN: "Architectural conceptualisation",
     location: "Université Laval, Québec",
-    // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/1-62.jpg"
     image: "images/projects/1-62.png",
     heroCaptionFR: "Collage",
     heroCaptionEN: "Collage",
@@ -310,25 +290,17 @@ const PROJECTS = [
         textEN: "The objective was to explore the formal possibilities of concrete by creating a collage, a model, and a section of a fictitious building based on the model's form. The AI image generator Midjourney was used to create the collage from models, photos, and drawings. Several attempts were made with Midjourney before obtaining the original image, from which successive modifications were made to achieve the desired rendering.",
         layout: "grid",
         images: [
-          // IMAGE 04 → remplacer par : "images/projects/1-62-04.jpg"
           { src: "images/projects/1-62-04.jpg", captionFR: "", captionEN: "" },
-          // IMAGE 05 → remplacer par : "images/projects/1-62-05.jpg"
           { src: "images/projects/1-62-05.jpg", captionFR: "", captionEN: "" },
-          // IMAGE 06 → remplacer par : "images/projects/1-62-06.jpg"
           { src: "images/projects/1-62-06.jpg", captionFR: "", captionEN: "" },
         ],
       },
       {
         headingFR: "Maquette et coupe",
         headingEN: "Model and Section",
-        textFR: "",
-        textEN: "",
         images: [
-          // IMAGE 01 → remplacer par : "images/projects/1-62-01.jpg"
           { src: "images/projects/1-62-01.jpg", captionFR: "", captionEN: "" },
-          // IMAGE 02 → remplacer par : "images/projects/1-62-02.jpg"
           { src: "images/projects/1-62-02.jpg", captionFR: "", captionEN: "" },
-          // IMAGE 03 → remplacer par : "images/projects/1-62-03.jpg"
           { src: "images/projects/1-62-03.jpg", captionFR: "", captionEN: "" },
         ],
       },
@@ -348,7 +320,6 @@ const PROJECTS = [
     typeFR: "Expérimentation numérique",
     typeEN: "Digital experimentation",
     location: "Université Laval, Québec",
-    // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/le-mirage.jpg"
     image: "images/projects/le-mirage.jpg",
     heroCaptionFR: "Rendu extérieur",
     heroCaptionEN: "Exterior render",
@@ -362,9 +333,7 @@ const PROJECTS = [
         textEN: "The goal of the project was to place a parametric structure in an unusual environment. We chose to place a monolithic structure that contrasts with the surrounding sand desert. Despite this duality, the parametric brick wall forms a movement that echoes the sand dunes.",
         layout: "grid",
         images: [
-          // IMAGE 01 → remplacer par : "images/projects/le-mirage-01.jpg"
           { src: "images/projects/le-mirage-01.jpg", captionFR: "Rendu extérieur", captionEN: "Exterior render" },
-          // IMAGE 02 → remplacer par : "images/projects/le-mirage-02.jpg"
           { src: "images/projects/le-mirage-02.jpg", captionFR: "Rendu intérieur", captionEN: "Interior render" },
         ],
       },
@@ -375,9 +344,7 @@ const PROJECTS = [
         textEN: "A Grasshopper script controls the parametric wall geometry, allowing the facade modules to vary in depth and distribution according to adjustable parameters.",
         layout: "flex",
         images: [
-          // IMAGE 03 → remplacer par : "images/projects/le-mirage-03.jpg"
           { src: "images/projects/le-mirage-03.jpg", captionFR: "Script Grasshopper — paramètres de façade", captionEN: "Grasshopper script — facade parameters" },
-          // IMAGE 04 → remplacer par : "images/projects/le-mirage-04.jpg"
           { src: "images/projects/le-mirage-04.jpg", captionFR: "Détail du mur paramétrique", captionEN: "Parametric wall detail" },
         ],
       },
@@ -397,8 +364,6 @@ const PROJECTS = [
     typeFR: "Design de produits",
     typeEN: "Product design",
     location: "Université Laval, Québec",
-    heroCover: false,
-    // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/uni-sons.jpg"
     image: "images/projects/uni-sons-01.jpg",
     heroCaptionFR: "Produit final",
     heroCaptionEN: "Final product",
@@ -418,11 +383,8 @@ const PROJECTS = [
         textEN: "The design process included building cardboard prototypes to test forms and assembly, followed by a final version handcrafted in a woodworking workshop.",
         layout: "grid",
         images: [
-          // IMAGE 1 → remplacer par : "images/projects/uni-sons-01.jpg"
           { src: "images/projects/uni-sons-02.jpg", captionFR: "Prototypes en carton", captionEN: "Cardboard prototypes" },
-          // IMAGE 2 → remplacer par : "images/projects/uni-sons-02.jpg"
           { src: "images/projects/uni-sons-03.jpg", captionFR: "Axonométrie explosée", captionEN: "Exploded axonometric" },
-          // IMAGE 3 → remplacer par : "images/projects/uni-sons-03.jpg"
           { src: "images/projects/uni-sons-04.jpg", captionFR: "Coupe technique", captionEN: "Technical section" },
         ],
       },
@@ -431,11 +393,8 @@ const PROJECTS = [
         headingEN: "Instructions",
         layout: "numbered",
         images: [
-          // IMAGE 4 → remplacer par : "images/projects/uni-sons-04.jpg"
           { src: "images/projects/uni-sons-05.jpg", captionFR: "", captionEN: "" },
-          // IMAGE 5 → remplacer par : "images/projects/uni-sons-05.jpg"
           { src: "images/projects/uni-sons-06.jpg", captionFR: "", captionEN: "" },
-          // IMAGE 6 → remplacer par : "images/projects/uni-sons-06.jpg"
           { src: "images/projects/uni-sons-07.jpg", captionFR: "", captionEN: "" },
         ],
       },

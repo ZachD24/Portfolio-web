@@ -239,32 +239,6 @@
       margin-top: 0.4rem;
     }
 
-    /* ── Galerie slides ───────────────────────────────────── */
-    .slides-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid var(--color-border);
-    }
-    .slides-gallery__item {
-      margin: 0;
-    }
-    .slides-gallery__img {
-      width: 100%;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-      display: block;
-      cursor: zoom-in;
-    }
-    .slides-gallery__caption {
-      font-size: 0.8125rem;
-      font-style: italic;
-      color: var(--color-muted);
-      margin-top: 0.5rem;
-    }
-
     /* ── Back link ────────────────────────────────────────── */
     .back-link {
       display: inline-flex;
@@ -551,19 +525,6 @@
           </div>`;
         }
 
-        function renderGallery() {
-          if (!project.slides || !project.slides.length) return '';
-          return `<div class="slides-gallery">
-            ${project.slides.map(s => {
-              const cap = lang === 'fr' ? (s.captionFR || '') : (s.captionEN || '');
-              return `<figure class="slides-gallery__item">
-                <img src="${s.image}" alt="${cap}" class="slides-gallery__img" loading="lazy">
-                ${cap ? `<figcaption class="slides-gallery__caption">${cap}</figcaption>` : ''}
-              </figure>`;
-            }).join('')}
-          </div>`;
-        }
-
         function renderBody() {
           if (project.sections && project.sections.length) {
             return `<div class="sections-wrapper">
@@ -611,7 +572,6 @@
             ${metaBar}
             <div class="divider"></div>
             ${renderBody()}
-            ${renderGallery()}
           </div>`;
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));

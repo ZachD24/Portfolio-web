@@ -25,12 +25,7 @@ const TRANSLATIONS = {
     "about.title":       "À propos",
     "about.bio.1":       "Étudiant en architecture à l'Université Laval, je réalise présentement un échange académique à l'École Nationale Supérieure d'Architecture de Lyon (ENSAL). J'ai toujours été partagé entre les technologies et le design, ce qui a rendu mon parcours académique atypique. J'ai étudié dans le très technique et le très créatif avant de trouver l'architecture, qui est pour moi le juste milieu parfait. Je crois que mes intérêts variés sont l'une de mes plus grandes forces, car ils me permettent de combiner mon amour des technologies et du design. Je m'intéresse particulièrement aux outils paramétriques comme Grasshopper ainsi qu'aux technologies émergentes comme l'intelligence artificielle. J'ai aussi un intérêt marqué pour l'architecture en milieu inhabituel ou extrême, car j'aime les défis et la recherche d'innovation qui viennent avec ce genre de projet.",
     "about.bio.2":       "Dans le futur, j'aimerais être un pont entre l'architecture et les nouvelles technologies afin d'optimiser le travail des architectes. Les options que je vois pour moi sont de travailler comme architecte-programmeur, être consultant pour des firmes voulant intégrer les nouvelles technologies à leur pratique, ou travailler dans un environnement qui pousse les innovations constructives, environnementales ou technologiques.",
-    "about.skills.title": "Compétences",
-    "about.software":    "Logiciels",
     "about.languages":   "Langues",
-    "about.lang.fr":     "Français — natif",
-    "about.lang.en":     "Anglais — parlé et écrit",
-    "about.photo.alt":   "Portrait d'Emma Renaud",
 
     // contact.html
     "contact.title":     "Contact",
@@ -97,12 +92,7 @@ const TRANSLATIONS = {
     "about.title":       "About",
     "about.bio.1":       "Architecture student at Université Laval, currently on academic exchange at the École Nationale Supérieure d'Architecture de Lyon (ENSAL). I have always been drawn to both technology and design, which made my academic path an unconventional one. I studied in the highly technical and the highly creative before finding architecture, which for me is the perfect middle ground. I believe my varied interests are one of my greatest strengths, as they allow me to combine my love of technology and design. I am particularly interested in parametric tools like Grasshopper and in emerging technologies such as artificial intelligence. I also have a strong interest in architecture in unusual or extreme environments, as I enjoy the challenges and the drive for innovation that come with such projects.",
     "about.bio.2":       "In the future, I would like to be a bridge between architecture and new technologies in order to optimise the work of architects. The paths I envision for myself are working as an architect-programmer, consulting for firms wishing to integrate new technologies into their practice, or working in an environment that drives constructive, environmental, or technological innovation.",
-    "about.skills.title": "Skills",
-    "about.software":    "Software",
     "about.languages":   "Languages",
-    "about.lang.fr":     "French — native",
-    "about.lang.en":     "English — spoken and written",
-    "about.photo.alt":   "Portrait of Emma Renaud",
 
     // contact.html
     "contact.title":     "Contact",
