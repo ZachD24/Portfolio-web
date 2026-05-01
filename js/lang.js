@@ -35,6 +35,11 @@ const Lang = (() => {
     if (typeof renderProjects === 'function') {
       renderProjects(lang);
     }
+
+    // Re-rend le contenu si on est sur une page projet individuelle
+    if (typeof renderProject === 'function') {
+      renderProject(lang);
+    }
   }
 
   function toggle() {
