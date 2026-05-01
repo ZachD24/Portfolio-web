@@ -47,8 +47,8 @@ const PROJECTS = [
         ],
       },
       {
-        headingFR: "Façade paramétrique",
-        headingEN: "Parametric facade",
+        headingFR: "Façades paramétriques",
+        headingEN: "Parametric facades",
         textFR: "Les façades des ajouts sont conçues en bois afin de créer une distinction claire avec les ruines historiques. Afin de rappeler l'irrégularité des murs de pierre, un script grasshopper et un scripts python génèrent des panneaux de dimensions et d'épaisseurs aléatoires qui peuvent être modifiés rapidement jusqu’à l’obtention d’un résultat satisfaisant. ",
         textEN: "The facades of the additions are designed in wood to create a clear distinction from the historic ruins. To evoke the irregularity of stone walls, a Grasshopper script and Python scripts generate panels of random dimensions and thicknesses that can be quickly modified until a satisfactory result is achieved.",
         layout: "flex",
