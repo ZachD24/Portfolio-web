@@ -21,8 +21,8 @@ const PROJECTS = [
     image: "images/projects/the-nest.jpg",
     heroCaptionFR: "Rendu extérieur",
     heroCaptionEN: "Exterior render",
-    descriptionFR: "Réhabilitation du château des Cornes d'Urfé en hôtel. Façades paramétriques en bois, atrium avec puits de lumière et colonnes arborescentes conçus sous Grasshopper.",
-    descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé into a hotel. Parametric wooden facades, atrium with skylight and tree-like columns designed in Grasshopper.",
+    descriptionFR: "Réhabilitation du château des Cornes d'Urfé, une forteresse médiévale qui a été habitée par la famille Urfé jusqu’au milieu du XVIIe siècle en hôtel.",
+    descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé, a medieval fortress that was inhabited by the Urfé family until the mid-17th century, into a hotel.",
     sections: [
       {
         headingFR: "Programme",
