@@ -231,12 +231,6 @@ const PROJECTS = [
         image: "images/projects/les-deux-freres-03.jpg",
       },
       {
-        headingFR: "Regard critique",
-        headingEN: "Critical Reflection",
-        textFR: "Le résultat final est élégant et les plans fonctionnent bien. Le concept de séparer les appartements familiaux et étudiants en deux bâtiments tout en les connectant est réussi. Les coupes et plans pourraient être plus clairs en pochant les murs. La façade du bâtiment familial donnant sur le boulevard Champlain pourrait être plus intéressante architecturalement.",
-        textEN: "The final result is elegant and the plans work well. The concept of separating family and student apartments across two connected buildings is successful. The sections and plans could be clearer with hatched walls. The facade of the family building facing Boulevard Champlain could be more architecturally interesting.",
-      },
-      {
         headingFR: "Réalisé avec",
         headingEN: "Credits",
         textFR: "Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
@@ -285,12 +279,6 @@ const PROJECTS = [
           { src: "images/projects/la-clairiere-02.jpg", captionFR: "Plan de site", captionEN: "Site plan" },
           { src: "images/projects/la-clairiere-05.jpg", captionFR: "Coupe transversale", captionEN: "Cross section" },
         ],
-      },
-      {
-        headingFR: "Regard critique",
-        headingEN: "Critical Reflection",
-        textFR: "La forme du chalet et la disposition des pièces pourraient être revues, car les nombreux angles aigus rendent le chalet difficile à meubler. La terrasse pourrait être ouverte plutôt qu'avec des bancs intégrés, pour plus de flexibilité. Les rendus 3D pourraient aussi être améliorés. Le concept du toit flottant grâce aux pilotis et colonnes reste la force du projet.",
-        textEN: "The chalet's form and room layout could be reconsidered, as the many acute angles make furnishing difficult. The terrace could be left open rather than having built-in benches, offering more flexibility. The 3D renderings could also be improved. The concept of the floating roof through pilotis and columns remains the project's strength.",
       },
       {
         headingFR: "Réalisé avec",
