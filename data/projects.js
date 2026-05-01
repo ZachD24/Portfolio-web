@@ -21,13 +21,13 @@ const PROJECTS = [
     image: "images/projects/the-nest.jpg",
     heroCaptionFR: "Rendu extérieur",
     heroCaptionEN: "Exterior render",
-    descriptionFR: "Réhabilitation du château des Cornes d'Urfé, une forteresse médiévale qui a été habitée par la famille Urfé jusqu’au milieu du XVIIe siècle en hôtel.",
+    descriptionFR: "Réhabilitation en hôtel du château des Cornes d’Urfé, une forteresse médiévale habitée par la famille Urfé jusqu’au milieu du XVIIe siècle.",
     descriptionEN: "Rehabilitation of the Château des Cornes d'Urfé, a medieval fortress that was inhabited by the Urfé family until the mid-17th century, into a hotel.",
     sections: [
       {
         headingFR: "Programme",
         headingEN: "Programme",
-        textFR: "L'objectif est de réhabiliter le château des Cornes d’Urfé, une forteresse médiévale qui a été habitée par la famille Urfé jusqu’au milieu du XVIIe siècle. Après avoir fait une analyse du site et et de son histoire, nous avons choisi de transformer le château en hôtel afin de lui redonner une fonction habitée, qui fait écho à sa vocation résidentielle d’origine. Le projet est guidé par la géométrie du château : les murs de l'hôtel suivent ceux de la ruine, l'entrée principale actuelle est conservée et une entrée secondaire traverse le donjon par l'accès historique. Les espaces publics comme le restaurant se trouvent à l'extérieur du château dans une ancienne grange réhabilitée. Les espaces semi-privés occupent la moitié du volume intérieur. L'autre moitié qui s'élève par dessus les murs de la ruine accueille les espaces privés.",
+        textFR: "L’objectif est de réhabiliter le château des Cornes d’Urfé, une forteresse médiévale qui a été habitée par la famille Urfé jusqu’au milieu du XVIIe siècle. Après avoir fait une analyse du site et de son histoire, nous avons choisi de transformer le château en hôtel afin de lui redonner une fonction habitée, qui fait écho à sa vocation résidentielle d’origine. Le projet est guidé par la géométrie du château : les murs de l’hôtel suivent ceux de la ruine, l’entrée principale actuelle est conservée et une entrée secondaire traverse le donjon par l’accès historique. Les espaces publics comme le restaurant se trouvent à l’extérieur du château dans une ancienne grange réhabilitée. Les espaces semi-privés occupent la moitié du volume intérieur. L’autre moitié qui s’élève au-dessus des murs de la ruine accueille les espaces privés.",
         textEN: "The objective is to rehabilitate the Château des Cornes d’Urfé, a medieval fortress that was inhabited by the Urfé family until the mid-17th century. After analyzing the site and its history, we chose to transform the château into a hotel to give it a renewed inhabited function, echoing its original residential purpose. The project is guided by the castle's geometry: the hotel walls follow those of the ruin, the existing main entrance is preserved, and a secondary entrance passes through the keep via the historic access. Public spaces such as the restaurant are located outside the castle in a rehabilitated barn. Semi-private spaces occupy half the interior volume. The other half, which rises above the ruin walls, houses private spaces.",
         layout: "grid",
         images: [
@@ -49,7 +49,7 @@ const PROJECTS = [
       {
         headingFR: "Façades paramétriques",
         headingEN: "Parametric facades",
-        textFR: "Les façades des ajouts sont conçues en bois afin de créer une distinction claire avec les ruines historiques. Afin de rappeler l'irrégularité des murs de pierre, un script grasshopper et un scripts python génèrent des panneaux de dimensions et d'épaisseurs aléatoires qui peuvent être modifiés rapidement jusqu’à l’obtention d’un résultat satisfaisant. ",
+        textFR: "Les façades des ajouts sont conçues en bois afin de créer une distinction claire avec les ruines historiques. Afin de rappeler l’irrégularité des murs de pierre, un script Grasshopper et des scripts Python génèrent des panneaux de dimensions et d’épaisseurs aléatoires qui peuvent être modifiés rapidement jusqu’à l’obtention d’un résultat satisfaisant.",
         textEN: "The facades of the additions are designed in wood to create a clear distinction from the historic ruins. To evoke the irregularity of stone walls, a Grasshopper script and Python scripts generate panels of random dimensions and thicknesses that can be quickly modified until a satisfactory result is achieved.",
         layout: "flex",
         images: [
@@ -90,7 +90,7 @@ const PROJECTS = [
     titleFR: "Le Cercle",
     titleEN: "The Circle",
     year: 2025,
-    typeFR: "centre d'interprétation culturelle",
+    typeFR: "Centre d'interprétation culturel",
     typeEN: "Cultural Interpretation Centre",
     location: "Île de Tekakwitha, Kahnawake",
     // IMAGE CARTE (grille + accueil) → remplacer par : "images/projects/le-cercle.jpg"
@@ -104,7 +104,7 @@ const PROJECTS = [
         headingFR: "Concept",
         headingEN: "Concept",
         textFR: "Symbole central dans la culture Mohawk, le cercle structure le projet en organisant les bâtiments autour d'un cœur commun. Par sa forme courbe et l'usage du bois, l'architecture évoque la maison longue traditionnelle ce qui est particulièrement marquant dans le pavillon résidentiel. La toiture unifiée des espaces publics renforce la circularité et clarifie la distinction entre les bâtiments privés et collectifs.",
-        textEN: "A central symbol in Mohawk culture, the circle structures the project: buildings are organised around a common heart marked by the sacred clan council fire. Through its curved form and use of wood, the architecture evokes the traditional longhouse. The unified roof over public spaces reinforces the circular layout and clarifies the distinction between private and collective buildings.",
+        textEN: "A central symbol in Mohawk culture, the circle structures the project: buildings are organised around a common heart. Through its curved form and use of wood, the architecture evokes the traditional longhouse, which is particularly striking in the residential pavilion. The unified roof over public spaces reinforces the circular layout and clarifies the distinction between private and collective buildings.",
         layout: "grid",
         images: [
           { src: "images/projects/le-cercle-02.jpg", captionFR: "Maquette éclairée", captionEN: "Lit model" },
@@ -174,7 +174,7 @@ const PROJECTS = [
         ],
       },
       {
-        headingFR: "Shéma de circulation",
+        headingFR: "Schéma de circulation",
         headingEN: "Circulation Diagram",
         textFR: "Afin de maximiser l'espace disponible à l'intérieur, les couloirs de circulation ont été placés sur des coursives extérieures. La circulation verticale peut se faire dans le bâtiment, à l'extrémité des coursives ou en empruntant les passerelles qui sillonnent la cour.",
         textEN: "To maximise usable interior space, circulation corridors were placed on external walkways. Vertical circulation can occur within the building, at the ends of the walkways, or by crossing the bridges that traverse the courtyard.",
@@ -208,7 +208,7 @@ const PROJECTS = [
     heroCaptionFR: "Rendu extérieur",
     heroCaptionEN: "Exterior render",
     descriptionFR: "Complexe multilogement sur la rue Champlain composé de deux bâtiments distincts — familial et étudiant — reliés par des coursives extérieures qui favorisent l'esprit communautaire. Avec Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
-    descriptionEN: "A multi-unit residential complex on Rue Champlain composed of two distinct buildings — family and student — separated by a shared corridor fostering community spirit. With Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
+    descriptionEN: "A multi-unit residential complex on Rue Champlain composed of two distinct buildings — family and student — connected by external walkways fostering community spirit. With Ève-Marie Girard · Louis Saint-Pierre · Atelier 2b, ARC-1012, Université Laval, 2024",
     sections: [
       {
         headingFR: "Programme",
@@ -306,7 +306,7 @@ const PROJECTS = [
       {
         headingFR: "Démarche",
         headingEN: "Process",
-        textFR: "L'objectif était d'explorer les possibiliter formelles du béton en créant un collage, une maquette et une coupe d'un bâtiment fictif ayant la forme de la maquette. L'outil de génération d'image par IA Midjourney a été utilisé pour créer le collage à partir de maquettes, de photos et de dessins. Plusieurs essais ont été réalisés avec Midjourney avant d'obtenir l'image d'origine à partir duquel des modifications successives ont été apportées afin d'obtenir le rendu souhaité.",
+        textFR: "L'objectif était d'explorer les possibilités formelles du béton en créant un collage, une maquette et une coupe d'un bâtiment fictif ayant la forme de la maquette. L'outil de génération d'image par IA Midjourney a été utilisé pour créer le collage à partir de maquettes, de photos et de dessins. Plusieurs essais ont été réalisés avec Midjourney avant d'obtenir l'image d'origine, à partir de laquelle des modifications successives ont été apportées afin d'obtenir le rendu souhaité.",
         textEN: "The objective was to explore the formal possibilities of concrete by creating a collage, a model, and a section of a fictitious building based on the model's form. The AI image generator Midjourney was used to create the collage from models, photos, and drawings. Several attempts were made with Midjourney before obtaining the original image, from which successive modifications were made to achieve the desired rendering.",
         layout: "grid",
         images: [
@@ -358,7 +358,7 @@ const PROJECTS = [
       {
         headingFR: "Concept",
         headingEN: "Concept",
-        textFR: "L'objectif du projet était de de placer une structure paramétrique dans un environnement inhabituel. Nous avons choisi de placer une structure monolithique qui fait contrast au désert de sable qui l'entoure. Malgré cette dualité, le mur de briques paramétriques forme un mouvement qui fait écho aux dunes de sable.",
+        textFR: "L'objectif du projet était de placer une structure paramétrique dans un environnement inhabituel. Nous avons choisi une structure monolithique qui contraste avec le désert de sable qui l'entoure. Malgré cette dualité, le mur de briques paramétriques forme un mouvement qui fait écho aux dunes de sable.",
         textEN: "The goal of the project was to place a parametric structure in an unusual environment. We chose to place a monolithic structure that contrasts with the surrounding sand desert. Despite this duality, the parametric brick wall forms a movement that echoes the sand dunes.",
         layout: "grid",
         images: [
@@ -371,7 +371,7 @@ const PROJECTS = [
       {
         headingFR: "Script Grasshopper",
         headingEN: "Grasshopper Script",
-        textFR: "Un script Grasshopper contrôle la géométrie du mur paramétrique permetant de controler le mouvement de la façade et la distribution des briques selon des paramètres ajustables.",
+        textFR: "Un script Grasshopper contrôle la géométrie du mur paramétrique, permettant de contrôler le mouvement de la façade et la distribution des briques selon des paramètres ajustables.",
         textEN: "A Grasshopper script controls the parametric wall geometry, allowing the facade modules to vary in depth and distribution according to adjustable parameters.",
         layout: "flex",
         images: [
@@ -408,7 +408,7 @@ const PROJECTS = [
       {
         headingFR: "Concept",
         headingEN: "Concept",
-        textFR: "UNI-SONS est un jouet sensoriel en bois visant en aider le développement des enfants en bas âge. Chaque pièce prend la forme d'une moitié d'animal qui créent des sons différent lorsqu'on les secoue en fonction des particules qui sont à l'intérieur. L'objectif est de stimuler les sens des enfants tout en favorisant leur motricité fine en leur donnant le défi de trouver les bonnes combinaisons de pièces à l'aide des sons.",
+        textFR: "UNI-SONS est un jouet sensoriel en bois visant à aider le développement des enfants en bas âge. Chaque pièce prend la forme d'une moitié d'animal qui crée des sons différents lorsqu'on la secoue, en fonction des particules qui sont à l'intérieur. L'objectif est de stimuler les sens des enfants tout en favorisant leur motricité fine en leur donnant le défi de trouver les bonnes combinaisons de pièces à l'aide des sons.",
         textEN: "UNI-SONS is a sensory wooden toy aimed at supporting the development of young children. Each piece takes the shape of half an animal that produces different sounds when shaken, depending on the particles inside. The goal is to stimulate children's senses while promoting fine motor skills by challenging them to find the correct combinations of pieces using the sounds.",
       },
       {
