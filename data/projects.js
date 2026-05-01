@@ -72,9 +72,9 @@ const PROJECTS = [
         layout: "grid",
         images: [
           // IMAGE 06 → déposer : "images/projects/the-nest-06.jpg"
-          { src: "images/projects/the-nest-06.jpg", captionFR: "", captionEN: "" },
+          { src: "images/projects/the-nest-06.jpg", captionFR: "Photo de l'extérieur du château", captionEN: "Exterior photo of the castle" },
           // IMAGE 07 → déposer : "images/projects/the-nest-07.jpg"
-          { src: "images/projects/the-nest-07.jpg", captionFR: "", captionEN: "" },
+          { src: "images/projects/the-nest-07.jpg", captionFR: "Photo prise depuis le donjon", captionEN: "Photo taken from the dungeon" },
         ],
       },
       {
